@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.149.40.203
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737749924411
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737749978574
+  login: 1737749898454
+money: '0'
+last-account-name: PikaLiix
+lastlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 44.62653981004158
+  y: 64.0
+  z: -27.695502103513387
+  yaw: -127.05054473876953
+  pitch: 28.499977111816406
+logoutlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 122.6510155986605
+  y: 85.25220334025373
+  z: 127.59396163949516
+  yaw: -165.650390625
+  pitch: 33.62757110595703

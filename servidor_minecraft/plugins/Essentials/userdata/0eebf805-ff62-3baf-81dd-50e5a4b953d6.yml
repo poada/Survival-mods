@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737748938619
-  login: 1737748932508
+  logout: 1737749978558
+  login: 1737749097384
 money: '0'
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 35.40801437688524
-  y: 70.99339715541389
-  z: -20.399881585910194
-  yaw: -107.60931396484375
-  pitch: 37.68543243408203
+  x: 121.521912905762
+  y: 85.0
+  z: 132.01791909732253
+  yaw: -161.708740234375
+  pitch: 15.764150619506836
 last-account-name: Futorista
