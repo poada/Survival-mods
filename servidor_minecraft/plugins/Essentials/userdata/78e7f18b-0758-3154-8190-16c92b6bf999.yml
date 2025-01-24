@@ -11,28 +11,39 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1737749924411
+  lastteleport: 1737751836435
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737749978574
-  login: 1737749898454
+  logout: 1737752141471
+  login: 1737750096620
+  kits:
+    inicial: 1737751994187
 money: '0'
 last-account-name: PikaLiix
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 44.62653981004158
-  y: 64.0
-  z: -27.695502103513387
-  yaw: -127.05054473876953
-  pitch: 28.499977111816406
+  x: 38.5
+  y: 72.0
+  z: -10.5
+  yaw: 0.0
+  pitch: 0.14999999105930328
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 122.6510155986605
-  y: 85.25220334025373
-  z: 127.59396163949516
-  yaw: -165.650390625
-  pitch: 33.62757110595703
+  x: 433.98689236186215
+  y: -40.0
+  z: -318.89469871805665
+  yaw: -128.251953125
+  pitch: 10.066659927368164
+homes:
+  home:
+    world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+    world-name: world
+    x: 421.5398043986148
+    y: -38.424654440509606
+    z: -315.30000001192093
+    yaw: -40.79937744140625
+    pitch: 53.266483306884766

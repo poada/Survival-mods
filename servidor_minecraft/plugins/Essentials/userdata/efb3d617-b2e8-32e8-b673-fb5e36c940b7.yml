@@ -1,0 +1,49 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.165.76.113
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737752078046
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737752141448
+  login: 1737750449288
+  kits:
+    inicial: 1737751992951
+money: '0'
+last-account-name: S3B4ST109
+homes:
+  home:
+    world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+    world-name: world
+    x: 1241.4237081899569
+    y: 68.0
+    z: -217.07768641861426
+    yaw: 76.58184814453125
+    pitch: 25.296340942382812
+lastlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 1237.800561965925
+  y: 68.25220334025373
+  z: -217.0577882963116
+  yaw: 70.46184539794922
+  pitch: 29.20191192626953
+logoutlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 1264.9778511808918
+  y: 76.0
+  z: -265.37648205398483
+  yaw: 129.45648193359375
+  pitch: 66.22221374511719
