@@ -1,617 +1,291 @@
-[20:21:09] [ServerMain/INFO]: Building unoptimized datafixer
-[20:21:10] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:21:12] [ServerMain/INFO]: Loaded 7 recipes
-[20:21:13] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[20:21:13] [Server thread/INFO]: Loading properties
-[20:21:13] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
-[20:21:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:21:14] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:21:14] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[20:21:14] [Server thread/INFO]: Default game type: SURVIVAL
-[20:21:14] [Server thread/INFO]: Generating keypair
-[20:21:14] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:21:14] [Server thread/INFO]: Using epoll channel type
-[20:21:14] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[20:21:14] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
-[20:21:15] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
-[20:21:15] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
-[20:21:16] [Server thread/INFO]: [nAntiBot] Loading nAntiBot v6.1.27
-[20:21:16] [Server thread/INFO]: [nAntiBot] Relocating dependencies (using 4 cores)
-[20:21:18] [Server thread/INFO]: [nAntiBot] All dependencies were loaded successfully. Took 2.47s
-[20:21:18] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library commons-math3
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library caffeine
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library HikariCP
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library h2
-[20:21:18] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
-[20:21:18] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.2.0-SNAPSHOT-679
-[20:21:19] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
-[20:21:19] [Server thread/INFO]: [nLogin] Loading nLogin v10.4.18
-[20:21:20] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.5.2
-[20:21:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:21:20] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
-[20:21:21] [Server thread/INFO]:         __    
-[20:21:21] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
-[20:21:21] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[20:21:21] [Server thread/INFO]: 
-[20:21:21] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[20:21:21] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[20:21:21] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[20:21:21] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[20:21:21] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1338ms)
-[20:21:21] [Server thread/INFO]: [nAntiBot] Enabling nAntiBot v6.1.27
-[20:21:22] [Server thread/INFO]: [nAntiBot] Successful plugin core start (took 0.39s)
-[20:21:22] [Server thread/INFO]:           _         _   _   ___       _   
-[20:21:22] [Server thread/INFO]:   _ __   /_\  _ __ | |_(_) / __\ ___ | |_ 
-[20:21:22] [Server thread/INFO]:  | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
-[20:21:22] [Server thread/INFO]:  | | | /  _  \ | | | |_| / \/  \ (_) | |_ 
-[20:21:22] [Server thread/INFO]:  |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
-[20:21:22] [Server thread/INFO]:                                          
-[20:21:22] [Server thread/INFO]:  By: www.nickuc.com - V 6.1.27
-[20:21:22] [Server thread/INFO]: 
-[20:21:23] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
-[20:21:23] [Server thread/INFO]: [nLogin] Enabling nLogin v10.4.18
-[20:21:23] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.25s)
-[20:21:23] [Server thread/INFO]:           __             _       
-[20:21:23] [Server thread/INFO]:   _ __   / /  ___   __ _(_)_ __  
-[20:21:23] [Server thread/INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
-[20:21:23] [Server thread/INFO]:  | | | / /__| (_) | (_| | | | | |
-[20:21:23] [Server thread/INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
-[20:21:23] [Server thread/INFO]:                   |___/            
-[20:21:23] [Server thread/INFO]:  By: www.nickuc.com - V 10.4.18 DEVELOPMENT
-[20:21:23] [Server thread/INFO]:  
-[20:21:23] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.2
-[20:21:24] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mYou must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.[0;39m
-[20:21:24] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.19.2[32;1m.[0;39m
-[20:21:24] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[20:21:24] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mPlease update your Java runtime to at least Java 21 (your version is 17).[0;39m
-[20:21:24] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mAt some point in the future, SkinsRestorer will no longer be compatible with this version of Java.[0;39m
-[20:21:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:21:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:21:24] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:21:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:21:24] [Server thread/INFO]: Preparing level "world"
-[20:21:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:21:25] [Server thread/INFO]: Time elapsed: 183 ms
-[20:21:25] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[20:21:26] [Server thread/INFO]: Time elapsed: 56 ms
-[20:21:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[20:21:26] [Server thread/INFO]: Time elapsed: 51 ms
-[20:21:26] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
-[20:21:26] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[20:21:26] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[20:21:26] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[20:21:26] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[20:21:27] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
-[20:21:27] [Server thread/INFO]: [Essentials] Using locale en
-[20:21:27] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[20:21:27] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[20:21:27] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
-[20:21:27] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
-[20:21:27] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[20:21:27] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
-[20:21:29] [Server thread/INFO]: [AxVaults] Loaded plugin!
-[20:21:29] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
-[20:21:29] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
-[20:21:29] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
-[20:21:29] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
-[20:21:29] [Server thread/INFO]: [ItemEdit] # Enabled (took 201 ms)
-[20:21:29] [Server thread/INFO]: Running delayed init tasks
-[20:21:29] [Craft Scheduler Thread - 1 - nAntiBot/INFO]: [nAntiBot] Connecting to the remote server antibot.nickuc.com...
-[20:21:29] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
-[20:21:29] [Server thread/INFO]: Done (15.918s)! For help, type "help"
-[20:21:29] [Server thread/INFO]: Timings Reset
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.5.2[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mae257f6[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[20:21:29] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[20:21:30] [Server thread/INFO]: /127.149.40.203:47125 lost connection: Disconnected
-[20:21:35] [User Authenticator #0/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
-[20:21:35] [Server thread/INFO]: daniel98120[/127.211.21.126:38075] logged in with entity id 187 at ([world]120.35880679262642, 84.0, 123.66829405598921)
-[20:21:36] [pool-13-thread-2/INFO]: [nAntiBot] [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 45, threads = 4, took 13.74s)
-[20:21:36] [User Authenticator #0/INFO]: UUID of player PikaLiix is 78e7f18b-0758-3154-8190-16c92b6bf999
-[20:21:36] [Server thread/INFO]: PikaLiix[/127.149.40.203:38309] logged in with entity id 216 at ([world]122.6590748478978, 85.25521960176278, 127.46941566875444)
-[20:21:39] [Craft Scheduler Thread - 9 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
-[20:21:42] [Craft Scheduler Thread - 7 - nLogin/INFO]: [nLogin] The user PikaLiix has successfully logged in.
-[20:21:43] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
-[20:21:43] [Server thread/INFO]: Futorista[/127.100.255.139:36955] logged in with entity id 318 at ([world]121.521912905762, 85.0, 132.01791909732253)
-[20:21:48] [Server thread/INFO]: daniel98120 was slain by PikaLiix
-[20:21:51] [Craft Scheduler Thread - 7 - nLogin/INFO]: [nLogin] The user Futorista has successfully logged in.
-[20:22:03] [Server thread/INFO]: Futorista has made the advancement [Monster Hunter]
-[20:22:20] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:22:25] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
-[20:22:29] [Server thread/INFO]: PikaLiix has made the advancement [Acquire Hardware]
-[20:22:35] [Server thread/INFO]: Futorista has made the advancement [Acquire Hardware]
-[20:22:36] [Server thread/INFO]: Futorista was slain by daniel98120
-[20:22:36] [Server thread/INFO]: daniel98120 has made the advancement [Acquire Hardware]
-[20:22:40] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:23:43] [Server thread/INFO]: daniel98120 was slain by Futorista
-[20:23:46] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:24:08] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:24:11] [Server thread/INFO]: PikaLiix issued server command: /pv 12
-[20:24:12] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:24:33] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:24:33] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:24:43] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:24:47] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:25:05] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:25:09] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:25:16] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:25:41] [Server thread/INFO]: daniel98120 tried to swim in lava to escape Skeleton
-[20:25:43] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /heal daniel9820
-[20:25:43] [Server thread/INFO]: Error: Player not found.
-[20:25:49] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:25:55] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:25:57] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:25:58] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:26:03] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /time set day
-[20:26:03] [Server thread/INFO]: The time was set to 0 ticks in: world, world_nether, world_the_end.
-[20:26:20] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:26:21] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:26:33] [Server thread/INFO]: Added S3B4ST109 to the whitelist
-[20:26:41] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /heal Futorista
-[20:26:41] [Server thread/INFO]: Healed Futorista.
-[20:26:57] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:27:00] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:27:04] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /heal Pikaliix
-[20:27:04] [Server thread/INFO]: Healed PikaLiix.
-[20:27:19] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /time 
-[20:27:19] [Server thread/INFO]: The current time in world is 07:31 or 7:31 AM or 1518 ticks.
-[20:27:19] [Server thread/INFO]: The current time in world_nether is 07:31 or 7:31 AM or 1518 ticks.
-[20:27:19] [Server thread/INFO]: The current time in world_the_end is 07:31 or 7:31 AM or 1518 ticks.
-[20:27:21] [Server thread/INFO]: PikaLiix was slain by daniel98120
-[20:27:23] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /heal Pikaliix
-[20:27:23] [Server thread/INFO]: Healed PikaLiix.
-[20:27:23] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:27:29] [User Authenticator #1/INFO]: UUID of player S3B4ST109 is efb3d617-b2e8-32e8-b673-fb5e36c940b7
-[20:27:29] [Server thread/INFO]: S3B4ST109[/127.165.76.113:43635] logged in with entity id 1966 at ([world]35.5, 65.0, -6.5)
-[20:27:30] [Server thread/INFO]: PikaLiix issued server command: /tpa Futorista
-[20:27:30] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:27:33] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:27:34] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:27:37] [Craft Scheduler Thread - 1 - nLogin/INFO]: [nLogin] The user S3B4ST109 has successfully registered.
-[20:27:38] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:27:39] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /kill daniel98120
-[20:27:39] [Server thread/INFO]: daniel98120 died
-[20:27:39] [Server thread/INFO]: Killed daniel98120.
-[20:27:49] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:27:57] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:27:57] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:28:01] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:28:03] [Server thread/INFO]: PikaLiix issued server command: /tpa Futorista
-[20:28:09] [Server thread/INFO]: daniel98120 was slain by Futorista
-[20:28:11] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:28:12] [Server thread/INFO]: Futorista issued server command: /tpaccept PikaLiix
-[20:28:12] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:28:17] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:28:19] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:28:30] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:28:32] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:28:34] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:28:42] [Server thread/INFO]: S3B4ST109 was slain by daniel98120
-[20:28:43] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:28:53] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:29:06] [Server thread/INFO]: PikaLiix has made the advancement [Stone Age]
-[20:29:17] [Server thread/INFO]: S3B4ST109 has made the advancement [Stone Age]
-[20:29:20] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:29:23] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:29:26] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:29:26] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:29:32] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
-[20:29:36] [Server thread/INFO]: S3B4ST109 has made the advancement [Getting an Upgrade]
-[20:29:37] [Server thread/INFO]: daniel98120 was slain by PikaLiix
-[20:29:41] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:29:41] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:29:44] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:29:46] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:29:51] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:29:57] [Server thread/INFO]: S3B4ST109 issued server command: /ie rename PENE
-[20:29:59] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:30:01] [Server thread/INFO]: S3B4ST109 issued server command: /enc
-[20:30:05] [Server thread/INFO]: Futorista issued server command: /ie rename %a&lPikacrak
-[20:30:07] [Server thread/INFO]: PikaLiix has made the advancement [Getting an Upgrade]
-[20:30:09] [Server thread/INFO]: Futorista issued server command: /ie rename &a&lPikacrak
-[20:30:10] [Server thread/INFO]: S3B4ST109 issued server command: /ie rename &1 PENE
-[20:30:11] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:30:13] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:30:15] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:30:17] [Server thread/INFO]: S3B4ST109 issued server command: /ie rename &1 PikaRIko
-[20:30:19] [Server thread/INFO]: Futorista issued server command: /tpacancel
-[20:30:20] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:30:20] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:30:22] [Server thread/INFO]: Futorista issued server command: /tpacancel daniel98120
-[20:30:31] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:30:34] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:30:40] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
-[20:30:40] [Server thread/INFO]: daniel98120 has made the advancement [Stone Age]
-[20:30:44] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:30:45] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:30:50] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:30:54] [Server thread/INFO]: Futorista has made the advancement [Stone Age]
-[20:30:57] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:31:09] [Server thread/INFO]: daniel98120 was slain by PikaLiix
-[20:31:11] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:31:11] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:31:14] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:31:17] [Server thread/INFO]: daniel98120 issued server command: /tpa PikaLiix
-[20:31:17] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:31:19] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:31:29] [Server thread/INFO]: S3B4ST109 issued server command: /Feed
-[20:31:31] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
-[20:31:39] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:31:43] [Server thread/INFO]: Futorista issued server command: /tpaccept daniel98120
-[20:31:47] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:31:51] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:31:58] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:02] [Server thread/INFO]: Futorista issued server command: /tpaccept daniel98120
-[20:32:11] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:12] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:32:15] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:18] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:32:22] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:23] [Server thread/INFO]: daniel98120 has made the advancement [Getting an Upgrade]
-[20:32:27] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:34] [Server thread/INFO]: Futorista has made the advancement [Getting an Upgrade]
-[20:32:35] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:32:39] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:32:52] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:33:55] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:34:04] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:34:09] [Server thread/INFO]: Made Futorista a server operator
-[20:34:12] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
-[20:34:13] [Server thread/INFO]: Futorista issued server command: /gamemode survival
-[20:34:13] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:34:13] [Server thread/INFO]: Futorista issued server command: /gamemode creative
-[20:34:19] [Server thread/INFO]: Futorista issued server command: /gamemode survival
-[20:34:21] [Server thread/INFO]: Futorista issued server command: /gamemode creative
-[20:34:41] [Server thread/INFO]: Futorista issued server command: /lp user Futorista permission set essentials.tempban
-[20:34:41] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [U] (futorista)
-[20:34:41] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.tempban true
-[20:34:42] [Server thread/INFO]: Futorista issued server command: /lp user Futorista permission set essentials.tempbanip
-[20:34:42] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [U] (futorista)
-[20:34:42] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.tempbanip true
-[20:34:49] [Server thread/INFO]: Futorista issued server command: /gamemode survival
-[20:34:52] [Server thread/INFO]: daniel98120 has made the advancement [Isn't It Iron Pick]
-[20:34:58] [Server thread/INFO]: Futorista issued server command: /deop Futorista
-[20:34:58] [Server thread/INFO]: [Futorista: Made Futorista no longer a server operator]
-[20:35:03] [Server thread/INFO]: Futorista issued server command: /tempban daniel98120 1s
-[20:35:03] [Server thread/INFO]: daniel98120 lost connection: You have been temporarily banned for 1 second:
-The Ban Hammer has spoken!
-[20:35:03] [Server thread/INFO]: [Essentials] Player Futorista temporarily banned daniel98120 for 1 second: The Ban Hammer has spoken!.
-[20:35:06] [User Authenticator #2/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
-[20:35:06] [Server thread/INFO]: daniel98120[/127.211.21.126:39277] logged in with entity id 4702 at ([world]211.31079424279574, 66.0, 205.02406922825188)
-[20:35:17] [Craft Scheduler Thread - 9 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
-[20:35:53] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:36:37] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:36:58] [Server thread/INFO]: daniel98120 has made the advancement [Diamonds!]
-[20:37:07] [Server thread/INFO]: PikaLiix has made the advancement [Monster Hunter]
-[20:37:10] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:37:13] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:37:48] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:38:13] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:38:16] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:38:18] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:38:27] [Server thread/INFO]: Futorista issued server command: /tpa daniel98120
-[20:38:38] [Server thread/INFO]: daniel98120 issued server command: /tpaccept Futorista
-[20:39:28] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:39:43] [Server thread/INFO]: S3B4ST109 has made the advancement [Sweet Dreams]
-[20:39:58] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:40:00] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:40:02] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:40:04] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:40:04] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:40:07] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:40:08] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:40:09] [Server thread/INFO]: S3B4ST109 has made the advancement [Monster Hunter]
-[20:40:19] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:40:28] [Server thread/INFO]: S3B4ST109 has made the advancement [Suit Up]
-[20:41:06] [Server thread/INFO]: Futorista has made the advancement [Isn't It Iron Pick]
-[20:41:07] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:41:10] [Server thread/INFO]: Futorista has made the advancement [Diamonds!]
-[20:41:11] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:41:56] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:42:05] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:42:10] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:42:15] [Server thread/INFO]: daniel98120 has made the advancement [Cover Me with Diamonds]
-[20:42:19] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:42:23] [Server thread/INFO]: Futorista issued server command: /craft
-[20:42:23] [Server thread/INFO]: [Essentials] Futorista was denied access to command.
-[20:42:39] [Server thread/INFO]: Made Futorista a server operator
-[20:42:43] [Server thread/INFO]: Futorista issued server command: /gamemode creative
-[20:42:47] [Server thread/INFO]: PikaLiix issued server command: /anvil
-[20:42:47] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:42:48] [Server thread/INFO]: PikaLiix issued server command: /antibot
-[20:42:50] [Server thread/INFO]: PikaLiix issued server command: /antibot 2
-[20:42:54] [Server thread/INFO]: PikaLiix issued server command: /antibot reload Futorista
-[20:43:13] [Server thread/INFO]: Futorista issued server command: /anvil
-[20:43:20] [Server thread/INFO]: S3B4ST109 has made the advancement [Isn't It Iron Pick]
-[20:43:53] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:44:22] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:45:36] [Server thread/INFO]: Added ImNotFish to the whitelist
-[20:45:48] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:46:03] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:46:17] [Server thread/INFO]: PikaLiix issued server command: /home
-[20:46:17] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:46:21] [Server thread/INFO]: PikaLiix issued server command: /sethome
-[20:46:21] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:46:31] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.home
-[20:46:31] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:46:31] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.home true
-[20:46:35] [Server thread/INFO]: PikaLiix issued server command: /home
-[20:46:37] [Server thread/INFO]: S3B4ST109 issued server command: /anvil
-[20:46:37] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[20:46:38] [Server thread/INFO]: PikaLiix issued server command: /back
-[20:46:38] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:46:41] [Server thread/INFO]: S3B4ST109 issued server command: /craft
-[20:46:41] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[20:47:28] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.back
-[20:47:28] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:47:28] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.back true
-[20:47:32] [Server thread/INFO]: PikaLiix issued server command: /back
-[20:47:43] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:47:49] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.sethome
-[20:47:49] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:47:49] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.sethome true
-[20:47:57] [Server thread/INFO]: PikaLiix issued server command: /sethome asd
-[20:48:29] [Server thread/INFO]: PikaLiix was blown up by Creeper
-[20:48:39] [Server thread/INFO]: PikaLiix issued server command: /home asd
-[20:48:59] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:49:04] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:49:11] [User Authenticator #3/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
-[20:49:11] [Server thread/INFO]: ImNotFish[/127.169.76.46:33823] logged in with entity id 12680 at ([world]42.5, 64.0, -24.5)
-[20:49:17] [Server thread/INFO]: Futorista issued server command: /pv
-[20:49:20] [Craft Scheduler Thread - 8 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully registered.
-[20:49:28] [Server thread/INFO]: Futorista issued server command: /pv p
-[20:49:34] [Server thread/INFO]: Futorista issued server command: /pv daniel
-[20:49:40] [Server thread/INFO]: ImNotFish issued server command: /tpa daniel98120
-[20:49:46] [Server thread/INFO]: ImNotFish issued server command: /craft
-[20:49:46] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:49:47] [Server thread/INFO]: daniel98120 issued server command: /tpaccept ImNotFish
-[20:50:01] [Server thread/WARN]: PikaLiix moved wrongly!
-[20:50:04] [Server thread/INFO]: ImNotFish was slain by Futorista
-[20:50:06] [Server thread/INFO]: ImNotFish issued server command: /craft
-[20:50:06] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:50:07] [Server thread/INFO]: ImNotFish issued server command: /tpa daniel98120
-[20:50:11] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
-[20:50:30] [Server thread/INFO]: Futorista issued server command: /kit
-[20:50:32] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:50:32] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:50:33] [Server thread/INFO]: PikaLiix was slain by Spider
-[20:50:33] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:50:33] [Server thread/INFO]: [Essentials] daniel98120 was denied access to command.
-[20:50:35] [Server thread/INFO]: Futorista issued server command: /deletekit color
-[20:50:36] [Server thread/INFO]: PikaLiix issued server command: /home asd
-[20:50:37] [Server thread/INFO]: Futorista issued server command: /deletekit dtools
-[20:50:39] [Server thread/INFO]: Futorista issued server command: /deletekit
-[20:50:41] [Server thread/INFO]: Futorista issued server command: /deletekit firework
-[20:50:44] [Server thread/INFO]: Futorista issued server command: /deletekit tools
-[20:50:45] [Server thread/INFO]: Futorista issued server command: /deletekit notch
-[20:50:46] [Server thread/INFO]: ImNotFish has made the advancement [Stone Age]
-[20:50:47] [Server thread/INFO]: Futorista issued server command: /pv 1
-[20:50:49] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:50:54] [Server thread/INFO]: S3B4ST109 issued server command: /kit
-[20:50:54] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[20:50:56] [Server thread/INFO]: PikaLiix issued server command: /kits
-[20:50:56] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:50:59] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:51:10] [Server thread/INFO]: PikaLiix has made the advancement [Suit Up]
-[20:51:16] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:51:24] [Server thread/INFO]: Futorista issued server command: /createkit inicial
-[20:51:26] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:51:29] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:29] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:34] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:51:34] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:51:34] [Server thread/INFO]: [Essentials] daniel98120 was denied access to command.
-[20:51:35] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:35] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:35] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:35] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:36] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:36] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:36] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:36] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:49] [Server thread/INFO]: Futorista issued server command: /heal ImNotFish
-[20:51:51] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:51:51] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:51:59] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:52:01] [Server thread/INFO]: PikaLiix issued server command: /kits
-[20:52:01] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:52:02] [Server thread/INFO]: PikaLiix issued server command: /kit
-[20:52:02] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:52:04] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:04] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:04] [Server thread/INFO]: PikaLiix issued server command: /kit
-[20:52:04] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:52:06] [Server thread/INFO]: Futorista issued server command: /createkit inicial 18000
-[20:52:09] [Server thread/INFO]: PikaLiix has made the advancement [Isn't It Iron Pick]
-[20:52:10] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
-[20:52:10] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:10] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:11] [Server thread/INFO]: PikaLiix issued server command: /kit
-[20:52:11] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[20:52:13] [Server thread/INFO]: S3B4ST109 issued server command: /kit
-[20:52:13] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[20:52:13] [Server thread/INFO]: ImNotFish issued server command: /kit inicia
-[20:52:13] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:13] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:52:15] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:52:15] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:16] [Server thread/INFO]: S3B4ST109 issued server command: /kit inicial
-[20:52:16] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[20:52:16] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:52:19] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:19] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:25] [Server thread/INFO]: PikaLiix has made the advancement [Not Today, Thank You]
-[20:52:27] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:27] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:27] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:52:27] [Server thread/INFO]: [Essentials] daniel98120 was denied access to command.
-[20:52:28] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:28] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:28] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:28] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:29] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:29] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:29] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:29] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:30] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:30] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:31] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:31] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:52:33] [Async Chat Thread - #0/INFO]: [Not Secure] <ImNotFish> a
-[20:52:34] [Async Chat Thread - #0/INFO]: [Not Secure] <ImNotFish> a
-[20:52:34] [Async Chat Thread - #0/INFO]: [Not Secure] <ImNotFish> a
-[20:52:39] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.kit
-[20:52:39] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:52:39] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.kit true
-[20:52:41] [Server thread/INFO]: ImNotFish issued server command: /kit
-[20:52:41] [Server thread/INFO]: S3B4ST109 issued server command: /kit inicial
-[20:52:45] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:52:45] [Server thread/INFO]: PikaLiix issued server command: /kit inicial
-[20:52:46] [Server thread/INFO]: PikaLiix issued server command: /kits
-[20:52:48] [Server thread/INFO]: PikaLiix issued server command: /kit
-[20:52:51] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.kit.inicial
-[20:52:51] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:52:51] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.kit.inicial true
-[20:52:52] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:52:53] [Server thread/INFO]: PikaLiix issued server command: /kit
-[20:52:53] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:52:55] [Server thread/INFO]: daniel98120 issued server command: /kt
-[20:52:56] [Server thread/INFO]: PikaLiix issued server command: /kit inicial
-[20:52:57] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:53:08] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:53:10] [Server thread/INFO]: Futorista issued server command: /lp group default permission set essentials.kits.inicial
-[20:53:10] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
-[20:53:10] [luckperms-command-executor/INFO]: [LP] LOG > permission set essentials.kits.inicial true
-[20:53:12] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:53:12] [Server thread/INFO]: ImNotFish has made the advancement [Getting an Upgrade]
-[20:53:12] [Server thread/INFO]: S3B4ST109 issued server command: /kit inicial
-[20:53:14] [Server thread/INFO]: PikaLiix issued server command: /kit inicial
-[20:53:34] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:53:37] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:53:40] [Server thread/INFO]: daniel98120 issued server command: /kit claim inicial
-[20:53:43] [Server thread/INFO]: daniel98120 issued server command: /kit
-[20:53:46] [Server thread/INFO]: daniel98120 issued server command: /kit inicial
-[20:53:53] [Server thread/INFO]: PikaLiix issued server command: /spawn
-[20:53:55] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:53:56] [Server thread/INFO]: Futorista issued server command: /kit i
-[20:53:57] [Server thread/INFO]: Futorista issued server command: /kit inicial
-[20:53:59] [Server thread/INFO]: ImNotFish issued server command: /kit inicial
-[20:54:02] [Server thread/INFO]: Futorista issued server command: /kit inicial
-[20:54:03] [Server thread/INFO]: Futorista issued server command: /kit inicial
-[20:54:03] [Server thread/INFO]: Futorista issued server command: /kit inicialt
-[20:54:05] [Server thread/INFO]: Futorista issued server command: /kit inicialt
-[20:54:06] [Server thread/INFO]: Futorista issued server command: /kit inicial
-[20:54:06] [Server thread/INFO]: Futorista issued server command: /kit inicial
-[20:54:30] [Server thread/INFO]: S3B4ST109 issued server command: /sethome
-[20:54:36] [Server thread/INFO]: S3B4ST109 issued server command: /home delete
-[20:54:38] [Server thread/INFO]: S3B4ST109 issued server command: /home delete
-[20:54:45] [Server thread/INFO]: Futorista issued server command: /ie enchant sharpness 255
-[20:54:48] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:55:03] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:55:04] [Server thread/INFO]: PikaLiix has made the advancement [Diamonds!]
-[20:55:07] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:55:13] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:55:24] [Server thread/INFO]: daniel98120 issued server command: /sethome
-[20:55:26] [Server thread/INFO]: ImNotFish issued server command: /sethome
-[20:55:28] [Server thread/INFO]: PikaLiix issued server command: /sethome asd
-[20:55:30] [Server thread/INFO]: PikaLiix issued server command: /sethome
-[20:55:33] [Server thread/INFO]: ImNotFish issued server command: /sethome
-[20:55:41] [Server thread/INFO]: Futorista issued server command: /restart
-[20:55:41] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
-[20:55:41] [Server thread/INFO]: Futorista lost connection: Server is restarting
-[20:55:41] [Server thread/INFO]: S3B4ST109 lost connection: Server is restarting
-[20:55:41] [Server thread/INFO]: daniel98120 lost connection: Server is restarting
-[20:55:41] [Server thread/INFO]: ImNotFish lost connection: Server is restarting
-[20:55:41] [Server thread/INFO]: PikaLiix lost connection: Server is restarting
-[20:55:41] [Server thread/INFO]: Stopping server
-[20:55:41] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.5.2
-[20:55:41] [Server thread/INFO]: [nLogin] Disabling nLogin v10.4.18
-[20:55:41] [Server thread/INFO]: [nLogin] Successful plugin core shutdown (took 0.00s)
-[20:55:41] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
-[20:55:41] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
-[20:55:41] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
-[20:55:41] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
-[20:55:41] [Server thread/INFO]: [nAntiBot] Disabling nAntiBot v6.1.27
-[20:55:41] [Server thread/INFO]: [nAntiBot] Successful plugin core shutdown (took 0.00s)
-[20:55:41] [Server thread/INFO]: [nAntiBot] Disconnecting from remote server...
-[20:55:43] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
-[20:55:43] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[20:55:43] [Server thread/INFO]: [LuckPerms] Closing storage...
-[20:55:43] [Server thread/INFO]: [LuckPerms] Goodbye!
-[20:55:43] [Server thread/INFO]: Saving players
-[20:55:43] [Server thread/INFO]: Saving worlds
-[20:55:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[20:55:43] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[20:55:43] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[20:55:43] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[20:55:45] [Server thread/INFO]: [ChunkHolderManager] Saved 2885 block chunks, 905 entity chunks, 4 poi chunks in world 'world' in 1.87s
-[20:55:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[20:55:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 16 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[20:55:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:55:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[20:55:46] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[20:55:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:55:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[20:55:46] [Server thread/INFO]: Saving usercache.json
-[20:55:46] [Server thread/INFO]: Flushing Chunk IO
-[20:55:46] [Server thread/INFO]: Closing Thread Pool
-[20:55:46] [Server thread/INFO]: Closing Server
+[20:56:23] [ServerMain/INFO]: Building unoptimized datafixer
+[20:56:24] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:56:25] [ServerMain/INFO]: Loaded 7 recipes
+[20:56:27] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[20:56:27] [Server thread/INFO]: Loading properties
+[20:56:27] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[20:56:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:56:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:56:27] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[20:56:27] [Server thread/INFO]: Default game type: SURVIVAL
+[20:56:27] [Server thread/INFO]: Generating keypair
+[20:56:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:56:27] [Server thread/INFO]: Using epoll channel type
+[20:56:27] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:56:27] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[20:56:28] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
+[20:56:29] [Server thread/INFO]: [nAntiBot] Loading nAntiBot v6.1.27
+[20:56:29] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library commons-math3
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library caffeine
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library HikariCP
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library h2
+[20:56:29] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
+[20:56:29] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.2.0-SNAPSHOT-679
+[20:56:30] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
+[20:56:30] [Server thread/INFO]: [nLogin] Loading nLogin v10.4.18
+[20:56:31] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.5.2
+[20:56:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:56:31] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
+[20:56:32] [Server thread/INFO]:         __    
+[20:56:32] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
+[20:56:32] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:56:32] [Server thread/INFO]: 
+[20:56:32] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:56:32] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:56:32] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:56:32] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:56:33] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1706ms)
+[20:56:33] [Server thread/INFO]: [nAntiBot] Enabling nAntiBot v6.1.27
+[20:56:33] [Server thread/INFO]: [nAntiBot] Successful plugin core start (took 0.32s)
+[20:56:33] [Server thread/INFO]:           _         _   _   ___       _   
+[20:56:33] [Server thread/INFO]:   _ __   /_\  _ __ | |_(_) / __\ ___ | |_ 
+[20:56:33] [Server thread/INFO]:  | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
+[20:56:33] [Server thread/INFO]:  | | | /  _  \ | | | |_| / \/  \ (_) | |_ 
+[20:56:33] [Server thread/INFO]:  |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
+[20:56:33] [Server thread/INFO]:                                          
+[20:56:33] [Server thread/INFO]:  By: www.nickuc.com - V 6.1.27
+[20:56:33] [Server thread/INFO]: 
+[20:56:33] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
+[20:56:33] [Server thread/INFO]: [nLogin] Enabling nLogin v10.4.18
+[20:56:34] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.25s)
+[20:56:34] [Server thread/INFO]:           __             _       
+[20:56:34] [Server thread/INFO]:   _ __   / /  ___   __ _(_)_ __  
+[20:56:34] [Server thread/INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[20:56:34] [Server thread/INFO]:  | | | / /__| (_) | (_| | | | | |
+[20:56:34] [Server thread/INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[20:56:34] [Server thread/INFO]:                   |___/            
+[20:56:34] [Server thread/INFO]:  By: www.nickuc.com - V 10.4.18 DEVELOPMENT
+[20:56:34] [Server thread/INFO]:  
+[20:56:34] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.2
+[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mYou must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.[0;39m
+[20:56:35] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.19.2[32;1m.[0;39m
+[20:56:35] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mPlease update your Java runtime to at least Java 21 (your version is 17).[0;39m
+[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mAt some point in the future, SkinsRestorer will no longer be compatible with this version of Java.[0;39m
+[20:56:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:56:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:56:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:56:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:56:35] [Server thread/INFO]: Preparing level "world"
+[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:56:36] [Server thread/INFO]: Time elapsed: 177 ms
+[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:56:36] [Server thread/INFO]: Time elapsed: 87 ms
+[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:56:36] [Server thread/INFO]: Time elapsed: 85 ms
+[20:56:36] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
+[20:56:37] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[20:56:37] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[20:56:37] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[20:56:38] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[20:56:38] [Server thread/INFO]: [Essentials] Using locale en
+[20:56:38] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[20:56:38] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[20:56:38] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[20:56:38] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[20:56:38] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[20:56:38] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
+[20:56:39] [Server thread/INFO]: [AxVaults] Loaded plugin!
+[20:56:39] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[20:56:39] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[20:56:39] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[20:56:39] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[20:56:39] [Server thread/INFO]: [ItemEdit] # Enabled (took 193 ms)
+[20:56:40] [Server thread/INFO]: Running delayed init tasks
+[20:56:40] [Craft Scheduler Thread - 1 - nAntiBot/INFO]: [nAntiBot] Connecting to the remote server antibot.nickuc.com...
+[20:56:40] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] Fetching version information...
+[20:56:40] [Server thread/INFO]: Done (13.102s)! For help, type "help"
+[20:56:40] [Server thread/INFO]: Timings Reset
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.5.2[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mae257f6[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[20:56:41] [User Authenticator #0/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
+[20:56:41] [User Authenticator #0/INFO]: UUID of player S3B4ST109 is efb3d617-b2e8-32e8-b673-fb5e36c940b7
+[20:56:42] [User Authenticator #0/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[20:56:42] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[20:56:42] [Server thread/INFO]: ImNotFish[/127.169.76.46:51073] logged in with entity id 22 at ([world]204.35899133903294, -27.0, 186.3005721698874)
+[20:56:43] [Server thread/INFO]: S3B4ST109[/127.165.76.113:56779] logged in with entity id 23 at ([world]1264.9778511808918, 76.0, -265.37648205398483)
+[20:56:44] [Craft Scheduler Thread - 5 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully logged in.
+[20:56:45] [User Authenticator #0/INFO]: UUID of player PikaLiix is 78e7f18b-0758-3154-8190-16c92b6bf999
+[20:56:45] [Server thread/INFO]: PikaLiix[/127.149.40.203:48135] logged in with entity id 200 at ([world]433.98689236186215, -40.0, -318.89469871805665)
+[20:56:47] [pool-12-thread-1/INFO]: [nAntiBot] [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 45, threads = 4, took 13.53s)
+[20:56:48] [Craft Scheduler Thread - 9 - nLogin/INFO]: [nLogin] The user S3B4ST109 has successfully logged in.
+[20:56:52] [Craft Scheduler Thread - 1 - nLogin/INFO]: [nLogin] The user PikaLiix has successfully logged in.
+[20:56:55] [User Authenticator #0/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[20:56:55] [Server thread/INFO]: daniel98120[/127.211.21.126:44761] logged in with entity id 652 at ([world]203.57531887069183, -20.0, 188.67762389779747)
+[20:57:02] [Craft Scheduler Thread - 5 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[20:57:15] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
+[20:57:16] [Server thread/INFO]: Futorista[/127.100.255.139:34057] logged in with entity id 961 at ([world]195.30000001192093, -8.0, 190.26858057222586)
+[20:57:23] [Craft Scheduler Thread - 8 - nLogin/INFO]: [nLogin] The user Futorista has successfully logged in.
+[20:57:48] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
+[20:57:49] [Server thread/INFO]: PikaLiix has made the advancement [Sneak 100]
+[20:57:50] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[20:57:51] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[20:57:53] [Server thread/INFO]: ImNotFish was slain by daniel98120
+[20:57:55] [Server thread/INFO]: Futorista issued server command: /tp daniel98120
+[20:58:03] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[20:58:07] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
+[20:58:08] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[20:58:11] [Server thread/INFO]: daniel98120 was slain by Futorista
+[20:58:14] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[20:58:15] [Server thread/INFO]: ImNotFish issued server command: /ec
+[20:58:15] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
+[20:58:17] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
+[20:58:20] [Server thread/INFO]: Futorista issued server command: /tpaccept
+[20:58:24] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
+[20:58:28] [Server thread/INFO]: ImNotFish has made the advancement [Cover Me with Diamonds]
+[20:58:30] [Server thread/INFO]: Futorista issued server command: /tpaccept
+[20:58:37] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[20:58:53] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[20:58:59] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[20:58:59] [Server thread/INFO]: PikaLiix issued server command: /PV 1
+[20:59:01] [Server thread/INFO]: PikaLiix issued server command: /pv 1
+[20:59:05] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[20:59:07] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[20:59:25] [Server thread/INFO]: ImNotFish has made the advancement [Monster Hunter]
+[20:59:50] [Server thread/INFO]: ImNotFish issued server command: /tpa daniel98120
+[20:59:53] [Server thread/INFO]: daniel98120 issued server command: /tpaccept
+[21:01:01] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:01:18] [Server thread/INFO]: ImNotFish issued server command: /craft
+[21:01:18] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
+[21:01:30] [Server thread/INFO]: PikaLiix issued server command: /craft
+[21:01:30] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
+[21:02:13] [Server thread/INFO]: ImNotFish has made the advancement [Diamonds!]
+[21:02:27] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish
+[21:02:33] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:02:37] [Server thread/INFO]: Futorista issued server command: /pv 1
+[21:02:54] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:03:03] [Server thread/INFO]: Futorista issued server command: /tpa daniel98120
+[21:03:06] [Server thread/INFO]: ImNotFish has made the advancement [Acquire Hardware]
+[21:03:12] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:03:16] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:03:18] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[21:03:31] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:04:26] [Server thread/INFO]: Futorista issued server command: /ie enchant sharpness 255
+[21:04:27] [Server thread/INFO]: daniel98120 was slain by Futorista
+[21:04:27] [Server thread/INFO]: Futorista has made the advancement [Cover Me with Diamonds]
+[21:04:32] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
+[21:04:35] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:04:48] [Server thread/INFO]: Futorista issued server command: /tphere i
+[21:04:49] [Server thread/INFO]: PikaLiix has made the advancement [Cover Me with Diamonds]
+[21:04:52] [Server thread/INFO]: Futorista issued server command: /tphere i
+[21:04:53] [Server thread/INFO]: Futorista issued server command: /tphere i
+[21:05:19] [Server thread/INFO]: Futorista issued server command: /pv 1
+[21:05:28] [Server thread/INFO]: Futorista issued server command: /invsee ImNotFish
+[21:05:33] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:05:47] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:06:11] [Server thread/INFO]: daniel98120 issued server command: /pv 1
+[21:07:10] [Server thread/INFO]: S3B4ST109 has made the advancement [Diamonds!]
+[21:07:57] [Server thread/INFO]: daniel98120 issued server command: /tpa ImNotFish
+[21:08:09] [Server thread/INFO]: S3B4ST109 issued server command: /craft
+[21:08:09] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
+[21:08:28] [Server thread/INFO]: Futorista issued server command: /craft
+[21:08:30] [Server thread/INFO]: ImNotFish issued server command: /tpa PikaLiix
+[21:08:51] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
+[21:09:03] [Server thread/INFO]: daniel98120 issued server command: /tpa ImNotFish
+[21:09:23] [Server thread/INFO]: Futorista has made the advancement [Hot Stuff]
+[21:09:59] [Server thread/INFO]: ImNotFish issued server command: /ie rename ee
+[21:10:15] [Server thread/INFO]: ImNotFish issued server command: /ie rename me la chupa el peruano
+[21:10:23] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:10:41] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[21:11:00] [Server thread/INFO]: S3B4ST109 issued server command: /pene
+[21:11:37] [Server thread/INFO]: Futorista issued server command: /restart
+[21:11:37] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
+[21:11:37] [Server thread/INFO]: S3B4ST109 lost connection: Server is restarting
+[21:11:37] [Server thread/INFO]: PikaLiix lost connection: Server is restarting
+[21:11:37] [Server thread/INFO]: Futorista lost connection: Server is restarting
+[21:11:37] [Server thread/INFO]: ImNotFish lost connection: Server is restarting
+[21:11:37] [Server thread/INFO]: Stopping server
+[21:11:37] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.5.2
+[21:11:37] [Server thread/INFO]: [nLogin] Disabling nLogin v10.4.18
+[21:11:37] [Server thread/INFO]: [nLogin] Successful plugin core shutdown (took 0.00s)
+[21:11:37] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[21:11:37] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
+[21:11:37] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
+[21:11:37] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
+[21:11:37] [Server thread/INFO]: [nAntiBot] Disabling nAntiBot v6.1.27
+[21:11:37] [Server thread/INFO]: [nAntiBot] Successful plugin core shutdown (took 0.00s)
+[21:11:37] [Server thread/INFO]: [nAntiBot] Disconnecting from remote server...
+[21:11:39] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
+[21:11:39] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[21:11:39] [Server thread/INFO]: [LuckPerms] Closing storage...
+[21:11:39] [Server thread/INFO]: [LuckPerms] Goodbye!
+[21:11:39] [Server thread/INFO]: Saving players
+[21:11:39] [Server thread/INFO]: Saving worlds
+[21:11:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 1547 block chunks, 1101 entity chunks, 1 poi chunks in world 'world' in 1.66s
+[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:11:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:11:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:11:41] [Server thread/INFO]: Saving usercache.json
+[21:11:41] [Server thread/INFO]: Flushing Chunk IO
+[21:11:41] [Server thread/INFO]: Closing Thread Pool
+[21:11:41] [Server thread/INFO]: Closing Server
