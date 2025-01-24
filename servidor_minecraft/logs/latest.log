@@ -1,195 +1,212 @@
-[20:00:15] [ServerMain/INFO]: Building unoptimized datafixer
-[20:00:16] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:00:18] [ServerMain/INFO]: Loaded 7 recipes
-[20:00:20] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[20:00:20] [Server thread/INFO]: Loading properties
-[20:00:20] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
-[20:00:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:00:20] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:00:20] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[20:00:21] [Server thread/INFO]: Default game type: SURVIVAL
-[20:00:21] [Server thread/INFO]: Generating keypair
-[20:00:21] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:00:22] [Server thread/INFO]: Using epoll channel type
-[20:00:22] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[20:00:22] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[20:00:22] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
-[20:00:23] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
-[20:00:23] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
-[20:00:23] [Server thread/INFO]: [OpeNLogin] Loading OpeNLogin v1.6.7
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library commons-math3
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library caffeine
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library HikariCP
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library h2
-[20:00:23] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
-[20:00:23] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
-[20:00:23] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:00:23] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
-[20:00:23] [Server thread/INFO]:         __    
-[20:00:23] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
-[20:00:23] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[20:00:23] [Server thread/INFO]: 
-[20:00:23] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[20:00:24] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[20:00:24] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[20:00:24] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[20:00:24] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1434ms)
-[20:00:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:00:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:00:24] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:00:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:00:24] [Server thread/INFO]: Preparing level "world"
-[20:00:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:00:25] [Server thread/INFO]: Time elapsed: 220 ms
-[20:00:25] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[20:00:25] [Server thread/INFO]: Time elapsed: 54 ms
-[20:00:25] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[20:00:26] [Server thread/INFO]: Time elapsed: 94 ms
-[20:00:26] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
-[20:00:26] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[20:00:26] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[20:00:26] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[20:00:26] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
-[20:00:26] [Server thread/INFO]: [Essentials] Found 1 files to convert...
-[20:00:26] [Server thread/INFO]: [Essentials] Converted 0/1
-[20:00:26] [Server thread/INFO]: [Essentials] Ban format update complete.
-[20:00:26] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
-[20:00:26] [Server thread/INFO]: [Essentials] Done converting ignore list.
-[20:00:26] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
-[20:00:26] [Server thread/INFO]: [Essentials] Done converting legacy userdata keys to Configurate.
-[20:00:26] [Server thread/INFO]: [Essentials] Done converting mail list.
-[20:00:27] [Server thread/INFO]: [Essentials] #===========================================================================#
-[20:00:27] [Server thread/INFO]: [Essentials]  EssentialsX will now purge any NPC accounts which were incorrectly created.
-[20:00:27] [Server thread/INFO]: [Essentials]  Only NPC accounts with the default starting balance will be deleted. If
-[20:00:27] [Server thread/INFO]: [Essentials]  they turn out to be valid NPC accounts, they will be re-created as needed.
-[20:00:27] [Server thread/INFO]: [Essentials]  Any files deleted here will be backed up to the 
-[20:00:27] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup" folder. If you notice any files
-[20:00:27] [Server thread/INFO]: [Essentials]  have been purged incorrectly, you should restore it from the backup and
-[20:00:27] [Server thread/INFO]: [Essentials]  report it to us on GitHub:
-[20:00:27] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
-[20:00:27] [Server thread/INFO]: [Essentials] 
-[20:00:27] [Server thread/INFO]: [Essentials]  NOTE: This is a one-time process and will take several minutes if you have
-[20:00:27] [Server thread/INFO]: [Essentials]  a lot of userdata files! If you interrupt this process, EssentialsX will
-[20:00:27] [Server thread/INFO]: [Essentials]  skip the process until you rename or remove the backup folder.
-[20:00:27] [Server thread/INFO]: [Essentials] #===========================================================================#
-[20:00:27] [Server thread/INFO]: [Essentials] Found ~1 files under "plugins/Essentials/userdata"...
-[20:00:27] [Server thread/INFO]: [Essentials] #===========================================================================#
-[20:00:27] [Server thread/INFO]: [Essentials]  EssentialsX has finished purging NPC accounts.
-[20:00:27] [Server thread/INFO]: [Essentials] 
-[20:00:27] [Server thread/INFO]: [Essentials]  Deleted accounts: 0
-[20:00:27] [Server thread/INFO]: [Essentials]  Total accounts processed: 1
-[20:00:27] [Server thread/INFO]: [Essentials] 
-[20:00:27] [Server thread/INFO]: [Essentials]  Purged accounts have been backed up to
-[20:00:27] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup", and can be restored from there
-[20:00:27] [Server thread/INFO]: [Essentials]  if needed. Please report any files which have been incorrectly deleted
-[20:00:27] [Server thread/INFO]: [Essentials]  to us on GitHub:
-[20:00:27] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
-[20:00:27] [Server thread/INFO]: [Essentials] #===========================================================================#
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[20:00:27] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
-[20:00:27] [Server thread/INFO]: [Essentials] Using locale en
-[20:00:27] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[20:00:27] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[20:00:27] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
-[20:00:27] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
-[20:00:27] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[20:00:27] [Server thread/INFO]: [OpeNLogin] Enabling OpeNLogin v1.6.7
-[20:00:27] [Server thread/INFO]: [OpeNLogin]    ___                __  __             _ 
-[20:00:27] [Server thread/INFO]: [OpeNLogin]   /___\_ __   ___  /\ \ \/ /  ___   __ _(_)_ __
-[20:00:27] [Server thread/INFO]: [OpeNLogin]  //  // '_ \ / _ \/  \/ / /  / _ \ / _` | | '_ \
-[20:00:27] [Server thread/INFO]: [OpeNLogin] / \_//| |_) |  __/ /\  / /__| (_) | (_| | | | | |
-[20:00:27] [Server thread/INFO]: [OpeNLogin] \___/ | .__/ \___\_\ \/\____/\___/ \__, |_|_| |_|
-[20:00:27] [Server thread/INFO]: [OpeNLogin]       |_|                          |___/         
-[20:00:28] [Server thread/INFO]: [OpeNLogin] By: www.nickuc.com / github.com/nickuc/OpeNLogin - V 1.6.7
-[20:00:28] [Server thread/INFO]: [OpeNLogin] 
-[20:00:28] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
-[20:00:29] [Server thread/INFO]: [AxVaults] Loaded plugin!
-[20:00:29] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
-[20:00:29] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
-[20:00:29] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
-[20:00:30] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
-[20:00:30] [Server thread/INFO]: [ItemEdit] # Enabled (took 283 ms)
-[20:00:30] [Server thread/INFO]: Running delayed init tasks
-[20:00:30] [Server thread/INFO]: Done (10.202s)! For help, type "help"
-[20:00:30] [Server thread/INFO]: Timings Reset
-[20:00:30] [Craft Scheduler Thread - 3 - Essentials/INFO]: [Essentials] Fetching version information...
-[20:02:12] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
-[20:02:12] [Server thread/INFO]: Futorista[/127.100.255.139:44579] logged in with entity id 251 at ([world]35.40801437688524, 70.99339715541389, -20.399881585910194)
-[20:02:12] [Server thread/WARN]: [Essentials] File motd.txt does not exist. Creating one for you.
-[20:02:18] [Server thread/INFO]: Futorista lost connection: nLogin was successfully installed. We are restarting the server to apply the changes.
-[20:02:18] [Server thread/INFO]: Futorista left the game
-[20:02:18] [Server thread/INFO]: Stopping server
-[20:02:18] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
-[20:02:18] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
-[20:02:18] [Server thread/INFO]: [OpeNLogin] Disabling OpeNLogin v1.6.7
-[20:02:18] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
-[20:02:18] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
-[20:02:18] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[20:02:18] [Server thread/INFO]: [LuckPerms] Closing storage...
-[20:02:18] [Server thread/INFO]: [LuckPerms] Goodbye!
-[20:02:18] [Server thread/INFO]: Saving players
-[20:02:18] [Server thread/INFO]: Saving worlds
-[20:02:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[20:02:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[20:02:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[20:02:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Saved 625 block chunks, 625 entity chunks, 0 poi chunks in world 'world' in 1.24s
-[20:02:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[20:02:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.57s
-[20:02:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:02:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[20:02:20] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.22s
-[20:02:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:02:21] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[20:02:21] [Server thread/INFO]: Saving usercache.json
-[20:02:21] [Server thread/INFO]: Flushing Chunk IO
-[20:02:21] [Server thread/INFO]: Closing Thread Pool
-[20:02:21] [Server thread/INFO]: Closing Server
+[20:03:00] [ServerMain/INFO]: Building unoptimized datafixer
+[20:03:02] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:03:03] [ServerMain/INFO]: Loaded 7 recipes
+[20:03:05] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[20:03:05] [Server thread/INFO]: Loading properties
+[20:03:05] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[20:03:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:03:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:03:05] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[20:03:05] [Server thread/INFO]: Default game type: SURVIVAL
+[20:03:05] [Server thread/INFO]: Generating keypair
+[20:03:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:03:05] [Server thread/INFO]: Using epoll channel type
+[20:03:05] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:03:05] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[20:03:06] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[20:03:06] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
+[20:03:06] [Server thread/INFO]: [nLogin] Loading nLogin v10.4.18
+[20:03:06] [Server thread/INFO]: [nLogin] Downloading required dependencies (using 4 cores)
+[20:03:09] [Server thread/INFO]: [nLogin] Relocating dependencies (using 4 cores)
+[20:03:12] [Server thread/INFO]: [nLogin] All dependencies were loaded successfully. Took 5.87s
+[20:03:12] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library commons-math3
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library caffeine
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library HikariCP
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library h2
+[20:03:12] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
+[20:03:12] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
+[20:03:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:03:12] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
+[20:03:13] [Server thread/INFO]:         __    
+[20:03:13] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
+[20:03:13] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:03:13] [Server thread/INFO]: 
+[20:03:13] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:03:13] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:03:14] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:03:14] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:03:14] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1227ms)
+[20:03:14] [Server thread/INFO]: [nLogin] Enabling nLogin v10.4.18
+[20:03:14] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.27s)
+[20:03:14] [Server thread/INFO]:           __             _       
+[20:03:14] [Server thread/INFO]:   _ __   / /  ___   __ _(_)_ __  
+[20:03:14] [Server thread/INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[20:03:14] [Server thread/INFO]:  | | | / /__| (_) | (_| | | | | |
+[20:03:14] [Server thread/INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[20:03:14] [Server thread/INFO]:                   |___/            
+[20:03:14] [Server thread/INFO]:  By: www.nickuc.com - V 10.4.18 DEVELOPMENT
+[20:03:14] [Server thread/INFO]:  
+[20:03:16] [Server thread/INFO]: [nLogin] Generating RSA keypair... (this may take a while)
+[20:03:17] [Server thread/INFO]: [nLogin] The RSA key pair was successfully generated. Took 0.42s
+[20:03:17] [Server thread/INFO]: [nLogin] Starting the OpeNLogin conversion...
+[20:03:17] [Server thread/WARN]: [nLogin] Initializing the OpeNLogin conversion
+[20:03:17] [Server thread/WARN]: [nLogin] Please do not shut down your server.
+[20:03:17] [nLogin OpeNLogin Converter/INFO]: [nLogin] OpeNLogin data has been successfully converted.
+[20:03:17] [nLogin OpeNLogin Converter/INFO]: [nLogin] No users have been converted ~ 0.05s
+[20:03:17] [Server thread/INFO]: [nLogin] Downloading ProtocolLib...
+[20:03:17] [Server thread/INFO]: [nLogin] *-----------------------------------------------*
+[20:03:17] [Server thread/INFO]: [nLogin]   ProtocolLib has been successfully downloaded.
+[20:03:17] [Server thread/INFO]: [nLogin]   Restarting server to apply changes...
+[20:03:17] [Server thread/INFO]: [nLogin] *-----------------------------------------------*
+[20:03:22] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:03:22] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:03:22] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:03:22] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:03:22] [Server thread/INFO]: Preparing level "world"
+[20:03:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:03:23] [Server thread/INFO]: Time elapsed: 172 ms
+[20:03:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:03:23] [Server thread/INFO]: Time elapsed: 57 ms
+[20:03:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:03:23] [Server thread/INFO]: Time elapsed: 52 ms
+[20:03:23] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
+[20:03:24] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[20:03:24] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[20:03:24] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[20:03:24] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[20:03:25] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[20:03:25] [Server thread/INFO]: [Essentials] Using locale en
+[20:03:25] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[20:03:25] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[20:03:25] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[20:03:25] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[20:03:25] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[20:03:25] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
+[20:03:26] [Server thread/INFO]: [AxVaults] Loaded plugin!
+[20:03:26] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[20:03:26] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[20:03:27] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[20:03:27] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[20:03:27] [Server thread/INFO]: [ItemEdit] # Enabled (took 204 ms)
+[20:03:27] [Server thread/INFO]: Running delayed init tasks
+[20:03:27] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
+[20:03:27] [Server thread/INFO]: Done (22.463s)! For help, type "help"
+[20:03:27] [Server thread/INFO]: Stopping server
+[20:03:27] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[20:03:27] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
+[20:03:27] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
+[20:03:27] [Server thread/INFO]: [nLogin] Disabling nLogin v10.4.18
+[20:03:27] [Server thread/INFO]: [nLogin] Successful plugin core shutdown (took 0.00s)
+[20:03:27] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
+[20:03:27] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[20:03:27] [Server thread/INFO]: [LuckPerms] Closing storage...
+[20:03:27] [Server thread/INFO]: [LuckPerms] Goodbye!
+[20:03:27] [Craft Scheduler Thread - 5 - Essentials/WARN]: [Essentials] Plugin Essentials v2.21.0-dev+160-e2295c1 generated an exception while executing task 21
+java.lang.IllegalStateException: zip file closed
+	at java.util.zip.ZipFile.ensureOpen(ZipFile.java:839) ~[?:?]
+	at java.util.zip.ZipFile.getEntry(ZipFile.java:338) ~[?:?]
+	at java.util.jar.JarFile.getEntry(JarFile.java:517) ~[?:?]
+	at java.util.jar.JarFile.getJarEntry(JarFile.java:472) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:189) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at com.earth2me.essentials.updatecheck.UpdateChecker.tryProcessDistance(UpdateChecker.java:169) ~[EssentialsX-2.21.0-dev+160-e2295c1.jar:?]
+	at com.earth2me.essentials.updatecheck.UpdateChecker.fetchDistance(UpdateChecker.java:202) ~[EssentialsX-2.21.0-dev+160-e2295c1.jar:?]
+	at com.earth2me.essentials.updatecheck.UpdateChecker.lambda$fetchLatestDev$0(UpdateChecker.java:80) ~[EssentialsX-2.21.0-dev+160-e2295c1.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.19.2.jar:git-Paper-307]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.19.2.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[20:03:27] [Craft Scheduler Thread - 4 - AxVaults/WARN]: [AxVaults] Plugin AxVaults v2.6.0 generated an exception while executing task 19
+java.lang.IllegalStateException: zip file closed
+	at java.util.zip.ZipFile.ensureOpen(ZipFile.java:839) ~[?:?]
+	at java.util.zip.ZipFile.getEntry(ZipFile.java:338) ~[?:?]
+	at java.util.jar.JarFile.getEntry(JarFile.java:517) ~[?:?]
+	at java.util.jar.JarFile.getJarEntry(JarFile.java:472) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:189) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at com.artillexstudios.axvaults.utils.UpdateNotifier.getWeight(UpdateNotifier.java:96) ~[AxVaults-2.6.0 (1).jar:?]
+	at com.artillexstudios.axvaults.utils.UpdateNotifier.isLatest(UpdateNotifier.java:90) ~[AxVaults-2.6.0 (1).jar:?]
+	at com.artillexstudios.axvaults.utils.UpdateNotifier.lambda$new$1(UpdateNotifier.java:41) ~[AxVaults-2.6.0 (1).jar:?]
+	at com.artillexstudios.axvaults.libs.axapi.scheduler.impl.BukkitScheduler.lambda$runAsyncTimer$4(BukkitScheduler.java:71) ~[AxVaults-2.6.0 (1).jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:103) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.19.2.jar:git-Paper-307]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.19.2.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[20:03:32] [Server thread/ERROR]: Nag author: 'Zenexer' of 'Essentials' about the following: This plugin is not properly shutting down its async tasks when it is being shut down. This task may throw errors during the final shutdown logs and might not complete before process dies.
+[20:03:32] [Server thread/INFO]: Saving players
+[20:03:32] [Server thread/INFO]: Saving worlds
+[20:03:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.00s
+[20:03:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:03:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[20:03:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:03:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[20:03:32] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[20:03:32] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:03:32] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:03:32] [Server thread/INFO]: Saving usercache.json
+[20:03:32] [Server thread/INFO]: Flushing Chunk IO
+[20:03:32] [Server thread/INFO]: Closing Thread Pool
+[20:03:35] [Server thread/INFO]: Closing Server
