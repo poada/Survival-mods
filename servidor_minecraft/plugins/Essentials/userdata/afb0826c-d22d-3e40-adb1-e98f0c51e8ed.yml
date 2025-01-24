@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737754802158
-  login: 1737754530836
+  logout: 1737756575438
+  login: 1737755438038
   kits:
     inicial: 1737751992618
 money: '0'
@@ -25,11 +25,11 @@ last-account-name: ImNotFish
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 868.2297956937322
-  y: 105.24918707874468
-  z: -688.203961936601
-  yaw: 81.16326904296875
-  pitch: 8.40011215209961
+  x: 18.57301991589841
+  y: 71.0
+  z: -11.647395614598011
+  yaw: 173.51953125
+  pitch: 24.843769073486328
 homes:
   home:
     world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
@@ -42,8 +42,8 @@ homes:
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 201.6936673365268
+  x: 211.89526584303377
   y: 64.0
-  z: 802.9860465635215
-  yaw: 110.0887451171875
-  pitch: 16.111339569091797
+  z: 797.5555201710604
+  yaw: 8.964431762695312
+  pitch: 5.623813629150391

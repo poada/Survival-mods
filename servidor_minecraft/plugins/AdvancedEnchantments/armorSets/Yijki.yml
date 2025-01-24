@@ -186,6 +186,7 @@ events:
     chance: 20
     cooldown: 10
     effects:
-    - MESSAGE:&f&l*** THE WRATH OF YIJKI <&b&l%attacker name%&f&l> @Aoe{radius=5,target=damageable}
-    - LIGHTNING @Aoe{radius=5,target=damageable}
-    - ADD_HARM:2 @Aoe{radius=5,target=damageable}
+    - MESSAGE:&f&l*** THE WRATH OF YIJKI <&b&l%attacker name%&f&l> <aoe> radius=5
+      target=damageable </aoe>
+    - LIGHTNING <aoe> radius=5 target=damageable </aoe>
+    - ADD_HARM:2 <aoe> radius=5 target=damageable </aoe>

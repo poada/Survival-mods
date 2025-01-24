@@ -208,5 +208,5 @@ events:
   FALL_DAMAGE:
     chance: 100
     effects:
-    - CANCEL_EVENT
+    - STOP_ATTACK
     cooldown: 0

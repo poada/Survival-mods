@@ -1,1709 +1,5594 @@
-abrasion:
-  display: '%group-color%Abrasion'
-  description: 'Damages the opponents armor.' 
-  applies-to: Weapons
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 10
-      effects:
-        - ADD_DURABILITY_ARMOR:-1 @Victim
-    '2':
-      chance: 15
-      effects:
-        - ADD_DURABILITY_ARMOR:-2 @Victim
-    '3':
-      chance: 25
-      effects:
-        - ADD_DURABILITY_ARMOR:-3 @Victim
-adrenaline:
-  display: '%group-color%Adrenaline'
-  description: 'Gain Strength when defending mob attacks.' 
-  applies-to: Armors
-  type: DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels:
-    '1':
-      chance: 10
-      cooldown: 5
-      effects:
-        - POTION:ABSORPTION:1:60 @Self
-    '2':
-      chance: 20
-      cooldown: 5
-      effects:
-        - POTION:ABSORPTION:1:60 @Self
-    '3':
-      cooldown: 5
-      chance: 25
-      effects:
-        - POTION:ABSORPTION:1:60 @Self
-ascend:
-  display: '%group-color%Ascend'
-  description: 'Levitate. Right-Click to activate' 
-  applies-to: Swords
-  type: RIGHT_CLICK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      effects:
-        - POTION:LEVITATION:2:25 @Self SLOW	
-        - WAIT:40 
-        - POTION:SLOW_FALLING:2:100 @Self
-        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LARGE_BLAST:1:1 @Self
-      cooldown: 90
-    '2':
-      effects:
-        - POTION:LEVITATION:2:50 @Self
-        - WAIT:40 
-        - POTION:SLOW_FALLING:2:100 @Self
-        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LARGE_BLAST:1:1 @Self
-      cooldown: 90
-    '3':
-      effects:
-        - POTION:LEVITATION:2:75 @Self
-        - WAIT:40 
-        - POTION:SLOW_FALLING:2:100 @Self
-        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LARGE_BLAST:1:1 @Self
-      cooldown: 90
-aura:
-  display: '%group-color%Aura'
-  description: 'Reduce damage taken by nearby players.' 
-  applies-to: Armor
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_CHESTPLATE
-    - ALL_LEGGINGS
-  levels:
-    '1':
-      chance: 10
-      cooldown: 3
-      effects:
-          - DECREASE_DAMAGE:10 @Aoe{radius=3,target=damageable}
-    '2':
-      chance: 15
-      cooldown: 3
-      effects:
-          - DECREASE_DAMAGE:20 @Aoe{radius=5,target=damageable}
-    '3':
-      chance: 20
-      cooldown: 3
-      effects:
-          - DECREASE_DAMAGE:30 @Aoe{radius=7,target=damageable}
-blackout:
-  display: '%group-color%Blackout'
-  description: 'Blind your opponent.' 
-  applies-to: Swords
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 7
-      effects:
-        - POTION:BLINDNESS:1:100 @Victim
-    '2':
-      chance: 9
-      effects:
-        - POTION:BLINDNESS:1:120 @Victim
-    '3':
-      chance: 11
-      effects:
-        - POTION:BLINDNESS:1:140 @Victim
-    '4':
-      chance: 13
-      effects:
-        - POTION:BLINDNESS:1:160 @Victim
-    '5':
-      chance: 15
-      effects:
-        - POTION:BLINDNESS:1:180 @Victim
-blast_mining:
-  display: '%group-color%Blast Mining'
-  description: 'Mine blocks in a 3x3 area.' 
-  applies-to: Pickaxes
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-  levels:
-    '1':
-      chance: 5
-      effects:
-        - BREAK_BLOCK @Trench{r=3}
-    '2':
-      chance: 10
-      effects:
-        - BREAK_BLOCK @Trench{r=3}
-    '3':
-      chance: 15
-      effects:
-        - BREAK_BLOCK @Trench{r=3}
-drain:
-  display: '%group-color%Drain'
-  description: 'Cause your opponent to drain.' 
-  applies-to: Swords
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 1.5
-      effects:
-        - BLEED:1:15:2 @Victim
-    '2':
-      chance: 3
-      effects:
-        - BLEED:1:15:4 @Victim
-    '3':
-      chance: 4.5
-      effects:
-        - BLEED:1:15:6 @Victim
-    '4':
-      chance: 6
-      effects:
-        - BLEED:1:15:8 @Victim
-    '5':
-      chance: 7.5
-      effects:
-        - BLEED:1:15:10 @Victim
-    '6':
-      chance: 9
-      effects:
-        - BLEED:1:15:12 @Victim
-    '7':
-      chance: 10.5
-      effects:
-        - BLEED:1:15:14 @Victim
-caffeinated:
-  display: '%group-color%Caffeinated'
-  description: 'Chance to increase attack speed while sprinting.' 
-  applies-to: Swords
-  type: ATTACK;ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 10
-      effects:
-        - POTION:SPEED:1:60 @Attacker
-      conditions:
-        - '%is sprinting% = true : %allow%'
-    '2':
-      chance: 20
-      effects:
-        - POTION:SPEED:1:60 @Attacker
-      conditions:
-        - '%is sprinting% = true : %allow%'
-    '3':
-      chance: 30
-      effects:
-        - POTION:SPEED:1:60 @Attacker
-      conditions:
-        - '%is sprinting% = true : %allow%'
-charge:
-  display: '%group-color%Charge'
-  description: 'Launch yourself forward.' 
-  applies-to: Swords
-  type: RIGHT_CLICK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      effects:
-        - BOOST:FORWARD:10 @Self 
-        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LAUNCH:2:1 @Self
-      cooldown: 40
-    '2':
-      effects:
-        - BOOST:FORWARD:20 @Self 
-        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LAUNCH:2:1 @Self
-      cooldown: 30
-fuddle:
-  display: '%group-color%fuddle'
-  description: Disorganize opponent's hotbar.
-  applies-to: Swords
-  type: ATTACK
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 5
-      cooldown: 15
-      effects:
-        - SHUFFLE_HOTBAR @Victim
-    '2':
-      chance: 7
-      cooldown: 15
-      effects:
-        - SHUFFLE_HOTBAR @Victim
-    '3':
-      chance: 100
-      cooldown: 1
-      effects:
-        - SHUFFLE_HOTBAR @Victim
-critical:
-  display: '%group-color%Criticals'
-  description: Increase damage done with critical hit.
-  applies-to: Swords
-  type: ATTACK_MOB;ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 7
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:10 @Attacker
-    '2':
-      chance: 8
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:15 @Attacker
-    '3':
-      chance: 12
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:20 @Attacker
-cubism:
-  display: '%group-color%Cubism'
-  description: 'Deal more damage to slimes and magma cubes.' 
-  applies-to: Weapons, Bows
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-    - BOW
-    - CROSSBOW
-  levels:
-    '1':
-      conditions:
-        - '%mob type% = SLIME or %mob type% = MAGMA_CUBE or %mob type% = MAGMACUBE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      conditions:
-        - '%mob type% = SLIME or %mob type% = MAGMA_CUBE or %mob type% = MAGMACUBE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      conditions:
-        - '%mob type% = SLIME or %mob type% = MAGMA_CUBE or %mob type% = MAGMACUBE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-enderbane:
-  display: '%group-color%Enderbane'
-  description: Increases damage dealt to Enderman and Ender dragons.
-  applies-to: Weapons
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 16
-      cooldown: 2
-      conditions:
-        - '%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      chance: 21
-      cooldown: 2
-      conditions:
-        - '%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      chance: 29
-      cooldown: 2
-      conditions:
-        - '%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON or %mob type% = ENDERMITE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '4':
-      chance: 34
-      cooldown: 2
-      conditions:
-        - '%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON or %mob type% = ENDERMITE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '5':
-      chance: 41
-      cooldown: 2
-      conditions:
-        - '%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON or %mob type% = ENDERMITE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker        
-escape:
-  display: '%group-color%Escape'
-  description: 'Gain a short burst of speed after taking damage.' 
-  applies-to: Boots
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_BOOTS
-  levels:
-    '1':
-      chance: 20
-      cooldown: 5
-      effects:
-        - POTION:SPEED:1:40
-    '2':
-      chance: 50
-      cooldown: 3
-      effects:
-        - POTION:SPEED:2:60
-finishing:
-  display: '%group-color%Finishing'
-  description: 'Increases damage dealt to low-health enemies.'
-  applies-to: Weapons
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      conditions:
-        - '%victim health% < 5 : %allow%'
-      effects:
-        - INCREASE_DAMAGE:5 @Attacker
-    '2':
-      conditions:
-        - '%victim health% < 5 : %allow%'
-      effects:
-        - INCREASE_DAMAGE:10 @Attacker
-    '3':
-      conditions:
-        - '%victim health% < 5 : %allow%' 
-      effects:
-        - INCREASE_DAMAGE:15 @Attacker   
-first_strike:
-  display: '%group-color%First Strike'
-  description: 'Deal more damage to enemies at full health.'
-  applies-to: Weapons
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      cooldown: 5
-      conditions:
-        - '%victim health% > 18 : %allow%' 
-      effects:
-        - INCREASE_DAMAGE:7 @Attacker
-    '2':
-      cooldown: 5
-      conditions:
-        - '%victim health% > 18 : %allow%' 
-      effects:
-        - INCREASE_DAMAGE:10 @Attacker
-    '3':
-      cooldown: 5
-      conditions:
-        - '%victim health% > 18 : %allow%' 
-      effects:
-        - INCREASE_DAMAGE:18 @Attacker
-flashbang:
-  display: '%group-color%Flashbang'
-  description: 'Blind your opponent on hit.'
-  applies-to: Bows
-  type: ARROW_HIT
-  group: VANILLA
-  applies:
-    - BOW
-    - CROSSBOW
-  levels:
-    '1':
-      cooldown: 5
-      chance: 10
-      effects:
-        - POTION:BLINDNESS:3:50 @Victim
-        - PLAY_SOUND:ENTITY_DRAGON_FIREBALL_EXPLODE:1.5:4 @Victim
-    '2':
-      cooldown: 5
-      chance: 20
-      effects:
-        - POTION:BLINDNESS:3:50 @Victim
-        - PLAY_SOUND:ENTITY_DRAGON_FIREBALL_EXPLODE:1.5:4 @Victim
-    '3':
-      cooldown: 5
-      chance: 30
-      effects:
-        - POTION:BLINDNESS:3:50 @Victim
-        - PLAY_SOUND:ENTITY_DRAGON_FIREBALL_EXPLODE:1.5:4 @Victim
-foraging:
-  display: '%group-color%Foraging'
-  description: |-
-    Chance to multiply drops from leaves.
-  applies-to: Tools
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_TOOLS
-    - ALL_SHEARS
-  levels:
-    '1':
-      chance: 30
-      cooldown: 5
-      settings:
-        whitelist:
-          - "OAK_LEAVES"
-          - "DARK_OAK_LEAVES"
-          - "SPRUCE_LEAVES"
-          - "JUNGLE_LEAVES"
-          - "ACACIA_LEAVES"
-          - "MANGROVE_LEAVES"
-          - "BIRCH_LEAVES"
-          - "CHERRY_LEAVES"
-          - "AZALEA_LEAVES"
-          - "FLOWERING_AZALEA_LEAVES"
-      conditions:
-        - '%block type% contains LEAVES : %allow%'
-      effects:
-        - MORE_DROPS:1
-    '2':
-      chance: 40
-      cooldown: 5
-      settings:
-        whitelist:
-          - "OAK_LEAVES"
-          - "DARK_OAK_LEAVES"
-          - "SPRUCE_LEAVES"
-          - "JUNGLE_LEAVES"
-          - "ACACIA_LEAVES"
-          - "MANGROVE_LEAVES"
-          - "BIRCH_LEAVES"
-          - "CHERRY_LEAVES"
-          - "AZALEA_LEAVES"
-          - "FLOWERING_AZALEA_LEAVES"
-      conditions:
-        - '%block type% contains LEAVES : %allow%'
-      effects:
-        - MORE_DROPS:2
-    '3':
-      chance: 50
-      cooldown: 5
-      settings:
-        whitelist:
-          - "OAK_LEAVES"
-          - "DARK_OAK_LEAVES"
-          - "SPRUCE_LEAVES"
-          - "JUNGLE_LEAVES"
-          - "ACACIA_LEAVES"
-          - "MANGROVE_LEAVES"
-          - "BIRCH_LEAVES"
-          - "CHERRY_LEAVES"
-          - "AZALEA_LEAVES"
-          - "FLOWERING_AZALEA_LEAVES"
-      conditions:
-        - '%block type% contains LEAVES : %allow%'
-      effects:
-        - MORE_DROPS:3
-frost:
-  display: '%group-color%Frost'
-  description: 'Chance to freeze your opponent.' 
-  applies-to: Bows
-  type: ARROW_HIT
-  group: VANILLA
-  applies:
-    - BOW
-  levels:
-    '1':
-      chance: 5
-      effects:
-        - FREEZE:80 @Victim
-    '2':
-      chance: 7
-      effects:
-        - FREEZE:100 @Victim
-    '3':
-      chance: 100
-      effects:
-        - FREEZE:120 @Victim        
-postpone:
-  display: '%group-color%Postpone'
-  description: Chance to cause no knockback to mobs.
-  applies-to: Swords
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 40
-      effects:
-        - STOP_KNOCKBACK @Victim
-    '2':
-      chance: 80
-      effects:
-        - STOP_KNOCKBACK @Victim
-    '3':
-      effects:
-        - STOP_KNOCKBACK @Victim
-brightness:
-  display: '%group-color%Brightness'
-  description: Chance to cause more damage to warden in the dark.
-  applies-to: Swords
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 15
-      cooldown: 5
-      conditions:
-        - '%mob type% = WARDEN : %allow%'
-      effects:
-        - INCREASE_DAMAGE:15 @Victim
-    '2':
-      chance: 20
-      cooldown: 5
-      conditions:
-        - '%mob type% = WARDEN : %allow%'
-      effects:
-        - INCREASE_DAMAGE:20 @Victim
-    '3':
-      chance: 25
-      cooldown: 5
-      conditions:
-        - '%mob type% = WARDEN : %allow%'
-      effects:
-        - INCREASE_DAMAGE:30 @Victim
-breaklessness:
-  display: '%group-color%Curse of Breaklessness'
-  applies-to: Pickaxes,Shovels,Axes
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-    - ALL_AXE
-    - ALL_SHOVEL
-  levels:
-    '1':
-      chance: 40
-      description: Gives 40% chance to fail to break blocks.
-      effects:
-        - CANCEL_EVENT @Self
-    '2':
-      chance: 30
-      description: Gives 30% chance to fail to break blocks.
-      effects:
-        - CANCEL_EVENT @Self
-    '3':
-      chance: 15
-      description: Gives 30% chance to fail to break blocks.
-      effects:
-        - CANCEL_EVENT @Self
-carve:
-  display: '%group-color%Carve'
-  applies-to: Swords
-  type: SWING
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 100
-      cooldown: 5
-      description: |-
-        Give damage to
-        entities within &a3
-        blocks when you swing.
-      effects:
-        - DO_HARM:5 @Aoe{radius=3,target=damageable}
-    '2':
-      chance: 100
-      cooldown: 5
-      description: |-
-        Give damage to
-        entities within &a4
-        blocks when you swing.
-      effects:
-        - DO_HARM:5 @Aoe{radius=4,target=damageable}
-    '3':
-      chance: 100
-      cooldown: 5
-      description: |-
-        Give damage to
-        entities within &a5
-        blocks when you swing.
-      effects:
-        - DO_HARM:5 @Aoe{radius=5,target=damageable}
-contagion:
-  display: '%group-color%Contagion'
-  description: |-
-    Give chance to 
-    spawn a cloud of void
-    where your Arrow lands.
-  applies-to: Bows
-  type: SHOOT;SHOOT_MOB;ARROW_HIT
-  group: VANILLA
-  applies:
-    - BOW
-  levels: 
-    '1':
-      chance: 20
-      cooldown: 5
-      effects:
-        - PARTICLE:SQUID_INK:300:3 @Block
-    '2':
-      chance: 30
-      cooldown: 7
-      effects:
-        - PARTICLE:SQUID_INK:300:3 @Block
-    '3':
-      chance: 35
-      cooldown: 10
-      effects:
-        - PARTICLE:SQUID_INK:300:3 @Block
-end_affinity:
-  display: '%group-color%End Affinity'
-  description: 'Reduces damages dealt in the end world.'
-  applies-to: Armors
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels: 
-    '1':
-      chance: 20
-      conditions:
-        - '%player world% = world_the_end : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-    '2':
-      chance: 30
-      conditions:
-        - '%player world% = world_the_end : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-    '3':
-      chance: 40
-      conditions:
-        - '%player world% = world_the_end : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-ninja:
-  display: '%group-color%Ninja'
-  description: |-
-    Chance to deal more damage to
-    enemy while sneaking
-  applies-to: Swords
-  type: ATTACK;ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 15
-      cooldown: 5
-      conditions:
-        - '%player is sneaking% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:10 @Attacker
-    '2':
-      chance: 20
-      cooldown: 5
-      conditions:
-        - '%player is sneaking% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:15 @Attacker
-    '3':
-      chance: 25
-      cooldown: 5
-      conditions:
-        - '%player is sneaking% = true : %allow%'
-      effects:
-        - INCREASE_DAMAGE:20 @Attacker
-feather_step:
-  display: '%group-color%Feather Step'
-  description: |-
-    Chance to cancel
-    fall damage.
-  applies-to: Boots
-  type: FALL_DAMAGE
-  group: VANILLA
-  applies:
-    - ALL_BOOTS
-  levels:
-    '1':
-      chance: 15
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '2':
-      chance: 20
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '3':
-      chance: 25
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '4':
-      chance: 33
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '5':
-      chance: 40
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-getaway:
-  display: '%group-color%Getaway'
-  description: "Chance to gain more movement speed below &a20%&7 health when dealt with damage"
-  applies-to: Armor
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels:
-    '1':
-      chance: 15
-      conditions:
-        - '%victim health% < 4 : %allow%'
-      effects:
-        - POTION:SPEED:1:60 @Self
-    '2':
-      chance: 20
-      conditions:
-        - '%victim health% < 4 : %allow%'
-      effects:
-        - POTION:SPEED:1:60 @Self
-    '3':
-      chance: 100
-      conditions:
-        - '%victim health% < 4 : %allow%'
-      effects:
-        - POTION:SPEED:1:60 @Self
-harmlessness:
-  display: '%group-color%Curse of Harmlessness'
-  description: |-
-    Gives a chance
-    for attacks to do nothing.
-  applies-to: Swords
-  type: ATTACK;ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 15
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '2':
-      chance: 20
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self
-    '3':
-      chance: 25
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT @Self        
-infernaltouch:
-  display: '%group-color%Infernal Touch'
-  description: Chance to smelt mined blocks.
-  applies-to: Pickaxes,Shovels
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-    - ALL_SHOVEL
-  levels:
-    '1':
-      chance: 33
-      effects:
-        - SMELT @Block
-    '2':
-      chance: 66
-      effects:
-        - SMELT @Block
-    '3':
-      chance: 100
-      effects:
-        - SMELT @Block
-nether_affinity:
-  display: '%group-color%Nether Affinity'
-  description: 'Reduces damages recieved in the nether world.'
-  applies-to: Armors
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels: 
-    '1':
-      chance: 20
-      conditions:
-        - '%player world% = world_nether : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-    '2':
-      chance: 30
-      conditions:
-        - '%player world% = world_nether : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-    '3':
-      chance: 40
-      conditions:
-        - '%player world% = world_nether : %allow%'
-      effects:
-        - HALF_DAMAGE @Attacker
-nether_prospector:
-  display: '%group-color%Nether Prospector'
-  description: 'Chance to multiply ancient debris drops.'
-  applies-to: Pickaxes
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-  levels: 
-    '1':
-      chance: 15
-      cooldown: 5
-      settings:
-        whitelist:
-          - "ANCIENT_DEBRIS"
-      conditions:
-        - '%block type% contains ANCIENT_DEBRIS : %allow%'
-      effects:
-        - MORE_DROPS:1
-    '2':
-      chance: 20
-      cooldown: 5
-      settings:
-        whitelist:
-          - "ANCIENT_DEBRIS"
-      conditions:
-        - '%block type% contains ANCIENT_DEBRIS : %allow%'
-      effects:
-        - MORE_DROPS:2
-    '3':
-      chance: 25
-      cooldown: 5
-      settings:
-        whitelist:
-          - "ANCIENT_DEBRIS"
-      conditions:
-        - '%block type% contains ANCIENT_DEBRIS : %allow%'
-      effects:
-        - MORE_DROPS:3
-blazereaper:
-  display: '%group-color%Blaze Reaper'
-  description: Boosts damage against Nether creatures.
-  applies-to: Weapons
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 16
-      cooldown: 2
-      conditions:
-        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      chance: 21
-      cooldown: 2
-      conditions:
-        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIEor %mob type% = GHAST : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      chance: 29
-      cooldown: 2
-      conditions:
-        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-replenish:
-  display: '%group-color%Replenish'
-  description: Restores crops back when you break them.
-  applies-to: Hoes
-  type: MINING
-  group: VANILLA
+# << Example configuration >>
+#lastchance:    <-- Enchantment name
+#  display: "%group-color%Last Chance"    <-- Display in item lore
+#  description: "Has a chance to heal when on low hearts"    <-- Enchantment Description
+#  applies-to: "Chestplate"    <-- What applies to (display purposes)
+#  type: "DEFENSE"    <-- Enchantment type (controls when enchantment activates)
+#  group: "COMMON"    <-- Enchantment group (For enchanter and right-click random books)
+#  settings:
+#    required-enchants:
+#      - "springs:1" # Can require specific level
+#      - "gears"
+#    not-applyable-with:
+#      - "frozen"
+#  applies:    <-- List of items that it applies
+#    - ALL_CHESTPLATE    <-- Item(s) list
+#  levels:    < -- All Levels are under here
+#    1:     <-- Level indicator
+#      chance: 30    <-- Chance for enchantment to activate
+#      condition: "%victim health% > 5 : %stop%"    <-- Condition (read more about it at Conditions)
+#      effects:    <-- All enchantment effects
+#        - "ADD_HEALTH:2 %victim%"    <-- Effect(s) list
+
+#  Display (String) (No spaces or enchantment will break)
+#    Determines how will enchantment look in item lore
+
+#  Applies-to (String)
+#    Display used in Custom Enchantment books for %description% variable
+
+#  Group (Setting)
+#    INFO: Create enchantment groups in config.yml under enchanter configuration.
+#   Enchantment groups are used for enchanter, to sell specific type books. You can group them
+#   and add a group-wide color, then obtain it with variable %group-color% (shown in example enchantments below).
+
+#  Enchantment Types List: https://ae.advancedplugins.net/enchantments/creating-enchantments/type-list
+
+#  Applies (Material)
+#    Determines which items will have the effects
+#    Latest Materials list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#    NOTICE: You can use "LEATHER_ARMOR, IRON_ARMOR, CHAIN_ARMOR, GOLD_ARMOR or DIAMOND_ARMOR" to
+#    to instantly add availability for all specific armor type pieces.
+#    Use "ALL_ARMOR" to add all armor pieces.
+#    Use "ALL_HELMET" to add all helmets.
+#    Use "ALL_CHESTPLATE" to add all chestplates.
+#    Use "ALL_BOOTS" to add all boots.
+#    Use "ALL_SWORD" to add all swords.
+#    Use "ALL_PICKAXE" to add all pickaxes.
+#    Use "ALL_AXE" to add all axes.
+#    Use "ALL_EDIBLE" to add all foods.
+#    And so on, but make sure to use non plural names of items!
+
+#  Levels (Numbers)
+#    Effects for each level, use as display in examples.
+
+#  Enchantment Effect List: https://ae.advancedplugins.net/enchantments/creating-enchantments/effect-list
+
+#        # You can use tags <random word>word1,word2,word3</random word>, it will get a random word from listed words.
+#        # You can use tags <random number>x-y</random number> while x < y, it will generate a random number between two given integers.
+#        # e.g.: "STEAL_MONEY:<random number>10000-50000</random number>"
+#        # Use <chance>x</chance> to set per-effect chance, x being a chance percentage.
+#        # e.g.: "POTION:SPEED:1:100 %attacker% <chance>25</chance>"
+
+#        # You also may use %victim% or %attacker% flag to give effects to different players (in ATTACK, BOW, DEATH, KILL_PLAYER and DEFENSE types).
+#        # Example usage: - "POTION:POISON:1:50 %attacker%', this will give Level 2 POISON potion effect to the player who attacked.
+#        # If none is provided, effects will be given to the player who had custom enchanted item.
+#        # You can add %combo% instead of numbers, to use number of combo's player has (eg. to limit combo number: "%combo% > 0 && %combo% < 5 : %continue%')
+#        # You can add %damage% instead of numbers, to use number of damage has been done (for ATTACK and DEFENSE)
+
+#  Area of effect: https://ae.advancedplugins.net/enchantments/radius-of-effect-enchantments
+#  Conditions:  https://ae.advancedplugins.net/enchantments/enchantment-conditions
+
+# Settings for enchantments
+# *** This is not a required configuration section and each enchantment doesn't need to have it ***
+#  settings:
+#    required-enchants:
+#      - "springs"
+#    not-applyable-with:
+#      - "frozen"
+#    removeable: false # Makes enchantment non-removeable with blackscrolls
+#    disable-in-enchanter: true # Players can no longer obtain enchantment from Enchanter
+#    disabled-worlds: # List worlds in which enchantment will not work (cAsE sEnSiTiVe)
+#      - "My_World"
+planter:
+  display: "%group-color%Jardinera"
+  description: "Planta semillas en un área de 3x3\npulsando Mayúsculas+Cuadro derecho."
+  applies-to: "Hoes"
+  type: "RIGHT_CLICK"
+  group: "ULTIMATE"
   applies:
     - ALL_HOE
   levels:
-    '1':
-      conditions:
-        - '%is crop% = false : %stop%'
-        - '%is fully grown% = false : %stop%'
-      effects:
-        - PLANT_SEEDS:0:%block drop type%
-blow:
-  display: '%group-color%Double Blow'
-  description: Chance to deal double damage.
-  applies-to: Trident
-  type: SHOOT;SHOOT_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - TRIDENT
-  levels:
-    '1':
-      chance: 5
+    1:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       cooldown: 3
       effects:
-        - DOUBLE_DAMAGE @Victim
-    '2':
-      chance: 8
+        - "PLANT_SEEDS:1"
+    2:
+      condition:
+        - "%player is sneaking% = true : %allow%"
+      cooldown: 2
+      effects:
+        - "PLANT_SEEDS:1"
+    3:
+      condition:
+        - "%player is sneaking% = true : %allow%"
+      effects:
+        - "PLANT_SEEDS:1"
+potatoplanter:
+  display: "%group-color%Sembradora de patatas"
+  description: "Planta las patatas en un área de 3x3\npulsando Mayúsculas+Cuadro derecho."
+  applies-to: "Hoes"
+  type: "RIGHT_CLICK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_HOE
+  levels:
+    1:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       cooldown: 3
       effects:
-        - DOUBLE_DAMAGE @Victim
-    '3':
-      chance: 11
-      cooldown: 5
-      effects:
-        - DOUBLE_DAMAGE @Victim
-    '4':
-      chance: 14
-      cooldown: 6
-      effects:
-        - DOUBLE_DAMAGE @Victim
-waterborne:
-  display: '%group-color%Waterborne'
-  description: Helps ya get some air underwater.
-  applies-to: Helmets
-  type: EFFECT_STATIC
-  group: VANILLA
-  applies:
-    - ALL_HELMET
-  levels:
-    '1':
-      effects:
-        - POTION:WATER_BREATHING:0
-experience:
-  display: '%group-color%Experience'
-  description: Chance to get more experience from ores.
-  applies-to: Tools
-  type: MINING
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-    - ALL_SPADE
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 15
-      cooldown: 1
-      conditions:
-        - '%block type% contains ORE : %allow%'
-      effects:
-        - EXP:<random number>2-5</random number> @Block
-    '2':
-      chance: 30
-      cooldown: 2
-      conditions:
-        - '%block type% contains ORE : %allow%'
-      effects:
-        - EXP:<random number>2-5</random number>
-    '3':
-      chance: 45
-      cooldown: 3
-      conditions:
-        - '%block type% contains ORE : %allow%'
-      effects:
-        - EXP:<random number>2-5</random number> @Block
-    '4':
-      chance: 60
-      cooldown: 4
-      conditions:
-        - '%block type% contains ORE : %allow%'
-      effects:
-        - EXP:<random number>2-5</random number> @Block
-    '5':
-      chance: 75
-      cooldown: 5
-      conditions:
-        - '%block type% contains ORE : %allow%'
-      effects:
-        - EXP:<random number>2-5</random number> @Block
-haste:
-  display: '%group-color%Haste'
-  description: Allows you to swing your tools faster.
-  applies-to: Tools
-  type: HELD
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-    - ALL_SPADE
-    - ALL_AXE
-  levels:
-    '1':
-      effects:
-        - POTION:FAST_DIGGING:0
-    '2':
-      effects:
-        - POTION:FAST_DIGGING:1
-    '3':
-      effects:
-        - POTION:FAST_DIGGING:2 Alacrity
-alacrity:
-  display: '%group-color%Alacrity'
-  description: Enables you to use your tools at a quicker speed.
-  applies-to: Tools
-  type: HELD
-  group: VANILLA
-  applies:
-    - ALL_PICKAXE
-    - ALL_SPADE
-    - ALL_AXE
-  levels:
-    '1':
-      effects:
-        - POTION:FAST_DIGGING:0
-    '2':
-      effects:
-        - POTION:FAST_DIGGING:1
-    '3':
-      effects:
-        - POTION:FAST_DIGGING:2
-repel:
-  display: '%group-color%Repel'
-  description: Chance to drive your opponent backward.
-  applies-to: Swords
-  type: ATTACK;ATTACK_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 30
-      cooldown: 12
-      effects:
-        - PULL_AWAY:1.0 @Victim
-    '2':
-      chance: 36
-      cooldown: 12
-      effects:
-        - PULL_AWAY:1.5 @Victim
-    '3':
-      chance: 42
-      cooldown: 12
-      effects:
-        - PULL_AWAY:2.0 @Victim
-starvation:
-  display: '%group-color%Starvation'
-  description: A chance to inflict the hunger effect on your opponent..
-  applies-to: Weapons
-  type: ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 12
-      cooldown: 8
-      effects:
-        - POTION:HUNGER:0:80 @Victim
-    '2':
-      chance: 15
-      cooldown: 8
-      effects:
-        - POTION:HUNGER:0:120 @Victim
-    '3':
-      chance: 18
-      cooldown: 8
-      effects:
-        - POTION:HUNGER:1:80 @Victim
-resonate:
-  display: '%group-color%Resonate'
-  description: "Take in enemy damage and send it back at them."
-  applies-to: Armor
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels:
-    '1':
-      chance: 3
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-    '2':
-      chance: 4
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-    '3':
-      chance: 5
-      cooldown: 5
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-explosive:
-  display: '%group-color%Explosive'
-  description: Chance for arrows to explode.
-  applies-to: Bow
-  type: SHOOT;SHOOT_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - BOW
-  levels:
-    '1':
-      chance: 20
-      cooldown: 7
-      effects:
-        - TNT @Victim
-    '2':
-      chance: 30
-      cooldown: 8
-      effects:
-        - TNT @Victim
-    '3':
-      chance: 40
-      cooldown: 8
-      effects:
-        - TNT @Victim
-    '4':
-      chance: 50
-      cooldown: 8
-      effects:
-        - TNT @Victim
-    '5':
-      chance: 60
-      cooldown: 9
-      effects:
-        - TNT @Victim
-sharpnesshook:
-  display: '%group-color%Sharpness Hook'
-  description: Deal damage with the hook.
-  applies-to: Fishing Rod
-  type: HOOK_ENTITY
-  group: VANILLA
-  applies:
-    - FISHING_ROD
-  levels:
-    '1':
-      effects:
-        - DO_HARM:2 @Victim
-    '2':
-      effects:
-        - DO_HARM:4 @Victim
-    '3':
-      effects:
-        - DO_HARM:6 @Victim
-    '4':
-      effects:
-        - DO_HARM:9 @Victim
-    '5':
-      effects:
-        - DO_HARM:12 @Victim
-    '6':
-      effects:
-        - DO_HARM:15 @Victim
-    '7':
-      effects:
-        - DO_HARM:19 @Victim
-    '8':
-      effects:
-        - DO_HARM:23 @Victim
-    '9':
-      effects:
-        - DO_HARM:27 @Victim
-poisonedhook:
-  display: '%group-color%Poisoned Hook'
-  description: Poisons the hook.
-  applies-to: Fishing Rod
-  type: HOOK_ENTITY
-  group: VANILLA
-  applies:
-    - FISHING_ROD
-  levels:
-    '1':
-      chance: 6
+        - "PLANT_SEEDS:1:POTATO"
+    2:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       cooldown: 2
       effects:
-        - POTION:POISON:0:80 @Victim
-    '2':
-      chance: 22
-      cooldown: 2
+        - "PLANT_SEEDS:1:POTATO"
+    3:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       effects:
-        - POTION:POISON:0:120 @Victim
-    '3':
-      chance: 35
-      cooldown: 2
-      effects:
-        - POTION:POISON:1:80 @Victim
-firehook:
-  display: '%group-color%Fire Hook'
-  description: The hook is on fire.
-  applies-to: Fishing Rod
-  type: HOOK_ENTITY
-  group: VANILLA
+        - "PLANT_SEEDS:1:POTATO"
+carrotplanter:
+  display: "%group-color%Jardinera de zanahorias"
+  description: "Planta zanahorias en un área de 3x3\npulsando Mayúsculas+Cuadro derecho."
+  applies-to: "Hoes"
+  type: "RIGHT_CLICK"
+  group: "ULTIMATE"
   applies:
-    - FISHING_ROD
+    - ALL_HOE
   levels:
-    '1':
-      chance: 25
+    1:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       cooldown: 3
       effects:
-        - BURN:40 @Victim
-    '2':
-      chance: 35
-      cooldown: 6
+        - "PLANT_SEEDS:1:CARROT"
+    2:
+      condition:
+        - "%player is sneaking% = true : %allow%"
+      cooldown: 2
       effects:
-        - BURN:40 @Victim
-    '3':
-      chance: 100
-      cooldown: 8
+        - "PLANT_SEEDS:1:CARROT"
+    3:
+      condition:
+        - "%player is sneaking% = true : %allow%"
       effects:
-        - BURN:40 @Victim
-scorching:
-  display: '%group-color%Scorching'
-  description: Chance to ignite the attacker in flames.
-  applies-to: Armor
-  type: DEFENSE;DEFENSE_MOB
-  group: VANILLA
+        - "PLANT_SEEDS:1:CARROT"
+replanter:
+  display: "%group-color%Replanter"
+  description: "Repone los cultivos cuando los rompe."
+  applies-to: "Hoes"
+  type: "MINING"
+  group: "UNIQUE"
   applies:
-    - ALL_ARMOR
+    - ALL_HOE
   levels:
-    '1':
-      chance: 21
-      cooldown: 2
+    1:
+      condition:
+        - "%is crop% = false : %stop%"
+        - "%is fully grown% = false : %stop%"
       effects:
-        - BURN:2 @Attacker
-    '2':
-      chance: 32
-      cooldown: 2
-      effects:
-        - BURN:4 @Attacker
-    '3':
-      chance: 49
-      cooldown: 2
-      effects:
-        - BURN:6 @Attacker
-ravenous:
-  display: '%group-color%Ravenous'
-  description: |-
-    Chance to regain hunger
-    while fighting.
-  applies-to: Swords, Axes
-  type: ATTACK;ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 14
-      cooldown: 2
-      effects:
-        - ADD_FOOD:<random number>1-4</random number> @Attacker
-    '2':
-      chance: 18
-      cooldown: 2
-      effects:
-        - ADD_FOOD:<random number>1-4</random number> @Attacker
-    '3':
-      chance: 22
-      cooldown: 2
-      effects:
-        - ADD_FOOD:<random number>1-4</random number> @Attacker
-    '4':
-      chance: 26
-      cooldown: 2
-      effects:
-        - ADD_FOOD:<random number>1-4</random number> @Attacker
-zombiecrusher:
-  display: '%group-color%Zombie Crusher'
-  description: Boosts damage inflicted on Zombies.
-  applies-to: Swords, Axes
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 16
-      cooldown: 2
-      conditions:
-        - '%mob type% = ZOMBIE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      chance: 20
-      cooldown: 2
-      conditions:
-        - '%mob type% = ZOMBIE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      chance: 40
-      cooldown: 2
-      conditions:
-        - '%mob type% = ZOMBIE : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-skullcrusher:
-  display: '%group-color%Skullcrusher'
-  description: Boosts damage inflicted on Skeletons.
-  applies-to: Swords, Axes
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 25
-      cooldown: 2
-      conditions:
-        - '%mob type% = SKELETON : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      chance: 50
-      cooldown: 2
-      conditions:
-        - '%mob type% = SKELETON : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      chance: 75
-      cooldown: 1
-      conditions:
-        - '%mob type% = SKELETON : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-incinerate:
-  display: '%group-color%Incinerate'
-  description: Boosts damage inflicted on Spiders.
-  applies-to: Swords, Axes
-  type: ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-    - ALL_AXE
-  levels:
-    '1':
-      chance: 25
-      cooldown: 2
-      conditions:
-        - '%mob type% = SPIDER : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '2':
-      chance: 50
-      cooldown: 2
-      conditions:
-        - '%mob type% = SPIDER : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-    '3':
-      chance: 75
-      conditions:
-        - '%mob type% = SPIDER : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>10-40</random number> @Attacker
-allurement:
-  display: '%group-color%Allurement'
-  description: Grants a chance to catch double loot while fishing.
-  applies-to: Fishing Rod
-  type: CATCH_FISH
+        - "PLANT_SEEDS:0:%block drop type%"
+strike:
+  display: "%group-color%Huelga"
+  description: "Posibilidad de lanzar un rayo\nal adversario."
+  applies-to: "Swords, Bow, Crossbow, Trident"
+  type: "ATTACK;ATTACK_MOB;BOW;BOW_MOB"
+  group: "SIMPLE"
   settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - FISHING_ROD
-  levels:
-    '1':
-      chance: 15
-      cooldown: 10
-      effects:
-        - MORE_DROPS:1
-    '2':
-      chance: 18
-      cooldown: 15
-      effects:
-        - MORE_DROPS:1
-    '3':
-      chance: 26
-      cooldown: 20
-      effects:
-        - MORE_DROPS:1
-arcticfreeze:
-  display: '%group-color%Arctic freeze'
-  description: Chance to inflict slowness and cause bleeding on opponents.
-  applies-to: Swords
-  type: ATTACK;ATTACK_MOB
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 15
-      cooldown: 12
-      effects:
-        - DO_HARM:1 @Victim
-        - BLOOD @Victim
-        - POTION:SLOW:0:20 @Victim
-        - WAIT:20
-        - DO_HARM:1 @Victim
-        - BLOOD @Victim
-        - WAIT:20
-        - DO_HARM:1 @Victim
-        - BLOOD @Victim
-    '2':
-      chance: 18
-      cooldown: 12
-      effects:
-        - DO_HARM:2 @Victim
-        - BLOOD @Victim
-        - POTION:SLOW:0:40 @Victim
-        - WAIT:20
-        - DO_HARM:2 @Victim
-        - BLOOD @Victim
-        - WAIT:20
-        - DO_HARM:1 @Victim
-        - BLOOD @Victim
-    '3':
-      chance: 19
-      cooldown: 12
-      effects:
-        - DO_HARM:3 @Victim
-        - BLOOD @Victim
-        - POTION:SLOW:0:50 @Victim
-        - WAIT:20
-        - DO_HARM:2 @Victim
-        - BLOOD @Victim
-        - WAIT:20
-        - DO_HARM:1 @Victim
-        - BLOOD @Victim
-rebounding:
-  display: '%group-color%Rebounding'
-  description: Rebounds incoming damage back at your attacker.
-  applies-to: Armors
-  type: DEFENSE;DEFENSE_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels:
-    '1':
-      chance: 15
-      cooldown: 10
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-    '2':
-      chance: 18
-      cooldown: 15
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-    '3':
-      chance: 26
-      cooldown: 20
-      effects:
-        - CANCEL_EVENT
-        - DO_HARM:%damage% @Attacker
-        - CACTUS @Victim
-rumble:
-  display: '%group-color%Rumble'
-  applies-to: Armors
-  type: DEFENSE;DEFENSE_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
-  applies:
-    - ALL_ARMOR
-  levels:
-    '1':
-      chance: 15
-      cooldown: 10
-      description: "Chance to damage back to all entities in a 3 block radius"
-      effects:
-        - DO_HARM:%damage% @Aoe{radius=3,target=damageable}
-    '2':
-      chance: 18
-      cooldown: 15
-      description: "Chance to damage back to all entities in a 4 block radius"
-      effects:
-        - DO_HARM:%damage% @Aoe{radius=4,target=damageable}
-    '3':
-      chance: 26
-      cooldown: 20
-      description: "Chance to damage back to all entities in a 5 block radius"
-      effects:
-        - DO_HARM:%damage% @Aoe{radius=5,target=damageable}
-shura:
-  display: '%group-color%Shura'
-  description: Gives a bonus to critical damage when under half health
-  applies-to: Swords
-  type: ATTACK_MOB;ATTACK
-  group: VANILLA
-  applies:
-    - ALL_SWORD
-  levels:
-    '1':
-      chance: 7
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-        - '%attacker health% < 10 : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>5-25</random number> @Attacker
-    '2':
-      chance: 8
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-        - '%attacker health% < 10 : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>5-25</random number> @Attacker
-    '3':
-      chance: 12
-      cooldown: 5
-      conditions:
-        - '%is critical% = true : %allow%'
-        - '%attacker health% < 10 : %allow%'
-      effects:
-        - INCREASE_DAMAGE:<random number>5-25</random number> @Attacker
-thor:
-  display: '%group-color%Thor'
-  description: |-
-    Chance to strike lightning
-    at the opponent.
-  applies-to: Swords, Bow, Crossbow, Trident
-  type: ATTACK;ATTACK_MOB;SHOOT;SHOOT_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
   applies:
     - TRIDENT
     - BOW
     - CROSSBOW
     - ALL_SWORD
   levels:
-    '1':
+    1:
       chance: 24
       cooldown: 3
       effects:
-        - LIGHTNING @Victim
-    '2':
+        - "LIGHTNING %victim%"
+    2:
       chance: 32
       cooldown: 3
       effects:
-        - LIGHTNING @Victim
-    '3':
+        - "LIGHTNING %victim%"
+    3:
       chance: 40
       cooldown: 4
       effects:
-        - LIGHTNING @Victim   
-multishot:
-  display: '%group-color%Multi-Shot'
-  description: Rain arrows over opponent.
-  applies-to: Bow
-  type: SHOOT;SHOOT_MOB
+        - "LIGHTNING %victim%"
+impact:
+  display: "%group-color%Impacto"
+  description: "Posibilidad de duplicar el daño infligido."
+  applies-to: "Trident"
+  type: "BOW;BOW_MOB"
+  group: "ELITE"
   settings:
-    showActionBar: true
-  group: VANILLA
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
   applies:
-    - BOW
+    - TRIDENT
   levels:
-    '1':
+    1:
+      chance: 5
+      cooldown: 3
+      effects:
+        - "DOUBLE_DAMAGE %victim%"
+    2:
+      chance: 8
+      cooldown: 3
+      effects:
+        - "DOUBLE_DAMAGE %victim%"
+    3:
+      chance: 11
+      cooldown: 5
+      effects:
+        - "DOUBLE_DAMAGE %victim%"
+    4:
+      chance: 14
+      cooldown: 6
+      effects:
+        - "DOUBLE_DAMAGE %victim%"
+twinge:
+  display: "%group-color%Pellizco"
+  description: "Haz sangrar a tu enemigo, si\ngolpea usando un ataque cuerpo a cuerpo."
+  applies-to: "Trident"
+  type: "ATTACK"
+  group: "LEGENDARY"
+  settings:
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 5
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "MESSAGE:&4You're bleeding! %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    2:
+      chance: 8
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "MESSAGE:&4You're bleeding! %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    3:
+      chance: 11
+      cooldown: 5
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "MESSAGE:&4You're bleeding! %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    4:
+      chance: 14
+      cooldown: 6
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "MESSAGE:&4You're bleeding! %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+jellylegs:
+  display: "%group-color%Piernas de gelatina"
+  description: "Posibilidad de anular el daño por caída."
+  applies-to: "Boots"
+  type: "FALL_DAMAGE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 40
+      effects:
+        - "STOP_ATTACK"
+    2:
+      chance: 80
+      effects:
+        - "STOP_ATTACK"
+    3:
+      effects:
+        - "STOP_ATTACK"
+wings:
+  display: "%group-color%Alas"
+  description: "Permite volar cuando se lleva puesto."
+  applies-to: "Boots"
+  type: "EFFECT_STATIC"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      effects:
+        - "FLY"
+aquatic:
+  display: "%group-color%Acuático"
+  description: "Respira bajo el agua."
+  applies-to: "Helmets"
+  type: "EFFECT_STATIC"
+  group: "SIMPLE"
+  applies:
+    - ALL_HELMET
+  levels:
+    1:
+      effects:
+        - "POTION:WATER_BREATHING:0"
+smelting:
+  display: "%group-color%Fundición"
+  description: "Posibilidad de fundir bloques minados."
+  applies-to: "Pickaxes"
+  type: "MINING"
+  group: "SIMPLE"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+  levels:
+    1:
+      chance: 33
+      effects:
+        - "SMELT"
+    2:
+      chance: 66
+      effects:
+        - "SMELT"
+    3:
+      chance: 100
+      effects:
+        - "SMELT"
+experience:
+  display: "%group-color%Experiencia"
+  description: "Posibilidad de obtener más experiencia de las menas."
+  applies-to: "Tools"
+  type: "MINING"
+  group: "SIMPLE"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+    - ALL_AXE
+  levels:
+    1:
+      chance: 15
+      cooldown: 1
+      condition: "%block type% contains ORE : %allow%"
+      effects:
+        - "EXP:<random number>2-5</random number>"
+    2:
+      chance: 30
+      cooldown: 2
+      condition: "%block type% contains ORE : %allow%"
+      effects:
+        - "EXP:<random number>2-5</random number>"
+    3:
+      chance: 45
+      cooldown: 3
+      condition: "%block type% contains ORE : %allow%"
+      effects:
+        - "EXP:<random number>2-5</random number>"
+    4:
+      chance: 60
+      cooldown: 4
+      condition: "%block type% contains ORE : %allow%"
+      effects:
+        - "EXP:<random number>2-5</random number>"
+    5:
+      chance: 75
+      cooldown: 5
+      condition: "%block type% contains ORE : %allow%"
+      effects:
+        - "EXP:<random number>2-5</random number>"
+hasten:
+  display: "%group-color%Apresúrate"
+  description: "Posibilidad de ganar Prisa después de romper bloques."
+  applies-to: "Tools"
+  type: "MINING"
+  group: "SIMPLE"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+    - ALL_AXE
+  levels:
+    1:
+      chance: 15
+      cooldown: 3
+      effects:
+        - "POTION:FAST_DIGGING:0:40"
+    2:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "POTION:FAST_DIGGING:1:60"
+    3:
+      chance: 45
+      cooldown: 3
+      effects:
+        - "POTION:FAST_DIGGING:2:80"
+haste:
+  display: "%group-color%Prisa"
+  description: "Le permite balancear sus herramientas más rápidamente."
+  applies-to: "Tools"
+  type: "HELD"
+  group: "FABLED"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+    - ALL_AXE
+  levels:
+    1:
+      effects:
+        - "POTION:FAST_DIGGING:0"
+    2:
+      effects:
+        - "POTION:FAST_DIGGING:1"
+    3:
+      effects:
+        - "POTION:FAST_DIGGING:2"
+rebreather:
+  display: "%group-color%Rebreather"
+  description: "Posibilidad de recuperar aire\nal minar bajo el agua."
+  applies-to: "Pickaxe"
+  type: "MINING"
+  group: "SIMPLE"
+  applies:
+    - ALL_PICKAXE
+  levels:
+    1:
+      cooldown: 3
+      chance: 30
+      effects:
+        - "FILL_OXYGEN"
+    2:
+      cooldown: 3
+      chance: 60
+      effects:
+        - "FILL_OXYGEN"
+glowing:
+  display: "%group-color%Brillante"
+  description: "Proporciona una visión nocturna permanente."
+  applies-to: "Helmet"
+  type: "EFFECT_STATIC"
+  group: "SIMPLE"
+  applies:
+    - ALL_HELMET
+  levels:
+    1:
+      effects:
+        - "POTION:NIGHT_VISION:0"
+decapitation:
+  display: "%group-color%Decapitación"
+  description: "Posibilidad de que los oponentes\npierdan la cabeza al morir."
+  applies-to: "Swords, Axes"
+  type: "KILL_PLAYER"
+  group: "SIMPLE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 5
+      cooldown: 10
+      effects:
+        - "DROP_HEAD %victim%"
+    2:
+      chance: 10
+      cooldown: 10
+      effects:
+        - "DROP_HEAD %victim%"
+    3:
+      chance: 15
+      cooldown: 10
+      effects:
+        - "DROP_HEAD %victim%"
+forcefield:
+  display: "%group-color%Campo de fuerza"
+  description: "Posibilidad de alejar a tu oponente."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "SIMPLE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 30
+      cooldown: 12
+      effects:
+        - "PULL_AWAY:1.0 %victim%"
+    2:
+      chance: 36
+      cooldown: 12
+      effects:
+        - "PULL_AWAY:1.5 %victim%"
+    3:
+      chance: 42
+      cooldown: 12
+      effects:
+        - "PULL_AWAY:2.0 %victim%"
+    4:
+      chance: 48
+      cooldown: 13
+      effects:
+        - "PULL_AWAY:2.5 %victim%"
+    5:
+      chance: 54
+      cooldown: 13
+      effects:
+        - "PULL_AWAY:3.0 %victim%"
+epicness:
+  display: "%group-color%Epicidad"
+  description: "Proporciona partículas y efectos de sonido."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "SIMPLE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 20
+      cooldown: 3
+      effects:
+        - "PARTICLE:SMOKE_LARGE:50:1 %victim%"
+        - "PLAY_SOUND:ENTITY_GHAST_SCREAM"
+    2:
+      chance: 40
+      cooldown: 3
+      effects:
+        - "PARTICLE:SMOKE_LARGE:50:1 %victim%"
+        - "PLAY_SOUND:ENTITY_GHAST_SCREAM"
+    3:
+      chance: 60
+      cooldown: 3
+      effects:
+        - "PARTICLE:SMOKE_LARGE:50:1 %victim%"
+        - "PLAY_SOUND:ENTITY_GHAST_SCREAM"
+famine:
+  display: "%group-color%Hambre"
+  description: "Una oportunidad de dar a tu oponente el efecto de hambre."
+  applies-to: "Weapons"
+  type: "ATTACK"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 12
+      cooldown: 8
+      effects:
+        - "POTION:HUNGER:0:80 %victim%"
+    2:
       chance: 15
       cooldown: 8
       effects:
-        - SPAWN_ARROWS @Victim
-    '2':
+        - "POTION:HUNGER:0:120 %victim%"
+    3:
       chance: 18
       cooldown: 8
       effects:
-        - SPAWN_ARROWS @Victim
-    '3':
+        - "POTION:HUNGER:1:80 %victim%"
+    4:
       chance: 22
       cooldown: 8
       effects:
-        - SPAWN_ARROWS @Victim
-vanish:
-  display: '%group-color%Vanish'
-  applies-to: Armors
-  type: DEFENSE;DEFENSE_MOB
-  settings:
-    showActionBar: true
-  group: VANILLA
+        - "POTION:HUNGER:1:120 %victim%"
+berserk:
+  display: "%group-color%Berserk"
+  description: "Probabilidad de fuerza\ny fatiga minera."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 4
+      cooldown: 8
+      effects:
+        - "POTION:SLOW_DIGGING:0:60 %attacker%"
+        - "POTION:INCREASE_DAMAGE:0:60 %attacker%"
+    2:
+      chance: 8
+      cooldown: 7
+      effects:
+        - "POTION:SLOW_DIGGING:0:80 %attacker%"
+        - "POTION:INCREASE_DAMAGE:0:80 %attacker%"
+    3:
+      chance: 12
+      cooldown: 6
+      effects:
+        - "POTION:SLOW_DIGGING:0:100 %attacker%"
+        - "POTION:INCREASE_DAMAGE:0:100 %attacker%"
+    4:
+      chance: 16
+      cooldown: 5
+      effects:
+        - "POTION:SLOW_DIGGING:1:80 %attacker%"
+        - "POTION:INCREASE_DAMAGE:1:80 %attacker%"
+    5:
+      chance: 20
+      cooldown: 4
+      effects:
+        - "POTION:SLOW_DIGGING:1:100 %attacker%"
+        - "POTION:INCREASE_DAMAGE:1:100 %attacker%"
+reflect:
+  display: "%group-color%Reflejar"
+  description: "Absorbe el daño del enemigo y\nlo refleja."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "UNIQUE"
   applies:
     - ALL_ARMOR
   levels:
-    '1':
+    1:
+      chance: 3
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HARM:%damage% %attacker%"
+        - "CACTUS_BREAK %victim%"
+    2:
+      chance: 4
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HARM:%damage% %attacker%"
+        - "CACTUS_BREAK %victim%"
+    3:
+      chance: 5
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HARM:%damage% %attacker%"
+        - "CACTUS_BREAK %victim%"
+    4:
+      chance: 6
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HARM:%damage% %attacker%"
+        - "CACTUS_BREAK %victim%"
+    5:
+      chance: 7
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HARM:%damage% %attacker%"
+        - "CACTUS_BREAK %victim%"
+ward:
+  display: "%group-color%Ward"
+  description: "Posibilidad de absorber el daño del enemigo"
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 3
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+    2:
+      chance: 7
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+    3:
+      chance: 11
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+    4:
+      chance: 15
+      cooldown: 5
+      effects:
+        - "STOP_ATTACK"
+explosive:
+  display: "%group-color%Explosivo"
+  description: "Posibilidad de que las flechas exploten."
+  applies-to: "Bow"
+  type: "BOW;BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - BOW
+  levels:
+    1:
+      chance: 20
+      cooldown: 7
+      effects:
+        - "TNT %victim%"
+    2:
+      chance: 30
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    3:
+      chance: 40
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    4:
+      chance: 50
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    5:
+      chance: 60
+      cooldown: 9
+      effects:
+        - "TNT %victim%"
+frenzy:
+  display: "%group-color%Frenesí"
+  description: "Posibilidad de que las flechas exploten."
+  applies-to: "Crossbow"
+  type: "BOW;BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - CROSSBOW
+  levels:
+    1:
+      chance: 20
+      cooldown: 7
+      effects:
+        - "TNT %victim%"
+    2:
+      chance: 30
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    3:
+      chance: 40
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    4:
+      chance: 50
+      cooldown: 8
+      effects:
+        - "TNT %victim%"
+    5:
+      chance: 60
+      cooldown: 9
+      effects:
+        - "TNT %victim%"
+featherweight:
+  display: "%group-color%Peso pluma"
+  description: "Posibilidad de obtener una ráfaga de prisa."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 35
+      cooldown: 2
+      effects:
+        - "POTION:FAST_DIGGING:0:60"
+    2:
+      chance: 55
+      cooldown: 2
+      effects:
+        - "POTION:FAST_DIGGING:1:80"
+    3:
+      chance: 75
+      cooldown: 2
+      effects:
+        - "POTION:FAST_DIGGING:2:100"
+molten:
+  display: "%group-color%Fundido"
+  description: "Posibilidad de incendiar a tu atacante."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 21
+      cooldown: 2
+      effects:
+        - "FLAME:2 %attacker%"
+    2:
+      chance: 32
+      cooldown: 2
+      effects:
+        - "FLAME:4 %attacker%"
+    3:
+      chance: 49
+      cooldown: 2
+      effects:
+        - "FLAME:6 %attacker%"
+    4:
+      chance: 63
+      cooldown: 2
+      effects:
+        - "FLAME:8 %attacker%"
+ravenous:
+  display: "%group-color%Ravenous"
+  description: "Posibilidad de recuperar el hambre\nmientras se lucha."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 14
+      cooldown: 2
+      effects:
+        - "ADD_FOOD:<random number>1-4</random number> %attacker%"
+    2:
+      chance: 18
+      cooldown: 2
+      effects:
+        - "ADD_FOOD:<random number>1-4</random number> %attacker%"
+    3:
+      chance: 22
+      cooldown: 2
+      effects:
+        - "ADD_FOOD:<random number>1-4</random number> %attacker%"
+    4:
+      chance: 26
+      cooldown: 2
+      effects:
+        - "ADD_FOOD:<random number>1-4</random number> %attacker%"
+veinminer:
+  display: "%group-color%Minero de vetas"
+  description: "Extraer toda la veta de minerales"
+  applies-to: "Pickaxes"
+  group: "ELITE"
+  type: "MINING"
+  applies:
+    - ALL_PICKAXE
+  levels:
+    1:
+      chance: 15
+      cooldown: 4
+      effects:
+        - "VEIN_MINE"
+    2:
+      chance: 35
+      cooldown: 3
+      effects:
+        - "VEIN_MINE"
+    3:
+      effects:
+        - "VEIN_MINE"
+telepathy:
+  display: "%group-color%Telepatía"
+  description: "Coloca automáticamente los bloques rotos\npor las herramientas en tu inventario."
+  applies-to: "Tools"
+  type: "MINING"
+  group: "UNIQUE"
+  applies:
+    - ALL_TOOLS
+  levels:
+    1:
+      chance: 40
+      effects:
+        - "TP_DROPS"
+    2:
+      chance: 60
+      effects:
+        - "TP_DROPS"
+    3:
+      chance: 80
+      effects:
+        - "TP_DROPS"
+    4:
+      effects:
+        - "TP_DROPS"
+explosivedemise:
+  display: "%group-color%Desaparición explosiva"
+  description: "Invoca a las enredaderas como tus guardias\ncuando estés cerca de la muerte."
+  applies-to: "Leggings"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_LEGGINGS
+  levels:
+    1:
+      chance: 13
+      cooldown: 3
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:1:%victim%"
+        - "POTION:BLINDNESS:0:40 %attacker%"
+    2:
+      chance: 17
+      cooldown: 3
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:1:%victim%"
+        - "POTION:BLINDNESS:0:60 %attacker%"
+    3:
+      chance: 24
+      cooldown: 3
+      condition:
+        - "%victim health% > 7 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:1:%victim%"
+        - "POTION:BLINDNESS:0:100 %attacker%"
+    4:
+      chance: 30
+      cooldown: 3
+      condition:
+        - "%victim health% > 7 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:1:%victim%"
+        - "POTION:BLINDNESS:1:40 %attacker%"
+    5:
+      chance: 38
+      cooldown: 3
+      condition:
+        - "%victim health% > 8 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:2:%victim%"
+        - "POTION:BLINDNESS:1:80 %attacker%"
+    6:
+      chance: 46
+      cooldown: 3
+      condition:
+        - "%victim health% > 8 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:2:%victim%"
+        - "POTION:BLINDNESS:1:120 %attacker%"
+    7:
+      chance: 55
+      cooldown: 3
+      condition:
+        - "%victim health% > 8 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:2:%victim%"
+        - "POTION:BLINDNESS:2:60 %attacker%"
+    8:
+      chance: 69
+      cooldown: 3
+      condition:
+        - "%victim health% > 8 : %stop%"
+      effects:
+        - "GUARD:CREEPER:8:3:%victim%"
+        - "POTION:BLINDNESS:2:100 %attacker%"
+enderslayer:
+  display: "%group-color%Ender Slayer"
+  description: "Aumenta el daño infligido a Enderman y a los dragones Ender."
+  applies-to: "Weapons"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 16
+      cooldown: 2
+      condition:
+        - "%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 21
+      cooldown: 2
+      condition:
+        - "%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 29
+      cooldown: 2
+      condition:
+        - "%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      chance: 34
+      cooldown: 2
+      condition:
+        - "%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    5:
+      chance: 41
+      cooldown: 2
+      condition:
+        - "%mob type% = ENDERMAN or %mob type% = ENDER_DRAGON or %mob type% = ENDERDRAGON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+deathpunch:
+  display: "%group-color%Death Punch"
+  description: "Aumenta el daño infligido a los Zombis."
+  applies-to: "Swords, Axes"
+  type: "ATTACK_MOB"
+  group: "SIMPLE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 16
+      cooldown: 2
+      condition:
+        - "%mob type% = ZOMBIE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 20
+      cooldown: 2
+      condition:
+        - "%mob type% = ZOMBIE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 40
+      cooldown: 2
+      condition:
+        - "%mob type% = ZOMBIE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      chance: 60
+      cooldown: 1
+      condition:
+        - "%mob type% = ZOMBIE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    5:
+      chance: 80
+      condition:
+        - "%mob type% = ZOMBIE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+bonecrusher:
+  display: "%group-color%Triturador de huesos"
+  description: "Aumenta el daño infligido a los esqueletos."
+  applies-to: "Swords, Axes"
+  type: "ATTACK_MOB"
+  group: "SIMPLE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%mob type% = SKELETON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%mob type% = SKELETON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      cooldown: 1
+      condition:
+        - "%mob type% = SKELETON : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+immolate:
+  display: "%group-color%Inmolar"
+  description: "Aumenta el daño infligido a las arañas."
+  applies-to: "Swords, Axes"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%mob type% = SPIDER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%mob type% = SPIDER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      condition:
+        - "%mob type% = SPIDER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+slayer:
+  display: "%group-color%Cazador"
+  description: "Aumenta el daño infligido a los Mobs pasivos."
+  applies-to: "Swords, Axes"
+  type: "ATTACK_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+hunter:
+  display: "%group-color%Cazador"
+  description: "Aumenta el daño infligido a los Mobs pasivos."
+  applies-to: "Bow, Crossbow, Trident"
+  type: "BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      condition:
+        - "%is hostile% = false : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+beastslayer:
+  display: "%group-color%Capa de bestia"
+  description: "Aumenta el daño infligido a los Mobs hostiles."
+  applies-to: "Swords, Axes"
+  type: "ATTACK_MOB"
+  group: "LEGENDARY"
+  settings:
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+hook:
+  display: "%group-color%Gancho"
+  description: "Consigue más exp de la pesca."
+  applies-to: "Fishing Rod"
+  type: "CATCH_FISH"
+  group: "ELITE"
+  applies:
+    - FISHING_ROD
+  levels:
+    1:
+      chance: 15
+      cooldown: 12
+      effects:
+        - "EXP:%exp%"
+    2:
+      chance: 25
+      cooldown: 12
+      effects:
+        - "EXP:%exp%"
+    3:
+      chance: 35
+      cooldown: 12
+      effects:
+        - "EXP:%exp%"
+bait:
+  display: "%group-color%Cebo"
+  description: "Posibilidad de recibir gotas de pesca dobles."
+  applies-to: "Fishing Rod"
+  type: "CATCH_FISH"
+  group: "LEGENDARY"
+  applies:
+    - FISHING_ROD
+  levels:
+    1:
+      chance: 15
+      cooldown: 10
+      effects:
+        - "MORE_DROPS:1"
+    2:
+      chance: 18
+      cooldown: 15
+      effects:
+        - "MORE_DROPS:1"
+    3:
+      chance: 26
+      cooldown: 20
+      effects:
+        - "MORE_DROPS:1"
+snap:
+  display: "%group-color%Snap"
+  description: "Tira de la entidad golpeada hacia ti."
+  applies-to: "Fishing Rod"
+  type: "CATCH_FISH"
+  group: "ELITE"
+  applies:
+    - FISHING_ROD
+  levels:
+    1:
+      chance: 15
+      cooldown: 4
+      effects:
+        - "PULL_CLOSER:1 %victim%"
+    2:
+      chance: 25
+      cooldown: 6
+      effects:
+        - "PULL_CLOSER:1.5 %victim%"
+    3:
+      chance: 35
+      cooldown: 8
+      effects:
+        - "PULL_CLOSER:2 %victim%"
+lucky:
+  display: "%group-color%Gancho"
+  description: "Posibilidad de aumentar la suerte durante la pesca."
+  applies-to: "Fishing Rod"
+  type: "RIGHT_CLICK"
+  group: "ULTIMATE"
+  applies:
+    - FISHING_ROD
+  levels:
+    1:
+      chance: 75
+      cooldown: 12
+      effects:
+        - "POTION:LUCK:1:200"
+    2:
+      chance: 85
+      cooldown: 12
+      effects:
+        - "POTION:LUCK:2:200"
+    3:
+      chance: 95
+      cooldown: 12
+      effects:
+        - "POTION:LUCK:3:200"
+permafrost:
+  display: "%group-color%Permafrost"
+  description: "La posibilidad de ralentizar y desangrar a los oponentes."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 15
+      cooldown: 12
+      effects:
+        - "ADD_HARM:1 %victim%"
+        - "BLOOD %victim%"
+        - "POTION:SLOW:0:20 %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:1 %victim%"
+        - "BLOOD %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:1 %victim%"
+        - "BLOOD %victim%"
+    2:
+      chance: 18
+      cooldown: 12
+      effects:
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+        - "POTION:SLOW:0:40 %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:1 %victim%"
+        - "BLOOD %victim%"
+    3:
+      chance: 19
+      cooldown: 12
+      effects:
+        - "ADD_HARM:3 %victim%"
+        - "BLOOD %victim%"
+        - "POTION:SLOW:0:50 %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:1 %victim%"
+        - "BLOOD %victim%"
+    4:
+      chance: 21
+      cooldown: 13
+      effects:
+        - "ADD_HARM:3 %victim%"
+        - "BLOOD %victim%"
+        - "POTION:SLOW:0:60 %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+    5:
+      chance: 25
+      cooldown: 13
+      effects:
+        - "ADD_HARM:3 %victim%"
+        - "BLOOD %victim%"
+        - "POTION:SLOW:1:60 %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:3 %victim%"
+        - "BLOOD %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:2 %victim%"
+        - "BLOOD %victim%"
+soulless:
+  display: "%group-color%Sin alma"
+  description: "Aumenta el daño infligido a los Mobs hostiles."
+  applies-to: "Bow, Crossbow, Trident"
+  type: "BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 50
+      cooldown: 2
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 75
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      condition:
+        - "%is hostile% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+reaper:
+  display: "%group-color%Reaper"
+  description: "Una oportunidad de dar a tu oponente el\nEfectos de marchitez y ceguera\nmientras infliges daño"
+  applies-to: "Axe"
+  type: "ATTACK"
+  group: "ELITE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 8
+      cooldown: 16
+      effects:
+        - "POTION:WITHER:0:35 %victim%"
+        - "POTION:BLINDNESS:0:35 %victim%"
+    2:
+      chance: 10
+      cooldown: 14
+      effects:
+        - "POTION:WITHER:0:40 %victim%"
+        - "POTION:BLINDNESS:0:40 %victim%"
+    3:
+      chance: 12
+      cooldown: 12
+      effects:
+        - "POTION:WITHER:0:50 %victim%"
+        - "POTION:BLINDNESS:0:50 %victim%"
+    4:
+      chance: 14
+      cooldown: 10
+      effects:
+        - "POTION:WITHER:0:60 %victim%"
+        - "POTION:BLINDNESS:0:60 %victim%"
+netherslayer:
+  display: "%group-color%Cazador de Nether"
+  description: "Aumenta el daño infligido a las turbas del fondo."
+  applies-to: "Weapons"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 16
+      cooldown: 2
+      condition:
+        - "%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    2:
+      chance: 21
+      cooldown: 2
+      condition:
+        - "%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    3:
+      chance: 29
+      cooldown: 2
+      condition:
+        - "%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    4:
+      chance: 34
+      cooldown: 2
+      condition:
+        - "%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+    5:
+      chance: 41
+      cooldown: 2
+      condition:
+        - "%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>10-40</random number> %attacker%"
+blind:
+  display: "%group-color%Ciegos"
+  description: "Probabilidad de causar ceguera\nal atacar."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 17
+      cooldown: 3
+      effects:
+        - "POTION:BLINDNESS:0:60 %victim%"
+    2:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "POTION:BLINDNESS:1:80 %victim%"
+    3:
+      chance: 33
+      cooldown: 3
+      effects:
+        - "POTION:BLINDNESS:2:100 %victim%"
+allure:
+  display: "%group-color%Allure"
+  description: "Tu ataque atrae a las turbas hacia ti."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 30
+      effects:
+        - "PULL_CLOSER:0.1 %victim%"
+    2:
+      chance: 60
+      effects:
+        - "PULL_CLOSER:0.2 %victim%"
+    3:
+      effects:
+        - "PULL_CLOSER:0.3 %victim%"
+frozen:
+  display: "%group-color%Congelado"
+  description: "Puede causar lentitud al atacante\ncuando se defiende."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 19
+      cooldown: 6
+      effects:
+        - "POTION:SLOW:0:40 %attacker%"
+    2:
+      chance: 19
+      cooldown: 6
+      effects:
+        - "POTION:SLOW:1:50 %attacker%"
+    3:
+      chance: 26
+      cooldown: 6
+      effects:
+        - "POTION:SLOW:2:60 %attacker%"
+paralyze:
+  display: "%group-color%Paralizar"
+  description: "Da un efecto de rayo y una posibilidad\nde lentitud y balanceo lento."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 7
+      cooldown: 3
+      effects:
+        - "LIGHTNING %victim%"
+        - "EXTINGUISH %victim%"
+        - "POTION:SLOW:0:60 %victim%"
+        - "POTION:SLOW_DIGGING:0:60 %victim%"
+    2:
+      chance: 10
+      cooldown: 3
+      effects:
+        - "LIGHTNING %victim%"
+        - "EXTINGUISH %victim%"
+        - "POTION:SLOW:0:100 %victim%"
+        - "POTION:SLOW_DIGGING:0:100 %victim%"
+    3:
+      chance: 13
+      cooldown: 3
+      effects:
+        - "LIGHTNING %victim%"
+        - "EXTINGUISH %victim%"
+        - "POTION:SLOW:1:60 %victim%"
+        - "POTION:SLOW_DIGGING:1:60 %victim%"
+    4:
+      chance: 16
+      cooldown: 3
+      effects:
+        - "LIGHTNING %victim%"
+        - "EXTINGUISH %victim%"
+        - "POTION:SLOW:1:100 %victim%"
+        - "POTION:SLOW_DIGGING:1:100 %victim%"
+poison:
+  display: "%group-color%Veneno"
+  description: "Una posibilidad de dar efecto de veneno."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 6
+      cooldown: 2
+      effects:
+        - "POTION:POISON:0:80 %victim%"
+    2:
+      chance: 22
+      cooldown: 2
+      effects:
+        - "POTION:POISON:0:120 %victim%"
+    3:
+      chance: 35
+      cooldown: 2
+      effects:
+        - "POTION:POISON:1:80 %victim%"
+virus:
+  display: "%group-color%Virus"
+  description: "Una posibilidad de dar efecto de veneno."
+  applies-to: "Bow, Crossbow, Trident"
+  type: "BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 6
+      cooldown: 2
+      effects:
+        - "POTION:POISON:0:80 %victim%"
+    2:
+      chance: 22
+      cooldown: 2
+      effects:
+        - "POTION:POISON:0:120 %victim%"
+    3:
+      chance: 35
+      cooldown: 2
+      effects:
+        - "POTION:POISON:1:80 %victim%"
+poisoned:
+  display: "%group-color%Envenenado"
+  description: "Posibilidad de dar veneno a tu atacante."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB;DEFENSE_BOW"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 8
+      cooldown: 6
+      effects:
+        - "POTION:POISON:0:60 %attacker%"
+    2:
+      chance: 12
+      cooldown: 6
+      effects:
+        - "POTION:POISON:0:120 %attacker%"
+    3:
+      chance: 17
+      cooldown: 6
+      effects:
+        - "POTION:POISON:1:60 %attacker%"
+    4:
+      chance: 23
+      cooldown: 6
+      effects:
+        - "POTION:POISON:1:120 %attacker%"
+reforged:
+  display: "%group-color%Reforzado"
+  description: "Protege la durabilidad de las armas y herramientas, los objetos tardarán más en romperse."
+  applies-to: "Weapons and tools"
+  type: "ATTACK_MOB;MINING"
+  group: "ELITE"
+  applies:
+    - ALL_AXE
+    - ALL_SWORD
+    - ALL_PICKAXE
+    - ALL_SPADE
+  levels:
+    1:
+      chance: 10
+      effects:
+        - "ADD_DURABILITY_ITEM:-1"
+    2:
+      chance: 20
+      effects:
+        - "ADD_DURABILITY_ITEM:-1"
+    3:
+      chance: 30
+      effects:
+        - "ADD_DURABILITY_ITEM:-2"
+    4:
+      chance: 40
+      effects:
+        - "ADD_DURABILITY_ITEM:-2"
+    5:
+      chance: 50
+      effects:
+        - "ADD_DURABILITY_ITEM:-2"
+    6:
+      chance: 60
+      effects:
+        - "ADD_DURABILITY_ITEM:-3"
+    7:
+      chance: 70
+      effects:
+        - "ADD_DURABILITY_ITEM:-3"
+    8:
+      chance: 80
+      effects:
+        - "ADD_DURABILITY_ITEM:-4"
+    9:
+      chance: 90
+      effects:
+        - "ADD_DURABILITY_ITEM:-4"
+    10:
+      effects:
+        - "ADD_DURABILITY_ITEM:-5"
+snare:
+  display: "%group-color%Trampa"
+  description: "Probabilidad de ralentizar y fatigar a los enemigos\ncon proyectiles."
+  applies-to: "Bows"
+  type: "BOW;BOW_MOB"
+  group: "ELITE"
+  applies:
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 12
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:0:80 %victim%"
+        - "POTION:SLOW_DIGGING:0:80 %victim%"
+    2:
+      chance: 19
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:0:120 %victim%"
+        - "POTION:SLOW_DIGGING:0:120 %victim%"
+    3:
+      chance: 24
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:1:80 %victim%"
+        - "POTION:SLOW_DIGGING:1:80 %victim%"
+    4:
+      chance: 29
+      cooldown: 3
+      effects:
+        - "POTION:SLOW:1:120 %victim%"
+        - "POTION:SLOW_DIGGING:1:120 %victim%"
+springs:
+  display: "%group-color%Muelles"
+  description: "Da impulso al salto."
+  applies-to: "Boots"
+  type: "EFFECT_STATIC"
+  group: "ELITE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      effects:
+        - "POTION:JUMP:0"
+    2:
+      effects:
+        - "POTION:JUMP:1"
+    3:
+      effects:
+        - "POTION:JUMP:2"
+undeadruse:
+  display: "%group-color%Artimaña de los no muertos"
+  description: "Cuando te golpean, tienes la posibilidad de engendrar hordas de zombis\npara distraer y desorientar a tus oponentes."
+  applies-to: "Boots"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 3
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:2:%victim%"
+    2:
+      chance: 4
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:2:%victim%"
+    3:
+      chance: 5
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:2:%victim%"
+    4:
+      chance: 6
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:2:%victim%"
+    5:
+      chance: 7
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:2:%victim%"
+    6:
+      chance: 8
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:3:%victim%"
+    7:
+      chance: 10
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:3:%victim%"
+    8:
+      chance: 14
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:4:%victim%"
+    9:
+      chance: 18
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:4:%victim%"
+    10:
+      chance: 22
+      cooldown: 6
+      effects:
+        - "GUARD:ZOMBIE:8:5:%victim%"
+voodoo:
+  display: "%group-color%Voodoo"
+  description: "Da la oportunidad de tratar la debilidad."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 5
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:0:60 %attacker%"
+    2:
+      chance: 7
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:0:100 %attacker%"
+    3:
+      chance: 9
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:0:140 %attacker%"
+    4:
+      chance: 13
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:1:60 %attacker%"
+    5:
+      chance: 16
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:1:100 %attacker%"
+    6:
+      chance: 21
+      cooldown: 2
+      effects:
+        - "POTION:WEAKNESS:1:120 %attacker%"
+wither:
+  display: "%group-color%Marchitar"
+  description: "Una oportunidad para dar el efecto de marchitamiento."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 9
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:60 %attacker%"
+    2:
+      chance: 11
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:100 %attacker%"
+    3:
+      chance: 14
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:140 %attacker%"
+    4:
+      chance: 17
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:1:60 %attacker%"
+    5:
+      chance: 21
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:1:100 %attacker%"
+perish:
+  display: "%group-color%Perder"
+  description: "Una oportunidad para dar el efecto de marchitamiento."
+  applies-to: "Bow, Crossbow, Trident"
+  type: "BOW;BOW_MOB"
+  group: "UNIQUE"
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 9
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:60 %victim%"
+    2:
+      chance: 11
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:100 %victim%"
+    3:
+      chance: 14
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:0:140 %victim%"
+    4:
+      chance: 17
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:1:60 %victim%"
+    5:
+      chance: 21
+      cooldown: 3
+      effects:
+        - "POTION:WITHER:1:100 %victim%"
+smokebomb:
+  display: "%group-color%Bomba de humo"
+  description: "Cuando estés cerca de la muerte,\nlanzarás una bomba de humo para\ndistraer a tus enemigos."
+  applies-to: "Helmet"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_HELMET
+  levels:
+    1:
+      chance: 9
+      cooldown: 2
+      condition:
+        - "%victim health% > 4 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:0:60 %attacker%"
+    2:
+      chance: 15
+      cooldown: 2
+      condition:
+        - "%victim health% > 4 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:0:60 %attacker%"
+    3:
+      chance: 23
+      cooldown: 2
+      condition:
+        - "%victim health% > 4 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:0:100 %attacker%"
+    4:
+      chance: 28
+      cooldown: 2
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:0:100 %attacker%"
+    5:
+      chance: 30
+      cooldown: 2
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:1:60 %attacker%"
+    6:
+      chance: 34
+      cooldown: 2
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:1:100 %attacker%"
+    7:
+      chance: 36
+      cooldown: 2
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:1:140 %attacker%"
+    8:
+      chance: 38
+      cooldown: 2
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "PARTICLE:CLOUD:200:3 %victim%"
+        - "POTION:BLINDNESS:2:120 %attacker%"
+infernal:
+  display: "%group-color%Infernal"
+  description: "Efecto de fuego explosivo."
+  applies-to: "Swords, Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 15
+      cooldown: 2
+      effects:
+        - "PARTICLE:FLAME:2:20"
+        - "FLAME:2 %victim%"
+    2:
+      chance: 30
+      cooldown: 2
+      effects:
+        - "PARTICLE:FLAME:2:40"
+        - "FLAME:4 %victim%"
+    3:
+      chance: 50
+      cooldown: 2
+      effects:
+        - "PARTICLE:FLAME:3:20"
+        - "FLAME:6 %victim%"
+extinguish:
+  display: "%group-color%Extinción"
+  description: "Posibilidad de extinguirse\ncuando está en llamas."
+  applies-to: "Leggings"
+  type: "DEFENSE;DEFENSE_MOB;FIRE"
+  group: "ELITE"
+  applies:
+    - ALL_LEGGINGS
+  levels:
+    1:
+      chance: 20
+      effects:
+        - "WAIT:1"
+        - "EXTINGUISH %victim%"
+    2:
+      chance: 60
+      effects:
+        - "WAIT:1"
+        - "EXTINGUISH %victim%"
+    3:
+      chance: 80
+      effects:
+        - "WAIT:1"
+        - "EXTINGUISH %victim%"
+shockwave:
+  display: "%group-color%Onda de choque"
+  description: "Posibilidad de hacer retroceder a tu atacante\ncuando tu salud es baja."
+  applies-to: "Chestplates"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_CHESTPLATE
+  levels:
+    1:
+      chance: 10
+      cooldown: 4
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PULL_AWAY:0.5 %attacker%"
+    2:
+      chance: 20
+      cooldown: 4
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PULL_AWAY:1.0 %attacker%"
+    3:
+      chance: 30
+      cooldown: 4
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PULL_AWAY:1.5 %attacker%"
+    4:
+      chance: 40
+      cooldown: 4
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PULL_AWAY:2.0 %attacker%"
+    5:
+      chance: 50
+      cooldown: 4
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "PULL_AWAY:2.5 %attacker%"
+vampire:
+  display: "%group-color%Vampiro"
+  description: "Una posibilidad de curarte hasta\n3hp unos segundos después de golpear."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 7
+      cooldown: 4
+      effects:
+        - "WAIT:40"
+        - "ADD_HEALTH:<random number>1-6</random number>"
+    2:
+      chance: 12
+      cooldown: 4
+      effects:
+        - "WAIT:40"
+        - "ADD_HEALTH:<random number>1-6</random number>"
+    3:
+      chance: 15
+      cooldown: 4
+      effects:
+        - "WAIT:40"
+        - "ADD_HEALTH:<random number>1-6</random number>"
+greatsword:
+  display: "%group-color%Espada de la grandeza"
+  description: "Multiplica el daño contra los jugadores que están\nblandiendo un Arco en el momento de ser golpeados."
+  applies-to: "Sword"
+  type: "ATTACK"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 15
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>45-70</random number> %attacker%"
+    2:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>75-90</random number> %attacker%"
+    3:
+      chance: 35
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>85-165</random number> %attacker%"
+    4:
+      chance: 45
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>105-205</random number>"
+    5:
+      chance: 55
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>105-205</random number>"
+bowmaster:
+  display: "%group-color%Bowmaster"
+  description: "Multiplica el daño contra los jugadores que están\nblandiendo una Espada en el momento de ser golpeados."
+  applies-to: "Bow, Crossbow, Trident"
+  type: "BOW"
+  group: "ELITE"
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 15
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>45-70</random number> %attacker%"
+    2:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>75-90</random number> %attacker%"
+    3:
+      chance: 35
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>85-165</random number> %attacker%"
+    4:
+      chance: 45
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>105-205</random number>"
+    5:
+      chance: 55
+      cooldown: 2
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>105-205</random number>"
+hardened:
+  display: "%group-color%Endurecido"
+  description: "Posibilidad de recuperar la durabilidad cuando es dañado por los jugadores."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 25
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-1 %victim%"
+    2:
+      chance: 35
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-1 %victim%"
+    3:
+      chance: 45
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-2 %victim%"
+patch:
+  display: "%group-color%Parche"
+  description: "Posibilidad de recuperar la durabilidad cuando es dañado por las turbas."
+  applies-to: "Armor"
+  type: "DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 25
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-1 %victim%"
+    2:
+      chance: 35
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-1 %victim%"
+    3:
+      chance: 45
+      cooldown: 7
+      effects:
+        - "ADD_DURABILITY:-2 %victim%"
+rocketescape:
+  display: "%group-color%Escape de cohetes"
+  description: "Salir disparado por los aires con poca potencia."
+  applies-to: "Boots"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 20
+      cooldown: 8
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "BOOST:UP:30 %victim%"
+    2:
+      chance: 34
+      cooldown: 8
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "BOOST:UP:45 %victim%"
+    3:
+      chance: 40
+      cooldown: 8
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "BOOST:UP:50 %victim%"
+trickster:
+  display: "%group-color%Arlequín"
+  description: "Cuando te golpean, tienes una probabilidad\nde teletransportarte directamente\ndetrás de tu oponente."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 8
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    2:
+      chance: 14
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    3:
+      chance: 17
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    4:
+      chance: 21
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    5:
+      chance: 29
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    6:
+      chance: 37
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    7:
+      chance: 46
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+    8:
+      chance: 51
+      cooldown: 5
+      effects:
+        - "TELEPORT_BEHIND %victim%"
+timber:
+  display: "%group-color%Madera"
+  description: "Posibilidad de romper un árbol de un solo golpe"
+  applies-to: "Axes"
+  group: "ULTIMATE"
+  type: "MINING"
+  applies:
+    - "ALL_AXE"
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      effects:
+        - "BREAK_TREE"
+    2:
+      chance: 35
+      cooldown: 5
+      effects:
+        - "BREAK_TREE"
+    3:
+      chance: 55
+      cooldown: 6
+      effects:
+        - "BREAK_TREE"
+distance:
+  display: "%group-color%Distancia"
+  description: "Posibilidad de distanciarse de los enemigos\ny ganar regeneración."
+  applies-to: "Weapons"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 16
+      cooldown: 6
+      effects:
+        - "PULL_AWAY:3.0 %victim%"
+        - "POTION:REGENERATION:0:20 %attacker%"
+    2:
+      chance: 20
+      cooldown: 6
+      effects:
+        - "PULL_AWAY:4.5 %victim%"
+        - "POTION:REGENERATION:0:20 %attacker%"
+    3:
+      chance: 24
+      cooldown: 6
+      effects:
+        - "PULL_AWAY:5.0 %victim%"
+        - "POTION:REGENERATION:1:20 %attacker%"
+    4:
+      chance: 28
+      cooldown: 6
+      effects:
+        - "PULL_AWAY:6.5 %victim%"
+        - "POTION:REGENERATION:1:40 %attacker%"
+cleave:
+  display: "%group-color%Cleave"
+  description: "Daña a los jugadores en un radio\nque aumenta con el nivel del encantamiento."
+  applies-to: "Axes"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 4
+      cooldown: 8
+      effects:
+        - "ADD_HARM:<random number>1-2</random number> <aoe> radius=1 target=damageable </aoe>"
+    2:
+      chance: 5
+      cooldown: 8
+      effects:
+        - "ADD_HARM:<random number>1-2</random number> <aoe> radius=2 target=damageable </aoe>"
+    3:
+      chance: 6
+      cooldown: 9
+      effects:
+        - "ADD_HARM:<random number>1-3</random number> <aoe> radius=3 target=damageable </aoe>"
+    4:
+      chance: 7
+      cooldown: 9
+      effects:
+        - "ADD_HARM:<random number>1-3</random number> <aoe> radius=4 target=damageable </aoe>"
+    5:
+      chance: 9
+      cooldown: 10
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=5 target=damageable </aoe>"
+    6:
+      chance: 12
+      cooldown: 12
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=6 target=damageable </aoe>"
+    7:
+      chance: 15
+      cooldown: 14
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=7 target=damageable </aoe>"
+ambit:
+  display: "%group-color%Ambit"
+  description: "Daña a las turbas en un radio\nque aumenta con el nivel del encantamiento."
+  applies-to: "Swords, Axes"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 4
+      cooldown: 8
+      effects:
+        - "ADD_HARM:<random number>1-2</random number> <aoe> radius=1 target=mobs </aoe>"
+    2:
+      chance: 5
+      cooldown: 8
+      effects:
+        - "ADD_HARM:<random number>1-2</random number> <aoe> radius=2 target=mobs </aoe>"
+    3:
+      chance: 6
+      cooldown: 9
+      effects:
+        - "ADD_HARM:<random number>1-3</random number> <aoe> radius=3 target=mobs </aoe>"
+    4:
+      chance: 7
+      cooldown: 9
+      effects:
+        - "ADD_HARM:<random number>1-3</random number> <aoe> radius=4 target=mobs </aoe>"
+    5:
+      chance: 9
+      cooldown: 10
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=5 target=mobs </aoe>"
+    6:
+      chance: 12
+      cooldown: 12
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=6 target=mobs </aoe>"
+    7:
+      chance: 15
+      cooldown: 14
+      effects:
+        - "ADD_HARM:<random number>2-3</random number> <aoe> radius=7 target=mobs </aoe>"
+angelic:
+  display: "%group-color%Angélica"
+  description: "Cura la salud cuando es dañado."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_CHESTPLATE
+  levels:
+    1:
+      chance: 9
+      cooldown: 7
+      effects:
+        - "ADD_HEALTH:<random number>1-3</random number> %victim%"
+    2:
+      chance: 14
+      cooldown: 9
+      effects:
+        - "ADD_HEALTH:<random number>1-3</random number> %victim%"
+    3:
+      chance: 17
+      cooldown: 11
+      effects:
+        - "ADD_HEALTH:<random number>1-3</random number> %victim%"
+    4:
+      chance: 26
+      cooldown: 13
+      effects:
+        - "ADD_HEALTH:<random number>1-4</random number> %victim%"
+    5:
+      chance: 34
+      cooldown: 15
+      effects:
+        - "ADD_HEALTH:<random number>1-4</random number> %victim%"
+arrowdeflect:
+  display: "%group-color%Flecha de desvío"
+  description: "Probabilidad de evitar que la flecha enemiga inflija daño."
+  applies-to: "Armor"
+  type: "DEFENSE_BOW"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 15
+      cooldown: 6
+      effects:
+        - "STOP_ATTACK"
+    2:
+      chance: 25
+      cooldown: 6
+      effects:
+        - "STOP_ATTACK"
+    3:
+      chance: 35
+      cooldown: 6
+      effects:
+        - "STOP_ATTACK"
+    4:
+      chance: 45
+      cooldown: 6
+      effects:
+        - "STOP_ATTACK"
+arrowbreak:
+  display: "%group-color%Rotura de flecha"
+  description: "Probabilidad de que las flechas\nreboten en ti\nmientras sostienes un objeto con este encantamiento."
+  applies-to: "Axe"
+  type: "DEFENSE_BOW"
+  group: "ULTIMATE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
       chance: 15
       cooldown: 8
-      description: |-
-         Chance to disappear 
-         for &a3 seconds 
-         after taking damage
       effects:
-        - POTION:INVISIBILITY:1:60 @Victim
-    '2':
-      chance: 18
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+    2:
+      chance: 25
       cooldown: 8
-      description: |-
-         Chance to disappear 
-         for &a4 seconds 
-         after taking damage
       effects:
-        - POTION:INVISIBILITY:1:80 @Victim
-    '3':
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+    3:
+      chance: 35
+      cooldown: 8
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+    4:
+      chance: 45
+      cooldown: 9
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+    5:
+      chance: 55
+      cooldown: 9
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+    6:
+      chance: 65
+      cooldown: 10
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_ITEM_BREAK:2 %victim%"
+curse:
+  display: "%group-color%Maldición"
+  description: "Posibilidad de dar a tu enemigo fatiga minera."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 13
+      effects:
+        - "POTION:SLOW_DIGGING:0:100 %attacker%"
+    2:
+      chance: 17
+      cooldown: 15
+      effects:
+        - "POTION:SLOW_DIGGING:1:100 %attacker%"
+diminish:
+  display: "%group-color%Disminuir"
+  description: "Posibilidad de dar a tu enemigo fatiga minera."
+  applies-to: "Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 13
+      effects:
+        - "POTION:SLOW_DIGGING:0:100 %attacker%"
+interrupt:
+  display: "%group-color%Interrupción"
+  description: "Posibilidad de dar a tu enemigo fatiga minera."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 13
+      effects:
+        - "POTION:SLOW_DIGGING:0:100 %attacker%"
+    2:
+      chance: 17
+      cooldown: 15
+      effects:
+        - "POTION:SLOW_DIGGING:1:100 %attacker%"
+exalted:
+  display: "%group-color%Exaltado"
+  description: "Una posibilidad de eliminar\nefectos de pociones malas."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 12
+      cooldown: 8
+      effects:
+        - "CURE:SLOW %attacker%"
+        - "CURE:CONFUSION %attacker%"
+        - "CURE:BLINDNESS %attacker%"
+        - "CURE:POISON %attacker%"
+        - "CURE:WITHER %attacker%"
+        - "CURE:HUNGER %attacker%"
+        - "CURE:WEAKNESS %attacker%"
+        - "CURE:SLOW_DIGGING %attacker%"
+    2:
+      chance: 16
+      cooldown: 8
+      effects:
+        - "CURE:SLOW %attacker%"
+        - "CURE:CONFUSION %attacker%"
+        - "CURE:BLINDNESS %attacker%"
+        - "CURE:POISON %attacker%"
+        - "CURE:WITHER %attacker%"
+        - "CURE:HUNGER %attacker%"
+        - "CURE:WEAKNESS %attacker%"
+        - "CURE:SLOW_DIGGING %attacker%"
+    3:
       chance: 22
       cooldown: 8
-      description: |-
-         Chance to disappear 
-         for &a5 seconds 
-         after taking damage
       effects:
-        - POTION:INVISIBILITY:1:100 @Victim
+        - "CURE:SLOW %attacker%"
+        - "CURE:CONFUSION %attacker%"
+        - "CURE:BLINDNESS %attacker%"
+        - "CURE:POISON %attacker%"
+        - "CURE:WITHER %attacker%"
+        - "CURE:HUNGER %attacker%"
+        - "CURE:WEAKNESS %attacker%"
+        - "CURE:SLOW_DIGGING %attacker%"
+    4:
+      chance: 36
+      cooldown: 8
+      effects:
+        - "CURE:SLOW %attacker%"
+        - "CURE:CONFUSION %attacker%"
+        - "CURE:BLINDNESS %attacker%"
+        - "CURE:POISON %attacker%"
+        - "CURE:WITHER %attacker%"
+        - "CURE:HUNGER %attacker%"
+        - "CURE:WEAKNESS %attacker%"
+        - "CURE:SLOW_DIGGING %attacker%"
+ragdoll:
+  display: "%group-color%Ragdoll"
+  description: "Posibilidad de ser empujado\nhacia atrás al ser golpeado."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 10
+      cooldown: 4
+      effects:
+        - "PULL_AWAY:0.1 %victim%"
+    2:
+      chance: 20
+      cooldown: 4
+      effects:
+        - "PULL_AWAY:0.2 %victim%"
+    3:
+      chance: 30
+      cooldown: 4
+      effects:
+        - "PULL_AWAY:0.3 %victim%"
+    4:
+      chance: 50
+      cooldown: 4
+      effects:
+        - "PULL_AWAY:0.4 %victim%"
+block:
+  display: "%group-color%Bloque"
+  description: "Posibilidad de anular un ataque\ny devolver hasta 4 de daño."
+  applies-to: "Swords"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 16
+      cooldown: 4
+      effects:
+        - "NEGATE_DAMAGE:50 %victim%"
+        - "ADD_HARM:<random number>1-4</random number> %attacker%"
+    2:
+      chance: 22
+      cooldown: 4
+      effects:
+        - "NEGATE_DAMAGE:50 %victim%"
+        - "ADD_HARM:<random number>1-4</random number> %attacker%"
+    3:
+      chance: 30
+      cooldown: 4
+      effects:
+        - "NEGATE_DAMAGE:50 %victim%"
+        - "ADD_HARM:<random number>1-4</random number> %attacker%"
+trench:
+  display: "%group-color%Trinchera"
+  description: "Oportunidad de romper en el área 3x3."
+  applies-to: "Pickaxes, Shovels"
+  type: "MINING"
+  group: "ULTIMATE"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+  levels:
+    1:
+      chance: 13
+      effects:
+        - "TRENCH:3"
+    2:
+      chance: 26
+      effects:
+        - "TRENCH:3"
+    3:
+      chance: 36
+      effects:
+        - "TRENCH:3"
+    4:
+      chance: 49
+      effects:
+        - "TRENCH:3"
+    5:
+      chance: 59
+      effects:
+        - "TRENCH:3"
+    6:
+      chance: 72
+      effects:
+        - "TRENCH:3"
+    7:
+      chance: 85
+      effects:
+        - "TRENCH:3"
+    8:
+      chance: 90
+      effects:
+        - "TRENCH:3"
+    9:
+      chance: 100
+      effects:
+        - "TRENCH:3"
+dodge:
+  display: "%group-color%Esquivar"
+  description: "Probabilidad de esquivar a los enemigos físicos,\nla probabilidad aumenta al escabullirse."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 7
+      cooldown: 8
+      condition:
+        - "%victim is sneaking% = true : %chance%+7"
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 %victim%"
+    2:
+      chance: 12
+      cooldown: 8
+      condition:
+        - "%victim is sneaking% = true : %chance%+7"
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 %victim%"
+    3:
+      chance: 16
+      cooldown: 8
+      condition:
+        - "%victim is sneaking% = true : %chance%+7"
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 %victim%"
+    4:
+      chance: 22
+      cooldown: 8
+      condition:
+        - "%victim is sneaking% = true : %chance%+7"
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 %victim%"
+    5:
+      chance: 27
+      cooldown: 8
+      condition:
+        - "%victim is sneaking% = true : %chance%+7"
+      effects:
+        - "STOP_ATTACK"
+        - "PLAY_SOUND:ENTITY_BAT_TAKEOFF:0.7 %victim%"
+fumble:
+  display: "%group-color%Fumble"
+  description: "Posibilidad de hacer explotar a los enemigos\ncuando son alcanzados por sus flechas."
+  applies-to: "Chestplate"
+  type: "DEFENSE_BOW"
+  group: "LEGENDARY"
+  applies:
+    - ALL_CHESTPLATE
+  levels:
+    1:
+      chance: 10
+      cooldown: 8
+      effects:
+        - "TNT:1 %attacker%"
+        - "PLAY_SOUND:ENCHANT_THORNS_HIT:1:1 %victim%"
+    2:
+      chance: 15
+      cooldown: 8
+      effects:
+        - "TNT:1 %attacker%"
+        - "PLAY_SOUND:ENCHANT_THORNS_HIT:1:1 %victim%"
+    3:
+      chance: 25
+      cooldown: 8
+      effects:
+        - "TNT:1 %attacker%"
+        - "PLAY_SOUND:ENCHANT_THORNS_HIT:1:1 %victim%"
+turmoil:
+  display: "%group-color%Turbulencia"
+  description: "Posibilidad de evitar la aparición de guardias\nde los oponentes."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 10
+      cooldown: 8
+      effects:
+        - "DISABLE_ACTIVATION:guardians:4"
+        - "DISABLE_ACTIVATION:spirits:4"
+        - "DISABLE_ACTIVATION:explosivedemise:4"
+        - "DISABLE_ACTIVATION:undeadruse:4"
+    2:
+      chance: 14
+      cooldown: 8
+      effects:
+        - "DISABLE_ACTIVATION:guardians:4"
+        - "DISABLE_ACTIVATION:spirits:4"
+        - "DISABLE_ACTIVATION:explosivedemise:4"
+        - "DISABLE_ACTIVATION:undeadruse:4"
+    3:
+      chance: 18
+      cooldown: 8
+      effects:
+        - "DISABLE_ACTIVATION:guardians:4"
+        - "DISABLE_ACTIVATION:spirits:4"
+        - "DISABLE_ACTIVATION:explosivedemise:4"
+        - "DISABLE_ACTIVATION:undeadruse:4"
+guardians:
+  display: "%group-color%Guardianes"
+  description: "Posibilidad de engendrar gólems de hierro para que te ayuden y te vigilen."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 6
+      cooldown: 8
+      effects:
+        - "GUARD:IRON_GOLEM:8:1:%victim%"
+    2:
+      chance: 9
+      cooldown: 8
+      effects:
+        - "GUARD:IRON_GOLEM:8:1:%victim%"
+    3:
+      chance: 13
+      cooldown: 8
+      effects:
+        - "GUARD:IRON_GOLEM:8:1:%victim%"
+    4:
+      chance: 14
+      cooldown: 8
+      effects:
+        - "GUARD:IRON_GOLEM:8:1:%victim%"
+    5:
+      chance: 16
+      cooldown: 9
+      effects:
+        - "GUARD:IRON_GOLEM:8:1:%victim%"
+    6:
+      chance: 17
+      cooldown: 10
+      effects:
+        - "GUARD:IRON_GOLEM:8:2:%victim%"
+    7:
+      chance: 18
+      cooldown: 12
+      effects:
+        - "GUARD:IRON_GOLEM:8:2:%victim%"
+        - "GUARD:IRON_GOLEM:8:2:%victim%"
+    8:
+      chance: 20
+      cooldown: 12
+      effects:
+        - "GUARD:IRON_GOLEM:8:3:%victim%"
+    9:
+      chance: 22
+      cooldown: 15
+      effects:
+        - "GUARD:IRON_GOLEM:8:3:%victim%"
+    10:
+      chance: 24
+      cooldown: 15
+      effects:
+        - "GUARD:IRON_GOLEM:8:4:%victim%"
+iceaspect:
+  display: "%group-color%Aspecto del hielo"
+  description: "Probabilidad de causar el efecto de lentitud\nen tu enemigo."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 15
+      cooldown: 2
+      effects:
+        - "POTION:SLOW:1:100 %victim%"
+    2:
+      chance: 23
+      cooldown: 2
+      effects:
+        - "POTION:SLOW:1:100 %victim%"
+    3:
+      chance: 31
+      cooldown: 2
+      effects:
+        - "POTION:SLOW:1:100 %victim%"
+momentum:
+  display: "%group-color%Impulso"
+  description: "Posibilidad de aumentar la velocidad\ncon los fuegos artificiales."
+  applies-to: "Elytra"
+  type: "RIGHT_CLICK"
+  group: "ELITE"
+  applies:
+    - ELYTRA
+  levels:
+    1:
+      chance: 15
+      cooldown: 3
+      condition: "%player is holding% = FIREWORK_ROCKET : %allow%"
+      effects:
+        - "POTION:SPEED:0:40"
+    2:
+      chance: 35
+      cooldown: 3
+      condition: "%player is holding% = FIREWORK_ROCKET : %allow%"
+      effects:
+        - "POTION:SPEED:1:60"
+    3:
+      chance: 65
+      cooldown: 3
+      condition: "%player is holding% = FIREWORK_ROCKET : %allow%"
+      effects:
+        - "POTION:SPEED:2:80"
+reinforced:
+  display: "%group-color%Reforzado"
+  description: "Reduce el daño que te infligen."
+  applies-to: "Elytra"
+  type: "DEFENSE;DEFENSE_MOB;DEFENSE_BOW"
+  group: "ULTIMATE"
+  applies:
+    - ELYTRA
+  levels:
+    1:
+      chance: 15
+      cooldown: 1
+      effects:
+        - "DECREASE_DAMAGE:15"
+    2:
+      chance: 45
+      cooldown: 1
+      effects:
+        - "DECREASE_DAMAGE:25"
+    3:
+      chance: 60
+      cooldown: 1
+      effects:
+        - "DECREASE_DAMAGE:35"
+    4:
+      chance: 75
+      cooldown: 1
+      effects:
+        - "DECREASE_DAMAGE:45"
+restore:
+  display: "%group-color%Restaurar"
+  description: "Al romperse, el objeto tiene una probabilidad\nde perder este encantamiento y reparar\nla mitad de su durabilidad."
+  applies-to: "Tools"
+  type: "ITEM_BREAK"
+  group: "FABLED"
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+    - ALL_AXE
+  levels:
+    1:
+      chance: 40
+      effects:
+        - "REMOVE_ENCHANT:restore"
+        - "ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>"
+        - "PLAY_SOUND:ITEM_TOTEM_USE"
+    2:
+      chance: 60
+      effects:
+        - "REMOVE_ENCHANT:restore"
+        - "ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>"
+        - "PLAY_SOUND:ITEM_TOTEM_USE"
+    3:
+      chance: 80
+      effects:
+        - "REMOVE_ENCHANT:restore"
+        - "ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>"
+        - "PLAY_SOUND:ITEM_TOTEM_USE"
+    4:
+      chance: 100
+      effects:
+        - "REMOVE_ENCHANT:restore"
+        - "ADD_DURABILITY_ITEM:<round><math>-1 * (%maximum durability%/2)</math></round>"
+        - "PLAY_SOUND:ITEM_TOTEM_USE"
+implants:
+  display: "%group-color%Implantes"
+  description: "Posibilidad de restaurar la comida cada pocos segundos."
+  applies-to: "Helmets"
+  type: "REPEATING"
+  time: 5
+  group: "ULTIMATE"
+  applies:
+    - ALL_HELMET
+  levels:
+    1:
+      chance: 30
+      effects:
+        - "ADD_FOOD:1"
+    2:
+      chance: 50
+      effects:
+        - "ADD_FOOD:1"
+    3:
+      chance: 70
+      effects:
+        - "ADD_FOOD:1"
+obsidianshield:
+  display: "%group-color%Obsidianshield"
+  description: "Proporciona una resistencia permanente al fuego."
+  applies-to: "Armor"
+  type: "EFFECT_STATIC"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      effects:
+        - "POTION:FIRE_RESISTANCE:0"
+piercing:
+  display: "%group-color%Perforación"
+  description: "Inflige más daño."
+  applies-to: "Bows"
+  type: "BOW;BOW_MOB"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 13
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    2:
+      chance: 19
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    3:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    4:
+      chance: 32
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    5:
+      chance: 37
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+archer:
+  display: "%group-color%Arquero"
+  description: "Aumenta el daño infligido con los arcos."
+  applies-to: "Bow"
+  type: "BOW;BOW_MOB"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+  levels:
+    1:
+      chance: 13
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    2:
+      chance: 19
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    3:
+      chance: 25
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    4:
+      chance: 32
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+marksman:
+  display: "%group-color%Marksman"
+  description: "Aumenta el daño infligido con las ballestas."
+  applies-to: "Crossbow"
+  type: "BOW;BOW_MOB"
+  group: "ELITE"
+  applies:
+    - CROSSBOW
+  levels:
+    1:
+      chance: 13
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = CROSSBOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    2:
+      chance: 19
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = CROSSBOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    3:
+      chance: 25
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = CROSSBOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    4:
+      chance: 32
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = CROSSBOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+poseidon:
+  display: "%group-color%Poseidón"
+  description: "Aumenta el daño causado por los Tridentes."
+  applies-to: "Trident"
+  type: "BOW;BOW_MOB"
+  group: "ELITE"
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 13
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = TRIDENT : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    2:
+      chance: 19
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = TRIDENT : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    3:
+      chance: 25
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = TRIDENT : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+    4:
+      chance: 32
+      cooldown: 3
+      condition:
+        - "%attacker is holding% = TRIDENT : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-150</random number> %victim%"
+safeguard:
+  display: "%group-color%Salvaguarda"
+  description: "Probabilidad de obtener Resistencia al daño\nal defender."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - "ALL_ARMOR"
+  levels:
+    1:
+      chance: 5
+      cooldown: 5
+      effects:
+        - "POTION:DAMAGE_RESISTANCE:0:60 %victim%"
+    2:
+      chance: 9
+      cooldown: 5
+      effects:
+        - "POTION:DAMAGE_RESISTANCE:1:60 %victim%"
+disappear:
+  display: "%group-color%Desaparecer"
+  description: "Posibilidad de volverse invisible cuando\ntiene poca salud."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - "ALL_ARMOR"
+  levels:
+    1:
+      chance: 20
+      cooldown: 20
+      condition:
+        - "%victim health% > 5 : %stop%"
+      effects:
+        - "POTION:INVISIBILITY:2:60 %victim%"
+    2:
+      chance: 23
+      cooldown: 20
+      condition:
+        - "%victim health% > 6 : %stop%"
+      effects:
+        - "POTION:INVISIBILITY:2:80 %victim%"
+    3:
+      chance: 26
+      cooldown: 20
+      condition:
+        - "%victim health% > 7 : %stop%"
+      effects:
+        - "POTION:INVISIBILITY:2:100 %victim%"
+    4:
+      chance: 30
+      cooldown: 20
+      condition:
+        - "%victim health% > 8 : %stop%"
+      effects:
+        - "POTION:INVISIBILITY:2:120 %victim%"
+confuse:
+  display: "%group-color%Confundir"
+  description: "Posibilidad de dar efecto de náuseas."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 12
+      cooldown: 6
+      effects:
+        - "POTION:CONFUSION:0:60"
+    2:
+      chance: 14
+      cooldown: 7
+      effects:
+        - "POTION:CONFUSION:1:60"
+    3:
+      chance: 16
+      cooldown: 8
+      effects:
+        - "POTION:CONFUSION:2:60"
+    4:
+      chance: 18
+      cooldown: 8
+      effects:
+        - "POTION:CONFUSION:3:60"
+disintegrate:
+  display: "%group-color%Desintegrar"
+  description: "Probabilidad de infligir daño de durabilidad adicional a\ntodas las armaduras enemigas con cada ataque."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 12
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    2:
+      chance: 25
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    3:
+      chance: 39
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    4:
+      chance: 46
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+shatter:
+  display: "%group-color%Destrozar"
+  description: "Probabilidad de infligir daño de durabilidad adicional a\ntodas las armaduras enemigas con cada ataque."
+  applies-to: "Axes"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 12
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    2:
+      chance: 25
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    3:
+      chance: 39
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+    4:
+      chance: 46
+      cooldown: 2
+      effects:
+        - "DAMAGE_ARMOR:2 %victim%"
+heavy:
+  display: "%group-color%Pesado"
+  description: "Reduce el daño de los arcos enemigos\nun 2% por nivel."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_BOW"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 4
+      cooldown: 4
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:2 %victim%"
+    2:
+      chance: 9
+      cooldown: 4
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:4 %victim%"
+    3:
+      chance: 12
+      cooldown: 4
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:6 %victim%"
+    4:
+      chance: 16
+      cooldown: 4
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:8 %victim%"
+    5:
+      chance: 21
+      cooldown: 4
+      condition:
+        - "%attacker is holding% = BOW : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:10 %victim%"
+devour:
+  display: "%group-color%Devorar"
+  description: "Posibilidad de restaurar la comida al matar a los mobs."
+  applies-to: "Weapons"
+  type: "KILL_MOB"
+  group: "UNIQUE"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 10
+      effects:
+        - "ADD_FOOD:1"
+    2:
+      chance: 15
+      effects:
+        - "ADD_FOOD:1"
+    3:
+      chance: 20
+      effects:
+        - "ADD_FOOD:1"
+replenish:
+  display: "%group-color%Reponer"
+  description: "Posibilidad de restaurar la comida mientras se mina."
+  applies-to: "Pickaxes"
+  type: "MINING"
+  group: "ELITE"
+  applies:
+    - ALL_PICKAXE
+  levels:
+    1:
+      chance: 30
+      effects:
+        - "ADD_FOOD:1"
+    2:
+      chance: 40
+      effects:
+        - "ADD_FOOD:2"
+    3:
+      chance: 60
+      effects:
+        - "ADD_FOOD:3"
+hellfire:
+  display: "%group-color%Hellfire"
+  description: "Las flechas se convierten en bolas de fuego."
+  applies-to: "Bow"
+  type: "BOW;BOW_MOB"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+  levels:
+    1:
+      chance: 10
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    2:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    3:
+      chance: 35
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    4:
+      chance: 50
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    5:
+      chance: 70
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+missile:
+  display: "%group-color%Misil"
+  description: "Las flechas se convierten en bolas de fuego."
+  applies-to: "Crossbow"
+  type: "BOW;BOW_MOB"
+  group: "ELITE"
+  applies:
+    - CROSSBOW
+  levels:
+    1:
+      chance: 10
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    2:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    3:
+      chance: 35
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    4:
+      chance: 50
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+    5:
+      chance: 70
+      cooldown: 3
+      effects:
+        - "FIREBALL %victim%"
+longbow:
+  display: "%group-color%Arco largo"
+  description: "Aumenta enormemente el daño infligido\na los jugadores enemigos que tienen\nun arco en sus manos."
+  applies-to: "Bow"
+  type: "BOW"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 12
+      cooldown: 4
+      condition:
+        - "%victim is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-50</random number> %attacker%"
+    2:
+      chance: 17
+      cooldown: 4
+      condition:
+        - "%victim is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-50</random number> %attacker%"
+    3:
+      chance: 25
+      cooldown: 4
+      condition:
+        - "%victim is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-100</random number> %attacker%"
+    4:
+      chance: 33
+      cooldown: 4
+      condition:
+        - "%victim is holding% = BOW : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>50-100</random number> %attacker%"
+tank:
+  display: "%group-color%Tanque"
+  description: "Probabilidad de disminuir el daño de las hachas enemigas\nen un 2% por nivel."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 5
+      cooldown: 3
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:2 %victim%"
+    2:
+      chance: 8
+      cooldown: 3
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:4 %victim%"
+    3:
+      chance: 12
+      cooldown: 3
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:6 %victim%"
+    4:
+      chance: 16
+      cooldown: 3
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:8 %victim%"
+swordsman:
+  display: "%group-color%Espadachín"
+  description: "Probabilidad de reducir el daño recibido mientras se blande una espada hasta un 22% al nivel máximo."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 4
+      cooldown: 4
+      condition:
+        - "%victim is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:<random number>1-4</random number> %victim%"
+    2:
+      chance: 9
+      cooldown: 4
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:<random number>8-12</random number> %victim%"
+    3:
+      chance: 13
+      cooldown: 4
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:<random number>12-15</random number> %victim%"
+    4:
+      chance: 16
+      cooldown: 4
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:<random number>15-18</random number> %victim%"
+    5:
+      chance: 21
+      cooldown: 4
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:<random number>18-22</random number> %victim%"
+critical:
+  display: "%group-color%Crítico"
+  description: "Aumenta el daño hecho con el golpe crítico."
+  applies-to: "Swords"
+  type: "ATTACK_MOB;ATTACK"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 7
+      cooldown: 5
+      condition: "%is critical% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:10"
+    2:
+      chance: 8
+      cooldown: 5
+      condition: "%is critical% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:15"
+    3:
+      chance: 12
+      cooldown: 5
+      condition: "%is critical% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:20"
+rebound:
+  display: "%group-color%Rebote"
+  description: "Recupera algo de salud después de las muertes."
+  applies-to: "Weapons"
+  type: "KILL_PLAYER;KILL_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_AXE
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 25
+      cooldown: 5
+      effects:
+        - "ADD_HEALTH:2 %attacker%"
+    2:
+      chance: 35
+      cooldown: 5
+      effects:
+        - "ADD_HEALTH:4 %attacker%"
+    3:
+      chance: 45
+      cooldown: 5
+      effects:
+        - "ADD_HEALTH:6 %attacker%"
+thunderlord:
+  display: "%group-color%Thunderlord"
+  description: "Golpea a los monstruos con un rayo\ncada 3 golpes consecutivos."
+  applies-to: "Weapons"
+  type: "ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_AXE
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%attacker combo% = 3 : %allow%"
+      effects:
+        - "LIGHTNING %victim%"
+        - "RESET_COMBO %attacker%"
+    2:
+      chance: 45
+      cooldown: 2
+      condition:
+        - "%attacker combo% = 3 : %allow%"
+      effects:
+        - "LIGHTNING %victim%"
+        - "RESET_COMBO %attacker%"
+    3:
+      chance: 75
+      cooldown: 2
+      condition:
+        - "%attacker combo% = 3 : %allow%"
+      effects:
+        - "LIGHTNING %victim%"
+        - "RESET_COMBO %attacker%"
+netherling:
+  display: "%group-color%Netherling"
+  description: "Dobla el daño a los mobs en el Nether."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 25
+      condition: "%player world% contains NETHER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+    2:
+      chance: 50
+      condition: "%player world% contains NETHER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+    3:
+      chance: 75
+      condition: "%player world% contains NETHER : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+endmaster:
+  display: "%group-color% Endmaster"
+  description: "Dobla el daño a las turbas en el final."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 25
+      condition: "%player world% contains _END : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+    2:
+      chance: 50
+      condition: "%player world% contains _END : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+    3:
+      chance: 75
+      condition: "%player world% contains _END : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:50"
+creeperarmor:
+  display: "%group-color%Armadura Creeper"
+  description: "Probabilidad de ser inmune al daño explosivo, a\nniveles superiores tienes la posibilidad de curarte."
+  applies-to: "Armor"
+  type: "EXPLOSION"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 25
+      effects:
+        - "STOP_ATTACK"
+    2:
+      chance: 50
+      effects:
+        - "STOP_ATTACK"
+    3:
+      chance: 75
+      effects:
+        - "STOP_ATTACK"
+        - "ADD_HEALTH:<random number>1-2</random number>"
+spirits:
+  display: "%group-color%Espíritus"
+  description: "Posibilidad de engendrar llamas de guardia."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 2
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:3:%victim%"
+    2:
+      chance: 2
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    3:
+      chance: 3
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    4:
+      chance: 5
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    5:
+      chance: 8
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    6:
+      chance: 12
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    7:
+      chance: 15
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    8:
+      chance: 19
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    9:
+      chance: 22
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:4:%victim%"
+    10:
+      chance: 27
+      cooldown: 8
+      effects:
+        - "GUARD:BLAZE:8:5:%victim%"
+bleed:
+  display: "%group-color%Sangrado"
+  description: "Haz sangrar a tu oponente."
+  applies-to: "Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 8
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    2:
+      chance: 15
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    3:
+      chance: 23
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    4:
+      chance: 30
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    5:
+      chance: 44
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+    6:
+      chance: 60
+      effects:
+        - "POTION:SLOW:0:100 %victim%"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+        - "WAIT:20"
+        - "ADD_HARM:<random number>1-3</random number> %victim%"
+lavawalker:
+  display: "%group-color%Caminante de lava"
+  description: "Caminar sobre la lava."
+  applies-to: "Boots"
+  type: "EFFECT_STATIC"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      effects:
+        - "LAVA_WALKER"
+waterwalker:
+  display: "%group-color%Caminante del agua"
+  description: "Caminar sobre el agua."
+  applies-to: "Boots"
+  type: "EFFECT_STATIC"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      effects:
+        - "WATER_WALKER"
+aqua:
+  display: "%group-color%Aqua"
+  description: "Inflige el doble de daño mientras está en el agua."
+  applies-to: "Boots"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 8
+      cooldown: 3
+      condition:
+        - "%is under water% = TRUE : %allow%"
+      effects:
+        - "DOUBLE_DAMAGE"
+    2:
+      chance: 13
+      cooldown: 3
+      condition:
+        - "%is under water% = TRUE : %allow%"
+      effects:
+        - "DOUBLE_DAMAGE"
+    3:
+      chance: 19
+      cooldown: 5
+      condition:
+        - "%is under water% = TRUE : %allow%"
+      effects:
+        - "DOUBLE_DAMAGE"
+    4:
+      chance: 23
+      cooldown: 5
+      condition:
+        - "%is under water% = TRUE : %allow%"
+      effects:
+        - "DOUBLE_DAMAGE"
+judgement:
+  display: "%group-color%Juicio"
+  description: "Probabilidad de envenenar al oponente y\nganar regeneración."
+  applies-to: "Elytra"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ELYTRA
+  levels:
+    1:
+      chance: 6
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    2:
+      chance: 8
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    3:
+      chance: 10
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    4:
+      chance: 12
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:1:60 %victim%"
+    5:
+      chance: 16
+      cooldown: 25
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:1:100 %victim%"
+divert:
+  display: "%group-color%Desviar"
+  description: "Probabilidad de envenenar al oponente y\nganar regeneración."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 6
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    2:
+      chance: 8
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    3:
+      chance: 10
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:0:100 %victim%"
+    4:
+      chance: 12
+      cooldown: 20
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:1:60 %victim%"
+    5:
+      chance: 16
+      cooldown: 25
+      effects:
+        - "POTION:POISON:0:100 %attacker%"
+        - "POTION:REGENERATION:1:100 %victim%"
+unholy:
+  display: "%group-color%Impío"
+  description: "Defiende con efectos de debilidad y marchitamiento."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 2
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:0:60 %attacker%"
+        - "POTION:WEAKNESS:0:100 %attacker%"
+    2:
+      chance: 4
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %attacker%"
+        - "POTION:WEAKNESS:0:5 %attacker%"
+    3:
+      chance: 6
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %attacker%"
+        - "POTION:WEAKNESS:0:100 %attacker%"
+    4:
+      chance: 8
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %attacker%"
+        - "POTION:WEAKNESS:0:100 %attacker%"
+    5:
+      chance: 10
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %attacker%"
+        - "POTION:WEAKNESS:0:100 %attacker%"
+chaos:
+  display: "%group-color%Caos"
+  description: "Reparte los efectos de debilidad y marchitez."
+  applies-to: "Trident"
+  type: "BOW;BOW_MOB"
+  group: "LEGENDARY"
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 2
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:0:60 %victim%"
+        - "POTION:WEAKNESS:0:100 %victim%"
+    2:
+      chance: 4
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %victim%"
+        - "POTION:WEAKNESS:0:5 %victim%"
+    3:
+      chance: 6
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %victim%"
+        - "POTION:WEAKNESS:0:100 %victim%"
+    4:
+      chance: 8
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %victim%"
+        - "POTION:WEAKNESS:0:100 %victim%"
+    5:
+      chance: 10
+      cooldown: 40
+      effects:
+        - "POTION:WITHER:1:60 %victim%"
+        - "POTION:WEAKNESS:0:100 %victim%"
+convulse:
+  display: "%group-color%Convulsión"
+  description: "Posibilidad de lanzar al aire a tus atacantes {NN}."
+  applies-to: "Boots"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 8
+      cooldown: 10
+      effects:
+        - "BOOST:UP:5 %attacker%"
+    2:
+      chance: 10
+      cooldown: 10
+      effects:
+        - "BOOST:UP:6 %attacker%"
+    3:
+      chance: 12
+      cooldown: 10
+      effects:
+        - "BOOST:UP:7 %attacker%"
+    4:
+      chance: 14
+      cooldown: 10
+      effects:
+        - "BOOST:UP:8 %attacker%"
+    5:
+      chance: 16
+      cooldown: 10
+      effects:
+        - "BOOST:UP:9 %attacker%"
+    6:
+      chance: 18
+      cooldown: 10
+      effects:
+        - "BOOST:UP:10 %attacker%"
+chunky:
+  display: "%group-color%Chunky"
+  description: "Posibilidad de recibir menos daño."
+  applies-to: "Chestplates"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_CHESTPLATE
+  levels:
+    1:
+      chance: 5
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:10 %victim%"
+    2:
+      chance: 10
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:20 %victim%"
+    3:
+      chance: 12
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:30 %victim%"
+    4:
+      chance: 15
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:40 %victim%"
+    5:
+      chance: 18
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:50 %victim%"
+    6:
+      chance: 20
+      cooldown: 10
+      effects:
+        - "NEGATE_DAMAGE:60 %victim%"
+barbarian:
+  display: "%group-color%Bárbaro"
+  description: "Probabilidad de infligir más daño de hacha."
+  applies-to: "Axes"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 8
+      cooldown: 2
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-100</random number> %victim%"
+    2:
+      chance: 15
+      cooldown: 2
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-100</random number> %victim%"
+    3:
+      chance: 19
+      cooldown: 2
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-100</random number> %victim%"
+    4:
+      chance: 25
+      cooldown: 2
+      condition:
+        - "%attacker is holding% contains AXE : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:<random number>25-100</random number> %victim%"
+lucid:
+  display: "%group-color%Lúcido"
+  description: "Probabilidad de curar la ceguera y\nganar visión nocturna al ser golpeado."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 22
+      cooldown: 5
+      effects:
+        - "CURE:BLINDNESS %victim%"
+        - "POTION:NIGHT_VISION:0:40 %victim%"
+    2:
+      chance: 32
+      cooldown: 5
+      effects:
+        - "CURE:BLINDNESS %victim%"
+        - "POTION:NIGHT_VISION:0:60 %victim%"
+    3:
+      chance: 42
+      cooldown: 5
+      effects:
+        - "CURE:BLINDNESS %victim%"
+        - "POTION:NIGHT_VISION:0:80 %victim%"
+doublestrike:
+  display: "%group-color%Golpe doble"
+  description: "Una oportunidad para golpear dos veces."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 8
+      cooldown: 15
+      effects:
+        - "WAIT:20"
+        - "ADD_HARM:%damage% %victim%"
+        - "BLOOD %victim%"
+    2:
+      chance: 13
+      cooldown: 15
+      effects:
+        - "WAIT:20"
+        - "ADD_HARM:%damage% %victim%"
+        - "BLOOD %victim%"
+    3:
+      chance: 19
+      cooldown: 15
+      effects:
+        - "WAIT:20"
+        - "ADD_HARM:%damage% %victim%"
+        - "BLOOD %victim%"
+gears:
+  display: "%group-color%Engranajes"
+  description: "Velocidad añadida cuando se equipa."
+  applies-to: "Boots"
+  type: "EFFECT_STATIC"
+  group: "LEGENDARY"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      effects:
+        - "POTION:SPEED:0"
+    2:
+      effects:
+        - "POTION:SPEED:1"
+    3:
+      effects:
+        - "POTION:SPEED:2"
+inflame:
+  display: "%group-color%Inflamar"
+  description: "Prende fuego a todos los jugadores del radio."
+  applies-to: "Axes"
+  group: "LEGENDARY"
+  type: "ATTACK"
+  applies:
+    - "ALL_AXE"
+  levels:
+    1:
+      chance: 10
+      cooldown: 4
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=2 target=damageable </aoe>"
+        - "FLAME:40 <aoe> radius=2 target=damageable </aoe>"
+    2:
+      chance: 12
+      cooldown: 5
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=4 target=damageable </aoe>"
+        - "FLAME:50 <aoe> radius=6 target=damageable </aoe>"
+    3:
+      chance: 16
+      cooldown: 5
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=4 target=damageable </aoe>"
+        - "FLAME:60 <aoe> radius=4 target=damageable </aoe>"
+immolation:
+  display: "%group-color%Inmolación"
+  description: "Prende fuego a todas las turbas en su radio."
+  applies-to: "Swords"
+  group: "ULTIMATE"
+  type: "ATTACK_MOB"
+  applies:
+    - "ALL_SWORD"
+  levels:
+    1:
+      chance: 10
+      cooldown: 4
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=2 target=mobs </aoe>"
+        - "FLAME:40 <aoe> radius=2 target=mobs </aoe>"
+    2:
+      chance: 12
+      cooldown: 5
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=4 target=mobs </aoe>"
+        - "FLAME:50 <aoe> radius=6 target=mobs </aoe>"
+    3:
+      chance: 16
+      cooldown: 5
+      effects:
+        - "PARTICLE:FALLING_LAVA:5:0 <aoe> radius=4 target=mobs </aoe>"
+        - "FLAME:60 <aoe> radius=4 target=mobs </aoe>"
+killaura:
+  display: "%group-color%Matar a Aura"
+  description: "Posibilidad de matar a varios monstruos\nen un radio."
+  applies-to: "Swords"
+  group: "LEGENDARY"
+  type: "ATTACK_MOB"
+  applies:
+    - "ALL_SWORD"
+  levels:
+    1:
+      chance: 5
+      cooldown: 3
+      effects:
+        - "PARTICLE:SPELL_MOB:5:0 <aoe> radius=2 target=mobs </aoe>"
+        - "KILL_MOB:1 <aoe> radius=2 target=mobs </aoe>"
+    2:
+      chance: 8
+      cooldown: 4
+      effects:
+        - "PARTICLE:SPELL_MOB:5:0 <aoe> radius=2 target=mobs </aoe>"
+        - "KILL_MOB:1 <aoe> radius=2 target=mobs </aoe>"
+    3:
+      chance: 12
+      cooldown: 5
+      effects:
+        - "PARTICLE:SPELL_MOB:5:0 <aoe> radius=3 target=mobs </aoe>"
+        - "KILL_MOB:1 <aoe> radius=3 target=mobs </aoe>"
+    4:
+      chance: 15
+      cooldown: 5
+      effects:
+        - "PARTICLE:SPELL_MOB:5:0 <aoe> radius=3 target=mobs </aoe>"
+        - "KILL_MOB:1 <aoe> radius=3 target=mobs </aoe>"
+    5:
+      chance: 18
+      cooldown: 6
+      effects:
+        - "PARTICLE:SPELL_MOB:5:0 <aoe> radius=4 target=mobs </aoe>"
+        - "KILL_MOB:1 <aoe> radius=4 target=mobs </aoe>"
+inquisitive:
+  display: "%group-color%Inquisitivo"
+  description: "Posibilidad de aumentar las gotas de EXP de las turbas."
+  applies-to: "Swords"
+  type: "KILL_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 30
+      cooldown: 4
+      effects:
+        - "EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%"
+    2:
+      chance: 35
+      cooldown: 4
+      effects:
+        - "EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%"
+    3:
+      chance: 40
+      cooldown: 4
+      effects:
+        - "EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%"
+    4:
+      chance: 45
+      cooldown: 4
+      effects:
+        - "EXP:<math>%exp% * (1.0 + 0.25 * %level%)</math> %victim%"
+lifesteal:
+  display: "%group-color%Vida útil"
+  description: "Posibilidad de robar salud\nal atacar."
+  applies-to: "Swords"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 9
+      cooldown: 15
+      effects:
+        - "STEAL_HEALTH:<random number>1-3</random number> %attacker%"
+    2:
+      chance: 13
+      cooldown: 15
+      effects:
+        - "STEAL_HEALTH:<random number>1-3</random number> %attacker%"
+    3:
+      chance: 17
+      cooldown: 15
+      effects:
+        - "STEAL_HEALTH:<random number>1-4</random number> %attacker%"
+    4:
+      chance: 21
+      cooldown: 15
+      effects:
+        - "STEAL_HEALTH:<random number>1-5</random number> %attacker%"
+    5:
+      chance: 25
+      cooldown: 15
+      effects:
+        - "STEAL_HEALTH:<random number>1-5</random number> %attacker%"
+overload:
+  display: "%group-color%Sobrecarga"
+  description: "Desbloquea corazones adicionales."
+  applies-to: "Armor"
+  type: "EFFECT_STATIC"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      effects:
+        - "POTION:HEALTH_BOOST:0"
+    2:
+      effects:
+        - "POTION:HEALTH_BOOST:1"
+    3:
+      effects:
+        - "POTION:HEALTH_BOOST:2"
+armored:
+  display: "%group-color%Blindado"
+  description: "Reduce el daño de las espadas enemigas\nun 2% por nivel."
+  applies-to: "Armor"
+  type: "DEFENSE"
+  group: "LEGENDARY"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 6
+      cooldown: 8
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:2 %attacker%"
+    2:
+      chance: 12
+      cooldown: 8
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:4 %attacker%"
+    3:
+      chance: 16
+      cooldown: 8
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:6 %attacker%"
+    4:
+      chance: 20
+      cooldown: 8
+      condition:
+        - "%attacker is holding% contains SWORD : %allow%"
+      effects:
+        - "REMOVE_DAMAGE:8 %attacker%"
+blacksmith:
+  display: "%group-color%Herrero"
+  description: "Repara tu arma a cambio de causar menos daño."
+  applies-to: "Axe"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 9
+      cooldown: 3
+      effects:
+        - "ADD_DURABILITY:-1"
+        - "HALF_DAMAGE"
+        - "PARTICLE:BLOCK_DUST:20:1"
+    2:
+      chance: 15
+      cooldown: 3
+      effects:
+        - "ADD_DURABILITY:-1"
+        - "HALF_DAMAGE"
+        - "PARTICLE:BLOCK_DUST:20:1"
+    3:
+      chance: 23
+      cooldown: 3
+      effects:
+        - "ADD_DURABILITY:-1"
+        - "HALF_DAMAGE"
+        - "PARTICLE:BLOCK_DUST:20:1"
+    4:
+      chance: 31
+      cooldown: 3
+      effects:
+        - "ADD_DURABILITY:-2"
+        - "HALF_DAMAGE"
+        - "PARTICLE:BLOCK_DUST:20:1"
+    5:
+      chance: 39
+      cooldown: 3
+      effects:
+        - "ADD_DURABILITY:-2"
+        - "HALF_DAMAGE"
+        - "PARTICLE:BLOCK_DUST:20:1"
+immortal:
+  display: "%group-color%Inmortal"
+  description: "Probabilidad de evitar que tu armadura\nreciba daño de durabilidad."
+  applies-to: "Armor"
+  type: "DEFENSE;DEFENSE_MOB"
+  group: "FABLED"
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 12
+      cooldown: 40
+      effects:
+        - "ADD_DURABILITY:-10 %victim%"
+    2:
+      chance: 18
+      cooldown: 40
+      effects:
+        - "ADD_DURABILITY:-10 %victim%"
+    3:
+      chance: 25
+      cooldown: 40
+      effects:
+        - "ADD_DURABILITY:-10 %victim%"
+    4:
+      chance: 31
+      cooldown: 40
+      effects:
+        - "ADD_DURABILITY:-10 %victim%"
+unbreakable:
+  display: "%group-color%Irrompible"
+  description: "Las herramientas con este encantamiento se vuelven irrompibles"
+  applies-to: "Tools"
+  type: "MINING;ATTACK;ATTACK_MOB"
+  group: "FABLED"
+  applies:
+    - ALL_TOOLS
+  levels:
+    1:
+      effects:
+        - "REPAIR"
+abiding:
+  display: "%group-color%Permanecer"
+  description: "Las armas con este encantamiento se vuelven irrompibles"
+  applies-to: "Weapons"
+  type: "ATTACK;ATTACK_MOB;BOW;BOW_MOB"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+    - BOW
+  levels:
+    1:
+      effects:
+        - "REPAIR"
+disarmor:
+  display: "%group-color%Desarme"
+  description: "Probabilidad de desequipar una pieza de armadura aleatoria\nde tu oponente."
+  applies-to: "Sword"
+  type: "ATTACK"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 0.4
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    2:
+      chance: 0.8
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    3:
+      chance: 1.0
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    4:
+      chance: 1.2
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    5:
+      chance: 1.4
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    6:
+      chance: 1.6
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    7:
+      chance: 1.8
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+    8:
+      chance: 2
+      cooldown: 6
+      effects:
+        - "REMOVE_RANDOM_ARMOR %victim%"
+        - "MESSAGE:&6&l** YOU HAVE BEEN DISARMORED ** %victim%"
+striker:
+  display: "%group-color%Golpeador"
+  description: "Lanza flechas sobre el oponente."
+  applies-to: "Bow"
+  type: "BOW;BOW_MOB"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+  levels:
+    1:
+      chance: 15
+      cooldown: 8
+      effects:
+        - "SPAWN_ARROWS %victim%"
+    2:
+      chance: 18
+      cooldown: 8
+      effects:
+        - "SPAWN_ARROWS %victim%"
+    3:
+      chance: 22
+      cooldown: 8
+      effects:
+        - "SPAWN_ARROWS %victim%"
+sniper:
+  display: "%group-color%Francotirador"
+  description: "Los disparos a la cabeza con arcos\ninfligen el doble de daño."
+  applies-to: "Bow"
+  type: "BOW;BOW_MOB"
+  group: "ULTIMATE"
+  applies:
+    - BOW
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      condition:
+        - "%is headshot% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    2:
+      chance: 20
+      cooldown: 5
+      condition:
+        - "%is headshot% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    3:
+      chance: 25
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    4:
+      chance: 30
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    5:
+      chance: 35
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+deadshot:
+  display: "%group-color%Deadshot"
+  description: "Los disparos a la cabeza con tridentes\ninfligen el doble de daño."
+  applies-to: "Trident"
+  type: "BOW;BOW_MOB"
+  group: "LEGENDARY"
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      condition:
+        - "%is headshot% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    2:
+      chance: 20
+      cooldown: 5
+      condition:
+        - "%is headshot% = true : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    3:
+      chance: 25
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    4:
+      chance: 30
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+    5:
+      chance: 35
+      cooldown: 5
+      condition:
+        - "%is headshot% = false : %stop%"
+      effects:
+        - "INCREASE_DAMAGE:100 %attacker%"
+soulbound:
+  display: "%group-color%Soulbound"
+  description: "Una oportunidad para mantener el artículo sobre la muerte."
+  applies-to: "Weapons + Tools + Bows"
+  type: "DEATH;PASSIVE_DEATH"
+  group: "FABLED"
+  applies:
+    - ALL_TOOLS
+    - ALL_SWORD
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 4
+      cooldown: 300
+      effects:
+        - "KEEP_ON_DEATH"
+    2:
+      chance: 6
+      cooldown: 300
+      effects:
+        - "KEEP_ON_DEATH"
+    3:
+      chance: 8
+      cooldown: 300
+      effects:
+        - "KEEP_ON_DEATH"
+neutralize:
+  display: "%group-color%Neutralizar"
+  description: "Posibilidad de desarmar al oponente."
+  applies-to: "Bow, Crossbow"
+  type: "BOW"
+  group: "FABLED"
+  applies:
+    - BOW
+    - CROSSBOW
+  levels:
+    1:
+      chance: 5
+      cooldown: 20
+      effects:
+        - "DISARM %victim%"
+    2:
+      chance: 10
+      cooldown: 20
+      effects:
+        - "DISARM %victim%"
+disarm:
+  display: "%group-color%Desarmar"
+  description: "Posibilidad de desarmar al oponente."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 2
+      cooldown: 20
+      effects:
+        - "DISARM %victim%"
+    2:
+      chance: 4
+      cooldown: 20
+      effects:
+        - "DISARM %victim%"
+    3:
+      chance: 5
+      cooldown: 20
+      effects:
+        - "DISARM %victim%"
+phoenix:
+  display: "%group-color%Phoenix"
+  description: "Posibilidad de revivir al morir."
+  applies-to: "Chestplates"
+  type: "DEATH"
+  group: "FABLED"
+  applies:
+    - ALL_CHESTPLATE
+  levels:
+    1:
+      chance: 5
+      cooldown: 20
+      effects:
+        - "REVIVE %victim%"
+    2:
+      chance: 7
+      cooldown: 20
+      effects:
+        - "REVIVE %victim%"
+    3:
+      chance: 9
+      cooldown: 20
+      effects:
+        - "REVIVE %victim%"
+scare:
+  display: "%group-color%Susto"
+  description: "Posibilidad de reemplazar el casco de tu oponente\npor una calabaza durante un corto tiempo."
+  applies-to: "Weapons"
+  type: "ATTACK"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 1.8
+      cooldown: 20
+      effects:
+        - "PUMPKIN:40 %victim%"
+        - "PLAY_SOUND_OUTLOUD:BLOCK_ANVIL_LAND"
+    2:
+      chance: 3.6
+      cooldown: 20
+      effects:
+        - "PUMPKIN:40 %victim%"
+        - "PLAY_SOUND_OUTLOUD:BLOCK_ANVIL_LAND"
+    3:
+      chance: 4.4
+      cooldown: 20
+      effects:
+        - "PUMPKIN:60 %victim%"
+        - "PLAY_SOUND_OUTLOUD:BLOCK_ANVIL_LAND"
+    4:
+      chance: 5.2
+      cooldown: 20
+      effects:
+        - "PUMPKIN:60 %victim%"
+        - "PLAY_SOUND_OUTLOUD:BLOCK_ANVIL_LAND"
+    5:
+      chance: 6
+      cooldown: 20
+      effects:
+        - "PUMPKIN:80 %victim%"
+        - "PLAY_SOUND_OUTLOUD:BLOCK_ANVIL_LAND"
+strife:
+  display: "%group-color%Lucha"
+  description: "Aumenta el daño cuerpo a cuerpo del Tridente."
+  applies-to: "Trident"
+  type: "ATTACK;ATTACK_MOB"
+  group: "LEGENDARY"
+  settings:
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 5
+      cooldown: 3
+      effects:
+        - "INCREASE_DAMAGE:15"
+    2:
+      chance: 10
+      cooldown: 6
+      effects:
+        - "INCREASE_DAMAGE:25"
+    3:
+      chance: 15
+      cooldown: 8
+      effects:
+        - "INCREASE_DAMAGE:30"
+spark:
+  display: "%group-color%Spark"
+  description: "Prende fuego a los oponentes."
+  applies-to: "Trident"
+  type: "ATTACK;ATTACK_MOB;BOW;BOW_MOB"
+  group: "ELITE"
+  settings:
+    newVersionsOnly: true # Only load this enchantment if server version is 1.13 or higher
+  applies:
+    - TRIDENT
+  levels:
+    1:
+      chance: 25
+      cooldown: 3
+      effects:
+        - "FLAME:40"
+    2:
+      chance: 35
+      cooldown: 6
+      effects:
+        - "FLAME:40"
+    3:
+      chance: 15
+      cooldown: 8
+      effects:
+        - "FLAME:40"
+bluntforce:
+  display: "%group-color%Fuerza bruta"
+  description: "Posibilidad de golpear con gran fuerza."
+  applies-to: "Axes"
+  group: "ELITE"
+  type: "ATTACK"
+  applies:
+    - "ALL_AXE"
+  levels:
+    1:
+      chance: 5
+      cooldown: 5
+      effects:
+        - "EXTRA_DAMAGE:1 %attacker%"
+    2:
+      chance: 8
+      cooldown: 5
+      effects:
+        - "EXTRA_DAMAGE:2 %attacker%"
+    3:
+      chance: 10
+      cooldown: 5
+      effects:
+        - "EXTRA_DAMAGE:3 %attacker%"
+    4:
+      chance: 12
+      cooldown: 5
+      effects:
+        - "EXTRA_DAMAGE:4 %attacker%"
+aegis:
+  display: "%group-color%Aegis"
+  description: "Posibilidad de ganar velocidad al recibir daño por caída."
+  applies-to: "Boots"
+  type: "FALL_DAMAGE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 40
+      cooldown: 3
+      effects:
+        - "POTION:SPEED:0:60"
+    2:
+      chance: 60
+      cooldown: 3
+      effects:
+        - "POTION:SPEED:1:60"
+    3:
+      chance: 70
+      cooldown: 3
+      effects:
+        - "POTION:SPEED:2:60"
+plummet:
+  display: "%group-color%Caída en picado"
+  description: "Inflige daño a los enemigos cercanos\ncuando recibe daño por caída."
+  applies-to: "Boots"
+  type: "FALL_DAMAGE"
+  group: "ULTIMATE"
+  applies:
+    - ALL_BOOTS
+  levels:
+    1:
+      chance: 40
+      effects:
+        - "ADD_HARM:2 <aoe> radius=3 target=mobs </aoe>"
+    2:
+      chance: 80
+      effects:
+        - "ADD_HARM:3 <aoe> radius=5 target=mobs </aoe>"
+    3:
+      effects:
+        - "ADD_HARM:5 <aoe> radius=8 target=mobs </aoe>"
+suspend:
+  display: "%group-color%Suspender"
+  description: "Probabilidad de no causar ningún retroceso a las turbas."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 40
+      effects:
+        - "STOP_KNOCKBACK %victim%"
+    2:
+      chance: 80
+      effects:
+        - "STOP_KNOCKBACK %victim%"
+    3:
+      effects:
+        - "STOP_KNOCKBACK %victim%"
+nightowl:
+  display: "%group-color%Búho nocturno"
+  description: "Inflige más daño a las turbas por la noche."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 40
+      condition: "%time% > 12300 or %time% < 23850 : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:25"
+    2:
+      chance: 60
+      condition: "%time% > 12300 or %time% < 23850 : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:35"
+    3:
+      chance: 80
+      condition: "%time% > 12300 or %time% < 23850 : %allow%"
+      effects:
+        - "INCREASE_DAMAGE:45"
+nightwalker:
+  display: "%group-color%Caminante de la noche"
+  description: "Congela a las turbas por la noche."
+  applies-to: "Swords"
+  type: "ATTACK_MOB"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 40
+      condition: "%time% < 12300 or %time% > 23850 : %allow%"
+      effects:
+        - "POTION:SLOW:10:400"
+    2:
+      chance: 70
+      condition: "%time% < 12300 or %time% > 23850 : %allow%"
+      effects:
+        - "POTION:SLOW:10:400"
+    3:
+      chance: 100
+      condition: "%time% < 12300 or %time% > 23850 : %allow%"
+      effects:
+        - "POTION:SLOW:10:400"
+launch:
+  display: "%group-color%Lanzamiento"
+  description: "Lánzate haciendo clic con el botón derecho del ratón."
+  applies-to: "Swords"
+  type: "RIGHT_CLICK"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 20
+      cooldown: 15
+      effects:
+        - "BOOST:UP:8"
+        - "PARTICLE:CLOUD:20:2"
+    2:
+      chance: 27
+      cooldown: 15
+      effects:
+        - "BOOST:UP:9"
+        - "PARTICLE:CLOUD:20:2"
+    3:
+      chance: 35
+      cooldown: 10
+      effects:
+        - "BOOST:UP:10"
+        - "PARTICLE:CLOUD:20:2"
+slingshot:
+  display: "%group-color%Tirachinas"
+  description: "Impúlsate a volar haciendo clic con el botón derecho."
+  applies-to: "Elytra"
+  type: "RIGHT_CLICK"
+  group: "LEGENDARY"
+  applies:
+    - ELYTRA
+  levels:
+    1:
+      chance: 20
+      cooldown: 15
+      condition: "%is holding% contains FIREWORK : %stop%"
+      effects:
+        - "BOOST:UP:10"
+    2:
+      chance: 40
+      cooldown: 10
+      condition: "%is holding% contains FIREWORK : %stop%"
+      effects:
+        - "BOOST:UP:12"
+    3:
+      chance: 50
+      cooldown: 5
+      condition: "%is holding% contains FIREWORK : %stop%"
+      effects:
+        - "BOOST:UP:16"
+nulify:
+  display: "%group-color%Nulificar"
+  description: "Probabilidad de infligir el doble de daño\nmientras se deja al enemigo ciego.\nCuesta 40 almas / activación."
+  applies-to: "Weapons"
+  type: "ATTACK"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    1:
+      chance: 8
+      cooldown: 10
+      souls: 40
+      effects:
+        - "INCREASE_DAMAGE:100"
+        - "POTION:BLINDNESS:0:80 %victim%"
+        - "PARTICLE:FLASH:1:0 %victim%"
+    2:
+      chance: 10
+      cooldown: 10
+      souls: 40
+      effects:
+        - "INCREASE_DAMAGE:100"
+        - "POTION:BLINDNESS:1:80 %victim%"
+        - "PARTICLE:FLASH:2:0 %victim%"
+    3:
+      chance: 12
+      cooldown: 10
+      souls: 40
+      effects:
+        - "INCREASE_DAMAGE:100"
+        - "POTION:BLINDNESS:2:80 %victim%"
+        - "PARTICLE:FLASH:3:0 %victim%"
+    4:
+      chance: 14
+      cooldown: 10
+      souls: 40
+      effects:
+        - "INCREASE_DAMAGE:100"
+        - "POTION:BLINDNESS:3:80 %victim%"
+        - "PARTICLE:FLASH:4:0 %victim%"
+rush:
+  display: "%group-color%Rush"
+  description: "Posibilidad de aumentar la velocidad al despegar con elytra.\nCuesta 10 almas / activación."
+  applies-to: "Elytra"
+  type: "ELYTRA_FLY"
+  group: "FABLED"
+  applies:
+    - ELYTRA
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      souls: 10
+      effects:
+        - "POTION:SPEED:3:60"
+    2:
+      chance: 25
+      cooldown: 5
+      souls: 10
+      effects:
+        - "POTION:SPEED:4:60"
+    3:
+      chance: 26
+      cooldown: 5
+      souls: 10
+      effects:
+        - "POTION:SPEED:5:60"
+diploid:
+  display: "%group-color%Diploide"
+  description: "Posibilidad de multiplicar las gotas de la mafia.\nCuesta 5 almas / activación."
+  applies-to: "Swords"
+  type: "MINING"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    2:
+      chance: 20
+      cooldown: 5
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    3:
+      chance: 25
+      cooldown: 6
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    4:
+      chance: 28
+      cooldown: 7
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    5:
+      chance: 30
+      cooldown: 8
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+multiplication:
+  display: "%group-color%Multiplicación"
+  description: "Posibilidad de multiplicar las gotas de mineral.\nCuesta 5 almas / activación."
+  applies-to: "Pickaxe"
+  type: "MINING"
+  group: "FABLED"
+  applies:
+    - ALL_PICKAXE
+  levels:
+    1:
+      chance: 15
+      cooldown: 5
+      condition: "%block type% contains ORE : %allow%"
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    2:
+      chance: 20
+      cooldown: 5
+      condition: "%block type% contains ORE : %allow%"
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    3:
+      chance: 25
+      cooldown: 6
+      condition: "%block type% contains ORE : %allow%"
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    4:
+      chance: 28
+      cooldown: 7
+      condition: "%block type% contains ORE : %allow%"
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+    5:
+      chance: 30
+      cooldown: 8
+      condition: "%block type% contains ORE : %allow%"
+      souls: 5
+      effects:
+        - "MORE_DROPS:1"
+fuddle:
+  display: "%group-color%Fuddle"
+  description: "Desorganizar la barra caliente del oponente."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ULTIMATE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 5
+      cooldown: 15
+      effects:
+        - "RANDOMIZE_HOTBAR %victim%"
+    2:
+      chance: 7
+      cooldown: 15
+      effects:
+        - "RANDOMIZE_HOTBAR %victim%"
+    3:
+      chance: 9
+      cooldown: 15
+      effects:
+        - "RANDOMIZE_HOTBAR %victim%"
+spiritmaster:
+  display: "%group-color%Spiritmaster"
+  description: "Posibilidad de obtener más almas\nal matar jugadores."
+  applies-to: "Swords"
+  type: "KILL_PLAYER"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 35
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    2:
+      chance: 45
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    3:
+      chance: 55
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+axeofspirits:
+  display: "%group-color%Hacha de los Espíritus"
+  description: "Posibilidad de obtener más almas\nal matar jugadores."
+  applies-to: "Axes"
+  type: "KILL_PLAYER"
+  group: "FABLED"
+  applies:
+    - ALL_AXE
+  levels:
+    1:
+      chance: 45
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    2:
+      chance: 65
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    3:
+      chance: 75
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+soulminer:
+  display: "%group-color%Soulminer"
+  description: "Posibilidad de conseguir almas mediante la minería."
+  applies-to: "Pickaxe"
+  type: "MINING"
+  group: "FABLED"
+  applies:
+    - ALL_PICKAXE
+  levels:
+    1:
+      chance: 5
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    2:
+      chance: 10
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    3:
+      chance: 15
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+soulgrind:
+  display: "%group-color%Soulgrind"
+  description: "Posibilidad de conseguir almas matando a los mobs."
+  applies-to: "Swords"
+  type: "KILL_MOB"
+  group: "FABLED"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 30
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    2:
+      chance: 60
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+    3:
+      chance: 90
+      effects:
+        - "ADD_SOULS:1"
+        - "PARTICLE:HEART:1:0"
+deranged:
+  display: "%group-color%Desordenado"
+  description: "Lanza un rayo a los jugadores cercanos."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "LEGENDARY"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 5
+      cooldown: 10
+      effects:
+        - "LIGHTNING <aoe> radius=5 target=damageable </aoe>"
+    2:
+      chance: 8
+      cooldown: 12
+      effects:
+        - "LIGHTNING <aoe> radius=6 target=damageable </aoe>"
+    3:
+      chance: 12
+      cooldown: 14
+      effects:
+        - "LIGHTNING <aoe> radius=7 target=damageable </aoe>"
+magnet:
+  display: "%group-color%Imán"
+  description: "Tu ataque atrae a los jugadores hacia ti."
+  applies-to: "Swords"
+  type: "ATTACK"
+  group: "ELITE"
+  applies:
+    - ALL_SWORD
+  levels:
+    1:
+      chance: 30
+      effects:
+        - "PULL_CLOSER:1 %victim%"
+    2:
+      chance: 60
+      effects:
+        - "PULL_CLOSER:2 %victim%"
+    3:
+      effects:
+        - "PULL_CLOSER:3 %victim%"
