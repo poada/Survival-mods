@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: ''
+ip-address: 127.100.255.139
 afk: false
 socialspy: false
 npc: false
@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737748780823
-  login: 0
+  logout: 1737748938619
+  login: 1737748932508
 money: '0'
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
@@ -25,5 +25,6 @@ logoutlocation:
   x: 35.40801437688524
   y: 70.99339715541389
   z: -20.399881585910194
-  yaw: -109.152587890625
-  pitch: 38.1893424987793
+  yaw: -107.60931396484375
+  pitch: 37.68543243408203
+last-account-name: Futorista
