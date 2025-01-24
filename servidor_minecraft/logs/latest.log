@@ -59,3 +59,256 @@
 [19:48:48] [Server thread/INFO]: BBdeDJ was slain by daniel98120
 [19:49:27] [Server thread/INFO]: BBdeDJ hit the ground too hard whilst trying to escape daniel98120
 [19:49:52] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:50:03] [Server thread/INFO]: Futorista issued server command: /time set day
+[19:50:03] [Server thread/INFO]: [Futorista: Set the time to 1000]
+[19:50:51] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:52:38] [Server thread/INFO]: Futorista issued server command: /tp @p
+[19:52:38] [Server thread/INFO]: [Futorista: Teleported Futorista to Futorista]
+[19:52:45] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:52:47] [Server thread/INFO]: Futorista issued server command: /tp daniel98120 BBdeDJ
+[19:52:47] [Server thread/INFO]: [Futorista: Teleported daniel98120 to BBdeDJ]
+[19:52:58] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:53:13] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:53:32] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:53:50] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:53:58] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:54:08] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:54:36] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:55:37] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:56:23] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:56:53] [Server thread/INFO]: BBdeDJ was slain by daniel98120
+[19:57:03] [Server thread/INFO]: BBdeDJ lost connection: Disconnected
+[19:57:03] [Server thread/INFO]: BBdeDJ left the game
+[19:57:21] [Server thread/INFO]: daniel98120 hit the ground too hard
+[19:57:28] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[19:57:28] [Server thread/INFO]: daniel98120 left the game
+[19:58:08] [Server thread/INFO]: Futorista issued server command: /reload
+[19:58:08] [Server thread/INFO]: Futorista: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[19:58:14] [Server thread/INFO]: Futorista issued server command: /reload confirm
+[19:58:14] [Server thread/INFO]: Futorista: Please note that this command is not supported and may cause issues when using some plugins.
+[19:58:14] [Server thread/INFO]: Futorista: If you encounter any issues please use the /stop command to restart your server.
+[19:58:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:58:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:58:14] [Server thread/INFO]: Loaded 7 recipes
+[19:58:15] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.16.0/adventure-bom-4.16.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-api/1.3.0/examination-api-1.3.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/22.0.0/annotations-22.0.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/examination-string/1.3.0/examination-string-1.3.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.13.1/adventure-api-4.13.1.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-bom/4.13.1/adventure-bom-4.13.1.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.13.1/adventure-key-4.13.1.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.0.1/annotations-24.0.1.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.pom
+[19:58:15] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.0/gson-parent-2.8.0.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[19:58:16] [Server thread/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.pom
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/option/1.0.0/option-1.0.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: Downloading https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[19:58:16] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: Downloading https://repo.maven.apache.org/maven2/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[19:58:16] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[19:58:16] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
+[19:58:18] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
+[19:58:18] [Server thread/INFO]: [OpeNLogin] Loading OpeNLogin v1.6.7
+[19:58:18] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
+[19:58:18] [Server thread/INFO]: [AxVaults] Loading library commons-math3
+[19:58:18] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar
+[19:58:18] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar
+[19:58:18] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/org/ow2/asm/asm/9.2/asm-9.2.jar
+[19:58:18] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/me/lucko/jar-relocator/1.7/jar-relocator-1.7.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Relocations applied to commons-math3-3.6.1.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library caffeine
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/3.1.8/caffeine-3.1.8.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Relocations applied to caffeine-3.1.8.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Relocations applied to snakeyaml-2.2.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library HikariCP
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Relocations applied to HikariCP-5.1.0.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library h2
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/com/h2database/h2/2.1.214/h2-2.1.214.jar
+[19:58:19] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
+[19:58:19] [Server thread/INFO]: [AxVaults] Downloaded library https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar
+[19:58:19] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
+[19:58:19] [Server thread/INFO]: [DeluxeCombat] Loading DeluxeCombat v1.70.1
+[19:58:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[19:58:19] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
+[19:58:20] [Server thread/INFO]:         __    
+[19:58:20] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
+[19:58:20] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[19:58:20] [Server thread/INFO]: 
+[19:58:20] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[19:58:20] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[19:58:20] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[19:58:20] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[19:58:20] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 990ms)
+[19:58:20] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
+[19:58:21] [Server thread/WARN]: [Essentials] Beginning Adventure locale file conversion.
+[19:58:21] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[19:58:21] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/config.yml
+[19:58:21] [Server thread/WARN]: [Essentials] Missing userdata folder, aborting
+[19:58:21] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/kits.yml
+[19:58:21] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[19:58:21] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[19:58:21] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[19:58:21] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[19:58:21] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[19:58:21] [Server thread/INFO]: [Essentials] Done converting random teleport config.
+[19:58:21] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/worth.yml
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[19:58:21] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/tpr.yml
+[19:58:21] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[19:58:21] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/custom_items.yml
+[19:58:21] [Server thread/INFO]: [Essentials] Using locale en
+[19:58:21] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[19:58:21] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[19:58:21] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[19:58:21] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[19:58:21] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[19:58:21] [Server thread/INFO]: [OpeNLogin] Enabling OpeNLogin v1.6.7
+[19:58:21] [Server thread/INFO]: [OpeNLogin]    ___                __  __             _ 
+[19:58:21] [Server thread/INFO]: [OpeNLogin]   /___\_ __   ___  /\ \ \/ /  ___   __ _(_)_ __
+[19:58:21] [Server thread/INFO]: [OpeNLogin]  //  // '_ \ / _ \/  \/ / /  / _ \ / _` | | '_ \
+[19:58:21] [Server thread/INFO]: [OpeNLogin] / \_//| |_) |  __/ /\  / /__| (_) | (_| | | | | |
+[19:58:21] [Server thread/INFO]: [OpeNLogin] \___/ | .__/ \___\_\ \/\____/\___/ \__, |_|_| |_|
+[19:58:21] [Server thread/INFO]: [OpeNLogin]       |_|                          |___/         
+[19:58:21] [Server thread/INFO]: [OpeNLogin] By: www.nickuc.com / github.com/nickuc/OpeNLogin - V 1.6.7
+[19:58:21] [Server thread/INFO]: [OpeNLogin] 
+[19:58:21] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
+[19:58:22] [Server thread/INFO]: [AxVaults] Loaded plugin!
+[19:58:22] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[19:58:22] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[19:58:22] [Server thread/INFO]: [ItemEdit] Updating configuration version (7 -> 8)
+[19:58:22] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[19:58:22] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[19:58:22] [Server thread/INFO]: [ItemEdit] # Enabled (took 290 ms)
+[19:58:22] [Server thread/INFO]: [DeluxeCombat] Enabling DeluxeCombat v1.70.1
+[19:58:23] [Server thread/INFO]: [DeluxeCombat]  _____        _                   ______            _                
+[19:58:23] [Server thread/INFO]: [DeluxeCombat] (____ \      | |                 / _____)          | |          _    
+[19:58:23] [Server thread/INFO]: [DeluxeCombat]  _   \ \ ____| |_   _ _   _ ____| /      ___  ____ | | _   ____| |_  
+[19:58:23] [Server thread/INFO]: [DeluxeCombat] | |   | / _  ) | | | ( \ / ) _  ) |     / _ \|    \| || \ / _  |  _) 
+[19:58:23] [Server thread/INFO]: [DeluxeCombat] | |__/ ( (/ /| | |_| |) X ( (/ /| \____| |_| | | | | |_) | ( | | |__ 
+[19:58:23] [Server thread/INFO]: [DeluxeCombat] |_____/ \____)_|\____(_/ \_)____)\______)___/|_|_|_|____/ \_||_|\___)
+[19:58:23] [Server thread/INFO]: [DeluxeCombat] 
+[19:58:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R1! Trying to find NMS support
+[19:58:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R1' loaded!
+[19:58:24] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeCombat' to create a bStats instance!
+[19:58:24] [Server thread/INFO]: [DeluxeCombat] Spawnpoints (0), Kill-Streaks (1), Rewards (2), Custom Tools (1) loaded!
+[19:58:24] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[19:58:24] [Server thread/INFO]: [DeluxeCombat] Start fetching marketplace addons...
+[19:58:24] [Server thread/INFO]: Futorista: Reload complete.
+[19:58:24] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10622ms or 212 ticks behind
+[19:58:24] [Server thread/INFO]: Timings Reset
+[19:58:24] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[19:58:25] [Craft Scheduler Thread - 6 - DeluxeCombat/INFO]: [DeluxeCombat] Successfully fetched 15 marketplace items from the internet!
+[19:58:25] [Craft Scheduler Thread - 12 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
+[19:58:25] [Craft Scheduler Thread - 12 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
+[19:59:40] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
+[19:59:40] [Server thread/INFO]: Futorista lost connection: Server is restarting
+[19:59:40] [Server thread/INFO]: Futorista left the game
+[19:59:41] [Server thread/INFO]: Stopping server
+[19:59:41] [Server thread/INFO]: [DeluxeCombat] Disabling DeluxeCombat v1.70.1
+[19:59:41] [Server thread/INFO]: [DeluxeCombat] Closing SQLite connection...
+[19:59:41] [Server thread/INFO]: [DeluxeCombat] SQLite connection closed.
+[19:59:41] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[19:59:41] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
+[19:59:41] [Server thread/INFO]: [OpeNLogin] Disabling OpeNLogin v1.6.7
+[19:59:41] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
+[19:59:41] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
+[19:59:41] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[19:59:41] [Server thread/INFO]: [LuckPerms] Closing storage...
+[19:59:41] [Server thread/INFO]: [LuckPerms] Goodbye!
+[19:59:41] [Server thread/INFO]: Saving players
+[19:59:41] [Server thread/INFO]: Saving worlds
+[19:59:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:59:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:59:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:59:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Saved 1312 block chunks, 284 entity chunks, 2 poi chunks in world 'world' in 0.87s
+[19:59:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:59:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Saved 1504 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0.43s
+[19:59:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:59:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:59:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:59:43] [Server thread/INFO]: [ChunkHolderManager] Saved 1506 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.41s
+[19:59:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:59:43] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:59:43] [Server thread/INFO]: Saving usercache.json
+[19:59:43] [Server thread/INFO]: Flushing Chunk IO
+[19:59:43] [Server thread/INFO]: Closing Thread Pool
+[19:59:43] [Server thread/INFO]: Closing Server
