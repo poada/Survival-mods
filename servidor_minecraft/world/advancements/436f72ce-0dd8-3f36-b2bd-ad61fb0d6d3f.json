@@ -407,6 +407,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2025-01-24 21:32:35 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/wooden_pickaxe": {
     "criteria": {
       "has_stick": "2025-01-24 19:48:04 +0000"
@@ -554,6 +560,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-01-24 20:18:42 +0000",
+      "minecraft:enderman": "2025-01-24 21:31:58 +0000",
       "minecraft:zombie": "2025-01-24 21:07:02 +0000"
     },
     "done": false
@@ -756,6 +763,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2025-01-24 21:31:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_feather": "2025-01-24 19:51:13 +0000"
@@ -771,6 +784,12 @@
   "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
       "has_coal": "2025-01-24 20:33:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_wood": {
+    "criteria": {
+      "has_log": "2025-01-24 21:32:35 +0000"
     },
     "done": true
   },
@@ -1006,7 +1025,8 @@
     "criteria": {
       "minecraft:taiga": "2025-01-24 19:50:04 +0000",
       "minecraft:river": "2025-01-24 19:50:10 +0000",
-      "minecraft:forest": "2025-01-24 19:46:47 +0000"
+      "minecraft:forest": "2025-01-24 19:46:47 +0000",
+      "minecraft:meadow": "2025-01-24 21:17:38 +0000"
     },
     "done": false
   },

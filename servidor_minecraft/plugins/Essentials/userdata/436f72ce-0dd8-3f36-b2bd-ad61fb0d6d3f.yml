@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737753023163
-  login: 1737752215357
+  logout: 1737754404140
+  login: 1737754270509
   kits:
     inicial: 1737752026864
 money: '0'
@@ -25,19 +25,19 @@ last-account-name: daniel98120
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 211.30000001192093
-  y: -48.0
-  z: 169.30000001192093
-  yaw: -82.39473724365234
-  pitch: 2.07840895652771
+  x: 878.5844912687612
+  y: 96.0
+  z: -644.6999999880791
+  yaw: 38.796173095703125
+  pitch: -11.993311882019043
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 196.11124930459334
-  y: -42.74779665974627
-  z: 149.30000001192093
-  yaw: 136.24578857421875
-  pitch: -5.728730201721191
+  x: 602.6999999880791
+  y: 111.0
+  z: -244.69999998807907
+  yaw: 8.210029602050781
+  pitch: 11.368180274963379
 homes:
   home:
     world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a

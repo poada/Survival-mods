@@ -11,30 +11,30 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1737752733540
+  lastteleport: 1737753980842
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737753097075
-  login: 1737752236139
+  logout: 1737754802146
+  login: 1737754385435
   kits:
     inicial: 1737752037963
 money: '0'
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 199.92570755183635
-  y: -41.68966364707286
-  z: 148.30000001192093
-  yaw: -64.842041015625
-  pitch: 44.388092041015625
+  x: 974.0481786137997
+  y: 122.90193865694305
+  z: -511.2022344120555
+  yaw: -144.2779541015625
+  pitch: 41.68720245361328
 last-account-name: Futorista
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 208.39728023560536
-  y: -48.0
-  z: 209.25790192215322
-  yaw: -148.5012664794922
-  pitch: 37.715999603271484
+  x: 24.5
+  y: 70.53292827534491
+  z: -17.5
+  yaw: 0.031495869159698486
+  pitch: 0.0

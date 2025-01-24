@@ -1,7 +1,7 @@
 recipes:
 - dcr-gold_apple!GOLDEN_APPLE!1&GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!APPLE!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT!GOLD_INGOT
 - dcr-god_apple!ENCHANTED_GOLDEN_APPLE!1&GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!APPLE!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK!GOLD_BLOCK
-language: en_EN
+language: es_ES
 disabled-potions: []
 disabled-enchantments: []
 commands_on_rejoin_players: []
@@ -112,7 +112,7 @@ Death:
   respawn_at_nearest_spawnpoint: false
   drop_head:
     enable: false
-    percentage: 100
+    percentage: 0
     transfer-to-killer: false
     commands: []
   ghost-players:
@@ -314,10 +314,10 @@ PvP_Settings:
   disable-drop-handling: false
   drop-handling:
     pickup-restriction:
-      enable: false
+      enable: true
       timelimit: 30
       mode: KILLER
-    transfer-items-to-killer: false
+    transfer-items-to-killer: true
     keep-inventory-permission:
       enable: false
       mode: IN_AND_OUTSIDE_PVP
@@ -422,7 +422,7 @@ Point-Ranking-System:
 General:
   data-group: default
   check_for_new_updates: true
-  prefix: '&c&lDC &r&8> &r&7'
+  prefix: '&c&lSV&8-'
   void-tp-to-nearest-spawnpoint: false
   use_metrics: true
   fill_recap_inv: true

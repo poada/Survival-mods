@@ -1,291 +1,1557 @@
-[20:56:23] [ServerMain/INFO]: Building unoptimized datafixer
-[20:56:24] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:56:25] [ServerMain/INFO]: Loaded 7 recipes
-[20:56:27] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[20:56:27] [Server thread/INFO]: Loading properties
-[20:56:27] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
-[20:56:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:56:27] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:56:27] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[20:56:27] [Server thread/INFO]: Default game type: SURVIVAL
-[20:56:27] [Server thread/INFO]: Generating keypair
-[20:56:27] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:56:27] [Server thread/INFO]: Using epoll channel type
-[20:56:27] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[20:56:27] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
-[20:56:28] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
-[20:56:28] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
-[20:56:29] [Server thread/INFO]: [nAntiBot] Loading nAntiBot v6.1.27
-[20:56:29] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library commons-math3
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library caffeine
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library HikariCP
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library h2
-[20:56:29] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
-[20:56:29] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.2.0-SNAPSHOT-679
-[20:56:30] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
-[20:56:30] [Server thread/INFO]: [nLogin] Loading nLogin v10.4.18
-[20:56:31] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.5.2
-[20:56:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:56:31] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
-[20:56:32] [Server thread/INFO]:         __    
-[20:56:32] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
-[20:56:32] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[20:56:32] [Server thread/INFO]: 
-[20:56:32] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[20:56:32] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[20:56:32] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[20:56:32] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[20:56:33] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1706ms)
-[20:56:33] [Server thread/INFO]: [nAntiBot] Enabling nAntiBot v6.1.27
-[20:56:33] [Server thread/INFO]: [nAntiBot] Successful plugin core start (took 0.32s)
-[20:56:33] [Server thread/INFO]:           _         _   _   ___       _   
-[20:56:33] [Server thread/INFO]:   _ __   /_\  _ __ | |_(_) / __\ ___ | |_ 
-[20:56:33] [Server thread/INFO]:  | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
-[20:56:33] [Server thread/INFO]:  | | | /  _  \ | | | |_| / \/  \ (_) | |_ 
-[20:56:33] [Server thread/INFO]:  |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
-[20:56:33] [Server thread/INFO]:                                          
-[20:56:33] [Server thread/INFO]:  By: www.nickuc.com - V 6.1.27
-[20:56:33] [Server thread/INFO]: 
-[20:56:33] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
-[20:56:33] [Server thread/INFO]: [nLogin] Enabling nLogin v10.4.18
-[20:56:34] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.25s)
-[20:56:34] [Server thread/INFO]:           __             _       
-[20:56:34] [Server thread/INFO]:   _ __   / /  ___   __ _(_)_ __  
-[20:56:34] [Server thread/INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
-[20:56:34] [Server thread/INFO]:  | | | / /__| (_) | (_| | | | | |
-[20:56:34] [Server thread/INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
-[20:56:34] [Server thread/INFO]:                   |___/            
-[20:56:34] [Server thread/INFO]:  By: www.nickuc.com - V 10.4.18 DEVELOPMENT
-[20:56:34] [Server thread/INFO]:  
-[20:56:34] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.2
-[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mYou must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.[0;39m
-[20:56:35] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.19.2[32;1m.[0;39m
-[20:56:35] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mPlease update your Java runtime to at least Java 21 (your version is 17).[0;39m
-[20:56:35] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mAt some point in the future, SkinsRestorer will no longer be compatible with this version of Java.[0;39m
-[20:56:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:56:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:56:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:56:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:56:35] [Server thread/INFO]: Preparing level "world"
-[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:56:36] [Server thread/INFO]: Time elapsed: 177 ms
-[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[20:56:36] [Server thread/INFO]: Time elapsed: 87 ms
-[20:56:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[20:56:36] [Server thread/INFO]: Time elapsed: 85 ms
-[20:56:36] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
-[20:56:37] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
-[20:56:37] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[20:56:37] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[20:56:37] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[20:56:38] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
-[20:56:38] [Server thread/INFO]: [Essentials] Using locale en
-[20:56:38] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[20:56:38] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[20:56:38] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
-[20:56:38] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
-[20:56:38] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[20:56:38] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
-[20:56:39] [Server thread/INFO]: [AxVaults] Loaded plugin!
-[20:56:39] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
-[20:56:39] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
-[20:56:39] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
-[20:56:39] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
-[20:56:39] [Server thread/INFO]: [ItemEdit] # Enabled (took 193 ms)
-[20:56:40] [Server thread/INFO]: Running delayed init tasks
-[20:56:40] [Craft Scheduler Thread - 1 - nAntiBot/INFO]: [nAntiBot] Connecting to the remote server antibot.nickuc.com...
-[20:56:40] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] Fetching version information...
-[20:56:40] [Server thread/INFO]: Done (13.102s)! For help, type "help"
-[20:56:40] [Server thread/INFO]: Timings Reset
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.5.2[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mae257f6[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[20:56:40] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[20:56:41] [User Authenticator #0/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
-[20:56:41] [User Authenticator #0/INFO]: UUID of player S3B4ST109 is efb3d617-b2e8-32e8-b673-fb5e36c940b7
-[20:56:42] [User Authenticator #0/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
-[20:56:42] [Server thread/INFO]: daniel98120 lost connection: Disconnected
-[20:56:42] [Server thread/INFO]: ImNotFish[/127.169.76.46:51073] logged in with entity id 22 at ([world]204.35899133903294, -27.0, 186.3005721698874)
-[20:56:43] [Server thread/INFO]: S3B4ST109[/127.165.76.113:56779] logged in with entity id 23 at ([world]1264.9778511808918, 76.0, -265.37648205398483)
-[20:56:44] [Craft Scheduler Thread - 5 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully logged in.
-[20:56:45] [User Authenticator #0/INFO]: UUID of player PikaLiix is 78e7f18b-0758-3154-8190-16c92b6bf999
-[20:56:45] [Server thread/INFO]: PikaLiix[/127.149.40.203:48135] logged in with entity id 200 at ([world]433.98689236186215, -40.0, -318.89469871805665)
-[20:56:47] [pool-12-thread-1/INFO]: [nAntiBot] [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 45, threads = 4, took 13.53s)
-[20:56:48] [Craft Scheduler Thread - 9 - nLogin/INFO]: [nLogin] The user S3B4ST109 has successfully logged in.
-[20:56:52] [Craft Scheduler Thread - 1 - nLogin/INFO]: [nLogin] The user PikaLiix has successfully logged in.
-[20:56:55] [User Authenticator #0/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
-[20:56:55] [Server thread/INFO]: daniel98120[/127.211.21.126:44761] logged in with entity id 652 at ([world]203.57531887069183, -20.0, 188.67762389779747)
-[20:57:02] [Craft Scheduler Thread - 5 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
-[20:57:15] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
-[20:57:16] [Server thread/INFO]: Futorista[/127.100.255.139:34057] logged in with entity id 961 at ([world]195.30000001192093, -8.0, 190.26858057222586)
-[20:57:23] [Craft Scheduler Thread - 8 - nLogin/INFO]: [nLogin] The user Futorista has successfully logged in.
-[20:57:48] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
-[20:57:49] [Server thread/INFO]: PikaLiix has made the advancement [Sneak 100]
-[20:57:50] [Server thread/INFO]: Futorista issued server command: /gamemode creative
-[20:57:51] [Server thread/INFO]: Futorista issued server command: /gamemode survival
-[20:57:53] [Server thread/INFO]: ImNotFish was slain by daniel98120
-[20:57:55] [Server thread/INFO]: Futorista issued server command: /tp daniel98120
-[20:58:03] [Server thread/INFO]: Futorista issued server command: /gamemode creative
-[20:58:07] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
-[20:58:08] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:58:11] [Server thread/INFO]: daniel98120 was slain by Futorista
-[20:58:14] [Server thread/INFO]: ImNotFish issued server command: /pv 1
-[20:58:15] [Server thread/INFO]: ImNotFish issued server command: /ec
-[20:58:15] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[20:58:17] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
-[20:58:20] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:58:24] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[20:58:28] [Server thread/INFO]: ImNotFish has made the advancement [Cover Me with Diamonds]
-[20:58:30] [Server thread/INFO]: Futorista issued server command: /tpaccept
-[20:58:37] [Server thread/INFO]: ImNotFish issued server command: /pv 1
-[20:58:53] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:58:59] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:58:59] [Server thread/INFO]: PikaLiix issued server command: /PV 1
-[20:59:01] [Server thread/INFO]: PikaLiix issued server command: /pv 1
-[20:59:05] [Server thread/INFO]: ImNotFish issued server command: /pv 1
-[20:59:07] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[20:59:25] [Server thread/INFO]: ImNotFish has made the advancement [Monster Hunter]
-[20:59:50] [Server thread/INFO]: ImNotFish issued server command: /tpa daniel98120
-[20:59:53] [Server thread/INFO]: daniel98120 issued server command: /tpaccept
-[21:01:01] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:01:18] [Server thread/INFO]: ImNotFish issued server command: /craft
-[21:01:18] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
-[21:01:30] [Server thread/INFO]: PikaLiix issued server command: /craft
-[21:01:30] [Server thread/INFO]: [Essentials] PikaLiix was denied access to command.
-[21:02:13] [Server thread/INFO]: ImNotFish has made the advancement [Diamonds!]
-[21:02:27] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish
-[21:02:33] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:02:37] [Server thread/INFO]: Futorista issued server command: /pv 1
-[21:02:54] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:03:03] [Server thread/INFO]: Futorista issued server command: /tpa daniel98120
-[21:03:06] [Server thread/INFO]: ImNotFish has made the advancement [Acquire Hardware]
-[21:03:12] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
-[21:03:16] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
-[21:03:18] [Server thread/INFO]: ImNotFish issued server command: /pv 1
-[21:03:31] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:04:26] [Server thread/INFO]: Futorista issued server command: /ie enchant sharpness 255
-[21:04:27] [Server thread/INFO]: daniel98120 was slain by Futorista
-[21:04:27] [Server thread/INFO]: Futorista has made the advancement [Cover Me with Diamonds]
-[21:04:32] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
-[21:04:35] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
-[21:04:48] [Server thread/INFO]: Futorista issued server command: /tphere i
-[21:04:49] [Server thread/INFO]: PikaLiix has made the advancement [Cover Me with Diamonds]
-[21:04:52] [Server thread/INFO]: Futorista issued server command: /tphere i
-[21:04:53] [Server thread/INFO]: Futorista issued server command: /tphere i
-[21:05:19] [Server thread/INFO]: Futorista issued server command: /pv 1
-[21:05:28] [Server thread/INFO]: Futorista issued server command: /invsee ImNotFish
-[21:05:33] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
-[21:05:47] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:06:11] [Server thread/INFO]: daniel98120 issued server command: /pv 1
-[21:07:10] [Server thread/INFO]: S3B4ST109 has made the advancement [Diamonds!]
-[21:07:57] [Server thread/INFO]: daniel98120 issued server command: /tpa ImNotFish
-[21:08:09] [Server thread/INFO]: S3B4ST109 issued server command: /craft
-[21:08:09] [Server thread/INFO]: [Essentials] S3B4ST109 was denied access to command.
-[21:08:28] [Server thread/INFO]: Futorista issued server command: /craft
-[21:08:30] [Server thread/INFO]: ImNotFish issued server command: /tpa PikaLiix
-[21:08:51] [Server thread/INFO]: PikaLiix issued server command: /tpaccept
-[21:09:03] [Server thread/INFO]: daniel98120 issued server command: /tpa ImNotFish
-[21:09:23] [Server thread/INFO]: Futorista has made the advancement [Hot Stuff]
-[21:09:59] [Server thread/INFO]: ImNotFish issued server command: /ie rename ee
-[21:10:15] [Server thread/INFO]: ImNotFish issued server command: /ie rename me la chupa el peruano
-[21:10:23] [Server thread/INFO]: daniel98120 lost connection: Disconnected
-[21:10:41] [Server thread/INFO]: ImNotFish issued server command: /pv 1
-[21:11:00] [Server thread/INFO]: S3B4ST109 issued server command: /pene
-[21:11:37] [Server thread/INFO]: Futorista issued server command: /restart
-[21:11:37] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
-[21:11:37] [Server thread/INFO]: S3B4ST109 lost connection: Server is restarting
-[21:11:37] [Server thread/INFO]: PikaLiix lost connection: Server is restarting
-[21:11:37] [Server thread/INFO]: Futorista lost connection: Server is restarting
-[21:11:37] [Server thread/INFO]: ImNotFish lost connection: Server is restarting
-[21:11:37] [Server thread/INFO]: Stopping server
-[21:11:37] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.5.2
-[21:11:37] [Server thread/INFO]: [nLogin] Disabling nLogin v10.4.18
-[21:11:37] [Server thread/INFO]: [nLogin] Successful plugin core shutdown (took 0.00s)
-[21:11:37] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
-[21:11:37] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
-[21:11:37] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
-[21:11:37] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
-[21:11:37] [Server thread/INFO]: [nAntiBot] Disabling nAntiBot v6.1.27
-[21:11:37] [Server thread/INFO]: [nAntiBot] Successful plugin core shutdown (took 0.00s)
-[21:11:37] [Server thread/INFO]: [nAntiBot] Disconnecting from remote server...
-[21:11:39] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
-[21:11:39] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[21:11:39] [Server thread/INFO]: [LuckPerms] Closing storage...
-[21:11:39] [Server thread/INFO]: [LuckPerms] Goodbye!
-[21:11:39] [Server thread/INFO]: Saving players
-[21:11:39] [Server thread/INFO]: Saving worlds
-[21:11:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[21:11:39] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 1547 block chunks, 1101 entity chunks, 1 poi chunks in world 'world' in 1.66s
-[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:11:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:11:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[21:11:41] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
-[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:11:41] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[21:11:41] [Server thread/INFO]: Saving usercache.json
-[21:11:41] [Server thread/INFO]: Flushing Chunk IO
-[21:11:41] [Server thread/INFO]: Closing Thread Pool
-[21:11:41] [Server thread/INFO]: Closing Server
+[21:12:16] [ServerMain/INFO]: Building unoptimized datafixer
+[21:12:17] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21:12:19] [ServerMain/INFO]: Loaded 7 recipes
+[21:12:21] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[21:12:21] [Server thread/INFO]: Loading properties
+[21:12:21] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[21:12:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:12:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:12:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[21:12:21] [Server thread/INFO]: Default game type: SURVIVAL
+[21:12:21] [Server thread/INFO]: Generating keypair
+[21:12:21] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:12:21] [Server thread/INFO]: Using epoll channel type
+[21:12:21] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:12:21] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loading 5 libraries... please wait
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[21:12:22] [Server thread/INFO]: [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[21:12:23] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.153
+[21:12:23] [Server thread/INFO]: [nAntiBot] Loading nAntiBot v6.1.27
+[21:12:23] [Server thread/INFO]: [Essentials] Loading Essentials v2.21.0-dev+160-e2295c1
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading AxVaults v2.6.0
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library commons-math3
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library caffeine
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library snakeyaml
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library HikariCP
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library sqlite-jdbc
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library h2
+[21:12:23] [Server thread/INFO]: [AxVaults] Loading library mysql-connector-j
+[21:12:23] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.2.0-SNAPSHOT-679
+[21:12:24] [Server thread/INFO]: [ItemEdit] Loading ItemEdit v3.6.3
+[21:12:24] [Server thread/INFO]: [nLogin] Loading nLogin v10.4.18
+[21:12:25] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.5.2
+[21:12:25] [Server thread/INFO]: [TradeSystem] Loading TradeSystem v2.6.3
+[21:12:25] [Server thread/INFO]: [AdvancedEnchantments] Loading AdvancedEnchantments v9.15.3
+[21:12:25] [Server thread/INFO]: [DeluxeCombat] Loading DeluxeCombat v1.70.1
+[21:12:25] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:12:25] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
+[21:12:25] [Server thread/INFO]:         __    
+[21:12:25] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
+[21:12:25] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[21:12:25] [Server thread/INFO]: 
+[21:12:25] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[21:12:25] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[21:12:26] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[21:12:26] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[21:12:26] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1441ms)
+[21:12:26] [Server thread/INFO]: [nAntiBot] Enabling nAntiBot v6.1.27
+[21:12:27] [Server thread/INFO]: [nAntiBot] Successful plugin core start (took 0.41s)
+[21:12:27] [Server thread/INFO]:           _         _   _   ___       _   
+[21:12:27] [Server thread/INFO]:   _ __   /_\  _ __ | |_(_) / __\ ___ | |_ 
+[21:12:27] [Server thread/INFO]:  | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
+[21:12:27] [Server thread/INFO]:  | | | /  _  \ | | | |_| / \/  \ (_) | |_ 
+[21:12:27] [Server thread/INFO]:  |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
+[21:12:27] [Server thread/INFO]:                                          
+[21:12:27] [Server thread/INFO]:  By: www.nickuc.com - V 6.1.27
+[21:12:27] [Server thread/INFO]: 
+[21:12:27] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0-SNAPSHOT-679
+[21:12:27] [Server thread/INFO]: [nLogin] Enabling nLogin v10.4.18
+[21:12:28] [Server thread/INFO]: [nLogin] Successful plugin core start (took 0.28s)
+[21:12:28] [Server thread/INFO]:           __             _       
+[21:12:28] [Server thread/INFO]:   _ __   / /  ___   __ _(_)_ __  
+[21:12:28] [Server thread/INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[21:12:28] [Server thread/INFO]:  | | | / /__| (_) | (_| | | | | |
+[21:12:28] [Server thread/INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[21:12:28] [Server thread/INFO]:                   |___/            
+[21:12:28] [Server thread/INFO]:  By: www.nickuc.com - V 10.4.18 DEVELOPMENT
+[21:12:28] [Server thread/INFO]:  
+[21:12:28] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.2
+[21:12:28] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mYou must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.[0;39m
+[21:12:28] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.19.2[32;1m.[0;39m
+[21:12:29] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[21:12:29] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mPlease update your Java runtime to at least Java 21 (your version is 17).[0;39m
+[21:12:29] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1m[33;1mAt some point in the future, SkinsRestorer will no longer be compatible with this version of Java.[0;39m
+[21:12:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[21:12:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[21:12:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[21:12:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[21:12:29] [Server thread/INFO]: Preparing level "world"
+[21:12:30] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:12:30] [Server thread/INFO]: Time elapsed: 213 ms
+[21:12:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:12:30] [Server thread/INFO]: Time elapsed: 68 ms
+[21:12:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:12:30] [Server thread/INFO]: Time elapsed: 68 ms
+[21:12:30] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+160-e2295c1
+[21:12:30] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[21:12:31] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[21:12:31] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Selected Legacy 1.8 Potion Meta Provider as the provider for PotionMetaProvider
+[21:12:31] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[21:12:31] [Server thread/INFO]: [Essentials] Using locale en
+[21:12:31] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[21:12:32] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[21:12:32] [Server thread/WARN]: [Essentials] Detected supported permissions plugin LuckPerms without Vault installed.
+[21:12:32] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[21:12:32] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[21:12:32] [Server thread/INFO]: [AxVaults] Enabling AxVaults v2.6.0
+[21:12:33] [Server thread/INFO]: [AxVaults] Loaded plugin!
+[21:12:33] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[21:12:33] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[21:12:33] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[21:12:33] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[21:12:33] [Server thread/INFO]: [ItemEdit] # Enabled (took 228 ms)
+[21:12:33] [Server thread/INFO]: [TradeSystem] Enabling TradeSystem v2.6.3
+[21:12:33] [Server thread/INFO]:  
+[21:12:33] [Server thread/INFO]: __________________________________________________________
+[21:12:33] [Server thread/INFO]:  
+[21:12:33] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:12:33] [Server thread/INFO]:  
+[21:12:33] [Server thread/INFO]: Status:
+[21:12:33] [Server thread/INFO]:  
+[21:12:33] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:12:33] [Server thread/INFO]:  
+[21:12:34] [Server thread/INFO]:   > Loading sounds
+[21:12:34] [Server thread/INFO]:   > Loading blacklist
+[21:12:34] [Server thread/INFO]:     ...got 3 blocked item(s)
+[21:12:34] [Server thread/INFO]:   > Loading layouts
+[21:12:34] [Server thread/WARN]: [TradeSystem] No trade pattern found -> create default patterns
+[21:12:34] [Server thread/INFO]: [TradeSystem] Saved 3 layout(s).
+[21:12:34] [Server thread/WARN]: [TradeSystem] No active layout found. Switching to the default layout: 'Standard'
+[21:12:34] [Server thread/INFO]: [TradeSystem] Saved 'Standard' as active layout.
+[21:12:34] [Server thread/INFO]:     ...got 3 layout(s)
+[21:12:34] [Server thread/INFO]:   > Queuing database initializing task
+[21:12:34] [Server thread/INFO]:  
+[21:12:34] [Server thread/INFO]: Finished (981ms)
+[21:12:34] [Server thread/INFO]:  
+[21:12:34] [Server thread/INFO]: __________________________________________________________
+[21:12:34] [Server thread/INFO]:  
+[21:12:34] [Server thread/INFO]: [AdvancedEnchantments] Enabling AdvancedEnchantments v9.15.3
+[21:12:35] [Server thread/INFO]: Thank you for installing AdvancedEnchantments! 
+[21:12:35] [Server thread/INFO]: - To get help, join our discord server: https://discord.gg/advancedplugins
+[21:12:35] [Server thread/INFO]: - We recommend installing https://ae.advancedplugins.net/advancedenchantments-ui to enhance your experience with our UI overhaul!
+[21:12:35] [Server thread/INFO]: [AdvancedEnchantments] Loading Minecraft Version MC1_19_R1
+[21:12:36] [Server thread/INFO]: [AdvancedEnchantments] Loaded 7 armor sets.
+[21:12:36] [Server thread/INFO]: [AdvancedEnchantments] Loaded 5 weapons.
+[21:12:36] [Server thread/ERROR]: [STDERR] [org.bukkit.craftbukkit.v1_19_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[21:12:41] [Server thread/ERROR]: [AdvancedEnchantments] Plugin AdvancedEnchantments v9.15.3 has failed to register events for class net.advancedplugins.ae.globallisteners.listeners.GrindstoneListener$Grindstone1_18_Listener because org/bukkit/event/inventory/PrepareGrindstoneEvent does not exist.
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] Enabling DeluxeCombat v1.70.1
+[21:12:41] [Server thread/INFO]: [DeluxeCombat]  _____        _                   ______            _                
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] (____ \      | |                 / _____)          | |          _    
+[21:12:41] [Server thread/INFO]: [DeluxeCombat]  _   \ \ ____| |_   _ _   _ ____| /      ___  ____ | | _   ____| |_  
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] | |   | / _  ) | | | ( \ / ) _  ) |     / _ \|    \| || \ / _  |  _) 
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] | |__/ ( (/ /| | |_| |) X ( (/ /| \____| |_| | | | | |_) | ( | | |__ 
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] |_____/ \____)_|\____(_/ \_)____)\______)___/|_|_|_|____/ \_||_|\___)
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] 
+[21:12:41] [Server thread/WARN]: [DeluxeCombat] "DeluxeCombat v1.70.1" has registered a listener for net.advancedplugins.ae.api.EnchantActivateEvent on method "public void nl.marido.deluxecombat.hooks.plugins.itemplugins.AEHook.onEnchantActivateEvent(net.advancedplugins.ae.api.EnchantActivateEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [Marido, timderspieler].
+[21:12:41] [Server thread/INFO]: [DeluxeCombat] Hook AdvancedEnchantments (8.0.0b29, Item Hook) has been registered.
+[21:12:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R1! Trying to find NMS support
+[21:12:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R1' loaded!
+[21:12:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeCombat' to create a bStats instance!
+[21:12:42] [Server thread/INFO]: [DeluxeCombat] Spawnpoints (0), Kill-Streaks (1), Rewards (2), Custom Tools (1) loaded!
+[21:12:42] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[21:12:42] [Server thread/INFO]: [DeluxeCombat] Start fetching marketplace addons...
+[21:12:42] [Server thread/INFO]: Running delayed init tasks
+[21:12:42] [Craft Scheduler Thread - 0 - nAntiBot/INFO]: [nAntiBot] Connecting to the remote server antibot.nickuc.com...
+[21:12:42] [Craft Scheduler Thread - 4 - Essentials/INFO]: [Essentials] Fetching version information...
+[21:12:43] [Craft Scheduler Thread - 9 - TradeSystem/INFO]: [TradeSystem] Database was started successfully.
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.5.2[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mae257f6[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[21:12:43] [Craft Scheduler Thread - 0 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[21:12:43] [Server thread/INFO]: Done (22.197s)! For help, type "help"
+[21:12:43] [Server thread/INFO]: Timings Reset
+[21:12:43] [Craft Scheduler Thread - 10 - DeluxeCombat/INFO]: [DeluxeCombat] Successfully fetched 15 marketplace items from the internet!
+[21:12:44] [Server thread/INFO]: [AdvancedEnchantments] Successfully hooked into ProtocolLib, AdvancedEnchantments, Essentials, LuckPerms.
+[21:12:44] [User Authenticator #0/INFO]: UUID of player S3B4ST109 is efb3d617-b2e8-32e8-b673-fb5e36c940b7
+[21:12:44] [User Authenticator #0/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
+[21:12:45] [Craft Scheduler Thread - 8 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
+[21:12:45] [Craft Scheduler Thread - 8 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
+[21:12:46] [Server thread/INFO]: S3B4ST109[/127.165.76.113:33387] logged in with entity id 16 at ([world]1281.1898120280669, -45.0, -184.30000001192093)
+[21:12:46] [Server thread/INFO]: ImNotFish[/127.169.76.46:47929] logged in with entity id 22 at ([world]610.658351760766, 11.0, -208.4458684708595)
+[21:12:47] [Craft Scheduler Thread - 8 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully logged in.
+[21:12:48] [pool-12-thread-4/INFO]: [nAntiBot] [Captcha] Captchas generated successfully. (RAM usage ≃ 8 MB [static only], total = 500, protocol count = 45, threads = 4, took 21.51s)
+[21:12:51] [Craft Scheduler Thread - 5 - nLogin/INFO]: [nLogin] The user S3B4ST109 has successfully logged in.
+[21:12:53] [Server thread/INFO]: [DeluxeCombat] Hooked into AdvancedEnchantments
+[21:13:02] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
+[21:13:02] [Server thread/INFO]: Futorista[/127.100.255.139:48079] logged in with entity id 724 at ([world]199.92570755183635, -41.68966364707286, 148.30000001192093)
+[21:13:09] [Craft Scheduler Thread - 8 - nLogin/INFO]: [nLogin] The user Futorista has successfully logged in.
+[21:13:28] [Server thread/INFO]: Futorista issued server command: /pl
+[21:13:30] [Server thread/INFO]: Futorista issued server command: /home
+[21:13:38] [Server thread/INFO]: Futorista issued server command: /ae help
+[21:13:41] [Server thread/INFO]: Futorista issued server command: /ae
+[21:13:50] [Server thread/INFO]: Futorista issued server command: /enchant
+[21:13:52] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:13:59] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:14:01] [Server thread/INFO]: Futorista issued server command: /tinkerer
+[21:14:04] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:14:14] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish
+[21:14:25] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[21:14:39] [Server thread/INFO]: Futorista issued server command: /dc
+[21:14:41] [Server thread/INFO]: Futorista issued server command: /dc menu
+[21:14:50] [Server thread/INFO]: Futorista issued server command: /dc
+[21:14:52] [Server thread/INFO]: Futorista issued server command: /dc m
+[21:14:54] [Server thread/INFO]: Futorista issued server command: /dc menu
+[21:15:32] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[21:15:44] [Async Chat Thread - #0/INFO]: [Not Secure] <Futorista> &c&lSV &8- &r
+[21:15:45] [Server thread/INFO]: S3B4ST109 has made the advancement [Acquire Hardware]
+[21:15:48] [Server thread/INFO]: ImNotFish lost connection: Disconnected
+[21:15:48] [Server thread/INFO]: [DeluxeCombat] Player ImNotFish left the server during combat.
+[21:15:48] [Server thread/INFO]: SV -ImNotFish se fue mientras estaba en combate con Futorista
+[21:15:54] [User Authenticator #1/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
+[21:15:54] [Server thread/INFO]: ImNotFish[/127.169.76.46:58197] logged in with entity id 1892 at ([world]598.9753910008117, 111.0, -240.62771994241606)
+[21:15:55] [Craft Scheduler Thread - 9 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully logged in.
+[21:16:35] [User Authenticator #1/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[21:16:35] [Server thread/INFO]: daniel98120[/127.211.21.126:57859] logged in with entity id 2036 at ([world]211.30000001192093, -48.0, 169.30000001192093)
+[21:16:40] [Craft Scheduler Thread - 17 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[21:16:43] [Server thread/INFO]: Futorista issued server command: /dc menu
+[21:16:46] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&ksd&r &8&l&o&m&uPou &r&0&uS&mword&r &l &kds
+[21:16:56] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&ksd&r &8&l&o&m&Pou &r&0&uS&mword&r &l &kds
+[21:17:03] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&ksd&r &8&l&o&mPou &r&0&uS&mword&r &l &kds
+[21:17:06] [Server thread/INFO]: Futorista issued server command: /pl
+[21:17:12] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
+[21:17:24] [Server thread/INFO]: Futorista issued server command: /tphere ImNotFish
+[21:17:37] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:17:47] [Server thread/INFO]: Futorista issued server command: /ae
+[21:17:57] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&k&0sd&r &8&l&o&m&uPou &r&0&uS&mword&r &l &kds
+[21:18:06] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&k&0&r &8&l&o&m&uPou &r&0&uS&mword&r &l &kds
+[21:18:10] [Server thread/INFO]: Futorista has made the advancement [Enchanter]
+[21:18:16] [Server thread/INFO]: daniel98120 issued server command: /ie rename &l&ksd&r &8&l&o&m&uPou &r&0&uS&mword&r &l &kds
+[21:18:18] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:18:45] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:18:48] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
+[21:18:49] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:18:53] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:19:08] [Server thread/INFO]: Futorista issued server command: /lp group default permission set tradesystem.trade
+[21:19:08] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[21:19:08] [luckperms-command-executor/INFO]: [LP] LOG > permission set tradesystem.trade true
+[21:19:13] [Server thread/INFO]: ImNotFish issued server command: /trade accept
+[21:19:24] [Server thread/INFO]: Futorista issued server command: /lp group default permission set tradesystem.trade
+[21:19:44] [Server thread/INFO]: Futorista issued server command: /lp group default permission set tradesystem.trade.initiate
+[21:19:44] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[21:19:44] [luckperms-command-executor/INFO]: [LP] LOG > permission set tradesystem.trade.initiate true
+[21:19:51] [Server thread/INFO]: Futorista issued server command: /lp group default permission set tradesystem.trade
+[21:19:54] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:19:54] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
+[21:19:56] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:19:56] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:20:01] [Server thread/INFO]: Futorista issued server command: /trade S3B4ST109
+[21:20:03] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:20:07] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:21:02] [Server thread/INFO]: Futorista issued server command: /tradesystem layout
+[21:21:06] [Server thread/INFO]: Futorista issued server command: /tradesystem len
+[21:21:13] [Server thread/INFO]: Futorista issued server command: /invsee ImNotFish
+[21:21:14] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[21:21:21] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[21:21:34] [Server thread/INFO]: Futorista issued server command: /tphere ImNotFish
+[21:21:50] [Server thread/INFO]: S3B4ST109 issued server command: /home
+[21:22:04] [Server thread/INFO]: Futorista issued server command: /tphere ImNotFish
+[21:22:13] [User Authenticator #2/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[21:22:13] [Server thread/INFO]: daniel98120[/127.211.21.126:46921] logged in with entity id 5034 at ([world]594.5, 112.0, -248.5)
+[21:22:21] [Craft Scheduler Thread - 7 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[21:22:26] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
+[21:22:46] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:22:54] [Server thread/INFO]: S3B4ST109 has made the advancement [Cover Me with Diamonds]
+[21:22:55] [User Authenticator #2/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[21:22:55] [Server thread/INFO]: daniel98120[/127.211.21.126:45605] logged in with entity id 5417 at ([world]602.6999999880791, 111.0, -244.69999998807907)
+[21:23:00] [Craft Scheduler Thread - 15 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[21:23:04] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&m&uPou &r&0&uS&mword&r&l&kds
+[21:23:12] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&mPou &r&0&uS&mword&r&l&kds
+[21:23:16] [Server thread/INFO]: daniel98120 issued server command: /tpa Futorista
+[21:23:28] [Server thread/INFO]: Futorista issued server command: /tphere daniel98120
+[21:23:36] [Server thread/INFO]: Futorista issued server command: /tradesystem reload
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: __________________________________________________________
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: Status:
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]:   > Cancelling all active trades
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: Finished (2ms)
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: __________________________________________________________
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: __________________________________________________________
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: Status:
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]:   > Loading sounds
+[21:23:36] [Server thread/INFO]:   > Loading blacklist
+[21:23:36] [Server thread/INFO]:     ...got 6 blocked item(s)
+[21:23:36] [Server thread/INFO]:   > Loading layouts
+[21:23:36] [Server thread/INFO]:     ...got 3 layout(s)
+[21:23:36] [Server thread/INFO]:   > Queuing database initializing task
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: Finished (119ms)
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Server thread/INFO]: __________________________________________________________
+[21:23:36] [Server thread/INFO]:  
+[21:23:36] [Craft Scheduler Thread - 32 - TradeSystem/INFO]: [TradeSystem] Database was started successfully.
+[21:23:38] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:23:40] [Server thread/INFO]: SV-Futorista Fue apuñalado por daniel98120 (20 ❤) usando el siguiente item: xd Pou &uSwordds
+[21:23:43] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:23:47] [Server thread/INFO]: Futorista issued server command: /tp daniel98120
+[21:23:47] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:24:03] [Server thread/INFO]: Futorista issued server command: /dc me
+[21:24:04] [Server thread/INFO]: Futorista issued server command: /dc me
+[21:24:07] [Server thread/INFO]: Futorista issued server command: /dc menu
+[21:24:23] [User Authenticator #3/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[21:24:23] [Server thread/INFO]: daniel98120[/127.211.21.126:50141] logged in with entity id 6289 at ([world]898.5633510757907, 88.0, -686.0743696904439)
+[21:24:29] [Craft Scheduler Thread - 28 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[21:24:36] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&m&uPou &r&0&uS&mword&r&l&kds
+[21:24:46] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&mPou &r&0&uS&mword&r&l&kds
+[21:24:54] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:24:56] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&Pou &r&0&uS&mword&r&l&kds
+[21:25:01] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&m&uPou &r&0&uS&mword&r&l&kds
+[21:25:07] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&m&Pou &r&0&uS&mword&r&l&kds
+[21:25:23] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:25:36] [Server thread/INFO]: daniel98120 issued server command: /ie rename &0&l&kxd &r&8&l&o&m&uPou &uS&mword&r&l&kds
+[21:25:40] [Server thread/INFO]: Futorista issued server command: /ie rename &0&l&kxd &r&8&l&o&m&Pou &r&0&uS&mword&r&l&kds
+[21:25:41] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:25:43] [Server thread/INFO]: SV-Futorista Fue apuñalado por daniel98120 (19 ❤) usando el siguiente item: xd &uPou &uSwordds
+[21:25:47] [Server thread/INFO]: Futorista issued server command: /tp daniel98120
+[21:25:48] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:25:52] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:25:56] [Server thread/INFO]: Futorista issued server command: /dc menu
+[21:26:13] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:26:15] [Server thread/INFO]: SV-Futorista No sabía que la colina era tan alta
+[21:26:17] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:26:20] [Server thread/INFO]: Futorista issued server command: /back
+[21:26:50] [Server thread/INFO]: Futorista issued server command: /dc reload
+[21:26:55] [Server thread/INFO]: Futorista issued server command: /dc reload config
+[21:26:55] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[21:27:09] [Server thread/INFO]: Futorista issued server command: /ae
+[21:27:18] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:27:19] [Server thread/INFO]: Futorista issued server command: /alchemist
+[21:27:22] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:27:23] [Server thread/INFO]: Futorista issued server command: /tinkerer
+[21:27:27] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:27:41] [Server thread/INFO]: Futorista issued server command: /xp give Futorista 15151545451
+[21:27:47] [Server thread/INFO]: Futorista issued server command: /xp give Futorista 15151l
+[21:27:50] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:28:05] [Server thread/INFO]: Futorista issued server command: /ae info gemify
+[21:28:10] [Server thread/INFO]: Futorista issued server command: /enchanter
+[21:29:08] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:29:11] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:29:18] [Server thread/INFO]: Futorista issued server command: /ae admin
+[21:30:48] [Server thread/INFO]: Futorista issued server command: /tradesystem reload
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: __________________________________________________________
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: Status:
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]:   > Cancelling all active trades
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: Finished (1ms)
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: __________________________________________________________
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: __________________________________________________________
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: Status:
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]:   > Loading sounds
+[21:30:48] [Server thread/INFO]:   > Loading blacklist
+[21:30:48] [Server thread/INFO]:     ...got 9 blocked item(s)
+[21:30:48] [Server thread/INFO]:   > Loading layouts
+[21:30:48] [Server thread/INFO]:     ...got 3 layout(s)
+[21:30:48] [Server thread/INFO]:   > Queuing database initializing task
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: Finished (102ms)
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Server thread/INFO]: __________________________________________________________
+[21:30:48] [Server thread/INFO]:  
+[21:30:48] [Craft Scheduler Thread - 43 - TradeSystem/INFO]: [TradeSystem] Database was started successfully.
+[21:30:51] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:30:53] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:30:54] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:30:57] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:30:58] [Server thread/ERROR]: Could not pass event InventoryCloseEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.Trade.moveCursorItemToInventory(Trade.java:900) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade.returnItemsToOwner(Trade.java:884) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade.cancel(Trade.java:687) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade.cancel(Trade.java:678) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade.cancel(Trade.java:667) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradingGUI.destroy(TradingGUI.java:48) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.lib.codingapi.API.removeRemovable(API.java:230) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.lib.codingapi.player.gui.inventory.v2.GUI.forceClose(GUI.java:149) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.lib.codingapi.player.gui.inventory.v2.GUIListener.onClose(GUIListener.java:35) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor481.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.event.CraftEventFactory.handleInventoryCloseEvent(CraftEventFactory.java:1534) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:3071) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClose(ServerGamePacketListenerImpl.java:3064) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.handle(ServerboundContainerClosePacket.java:15) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClosePacket.a(ServerboundContainerClosePacket.java:10) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:30:59] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:30:59] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:30:59] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:30:59] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:01] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:02] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:03] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:03] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:03] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:04] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:05] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:05] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:05] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1445) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:06] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onForbiddenClick(TradeGUIListener.java:92) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor162.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:06] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.checkForShulkerBoxes(TradeGUIListener.java:161) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onShulkerBoxClick(TradeGUIListener.java:111) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor159.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:06] [Server thread/ERROR]: Could not pass event InventoryClickEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.gui.Actions$Configuration.lambda$DEFAULT$1(Actions.java:77) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.Actions.projectResult(Actions.java:158) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.gui.TradeGUIListener.onClick(TradeGUIListener.java:134) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor163.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleContainerClick(ServerGamePacketListenerImpl.java:3307) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:58) ~[?:?]
+	at net.minecraft.network.protocol.game.ServerboundContainerClickPacket.handle(ServerboundContainerClickPacket.java:23) ~[?:?]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$1(PacketUtils.java:51) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:10] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:31:10] [User Authenticator #4/INFO]: UUID of player daniel98120 is 436f72ce-0dd8-3f36-b2bd-ad61fb0d6d3f
+[21:31:10] [Server thread/INFO]: daniel98120[/127.211.21.126:48097] logged in with entity id 14842 at ([world]897.349044158841, 88.0, -685.0385544512999)
+[21:31:11] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:31:11] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:31:13] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:31:13] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:14] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:15] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:15] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:15] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:17] [Craft Scheduler Thread - 14 - nLogin/INFO]: [nLogin] The user daniel98120 has successfully logged in.
+[21:31:17] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:31:22] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:31:23] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:23] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:23] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:24] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:26] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:31:26] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:31:32] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:31:37] [Server thread/INFO]: Futorista issued server command: /trade daniel98120
+[21:31:40] [Server thread/INFO]: daniel98120 issued server command: /trade accept Futorista
+[21:31:42] [Server thread/INFO]: daniel98120 issued server command: /trade accept Futorista
+[21:31:43] [Server thread/ERROR]: Could not pass event PlayerPickupItemEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.Trade.canPickup(Trade.java:921) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade$2.onPickup(Trade.java:939) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.world.entity.item.ItemEntity.playerTouch(ItemEntity.java:452) ~[?:?]
+	at net.minecraft.world.entity.player.Player.touch(Player.java:630) ~[?:?]
+	at net.minecraft.world.entity.player.Player.aiStep(Player.java:596) ~[?:?]
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2992) ~[?:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:277) ~[?:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:688) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:365) ~[?:?]
+	at net.minecraft.network.Connection.tick(Connection.java:588) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:233) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1565) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1397) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:44] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:44] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:31:47] [Server thread/ERROR]: Could not pass event PlayerPickupItemEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.Trade.canPickup(Trade.java:921) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade$2.onPickup(Trade.java:939) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.world.entity.item.ItemEntity.playerTouch(ItemEntity.java:452) ~[?:?]
+	at net.minecraft.world.entity.player.Player.touch(Player.java:630) ~[?:?]
+	at net.minecraft.world.entity.player.Player.aiStep(Player.java:596) ~[?:?]
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2992) ~[?:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:277) ~[?:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:688) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:365) ~[?:?]
+	at net.minecraft.network.Connection.tick(Connection.java:588) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:233) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1565) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1397) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:31:48] [Server thread/INFO]: Futorista issued server command: /trade daniel98120
+[21:31:57] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:31:58] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:32:03] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:32:05] [Server thread/INFO]: daniel98120 issued server command: /trade Futorista
+[21:32:06] [Server thread/INFO]: Futorista issued server command: /trade accept ImNotFish
+[21:32:08] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:32:10] [Server thread/INFO]: Futorista issued server command: /trade accept ImNotFish
+[21:32:13] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:32:14] [Server thread/INFO]: daniel98120 issued server command: /trade Futorista
+[21:32:17] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:32:19] [Server thread/INFO]: daniel98120 issued server command: /trade Futorista
+[21:32:21] [Server thread/INFO]: Futorista issued server command: /trade accept daniel98120
+[21:32:22] [Server thread/INFO]: Futorista issued server command: /trade accept daniel98120
+[21:32:23] [Server thread/INFO]: Futorista issued server command: /trade accept daniel98120
+[21:32:23] [Server thread/INFO]: daniel98120 issued server command: /trade Futorista
+[21:32:25] [Server thread/INFO]: Futorista issued server command: /trade accept daniel98120
+[21:32:28] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:32:37] [Server thread/ERROR]: Could not pass event PlayerPickupItemEvent to TradeSystem v2.6.3
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.inventory.InventoryView, but interface was expected
+	at de.codingair.tradesystem.spigot.trade.Trade.canPickup(Trade.java:921) ~[TradeSystem_v2.6.3.jar:?]
+	at de.codingair.tradesystem.spigot.trade.Trade$2.onPickup(Trade.java:939) ~[TradeSystem_v2.6.3.jar:?]
+	at com.destroystokyo.paper.event.executor.MethodHandleEventExecutor.execute(MethodHandleEventExecutor.java:40) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:git-Paper-307]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.world.entity.item.ItemEntity.playerTouch(ItemEntity.java:452) ~[?:?]
+	at net.minecraft.world.entity.player.Player.touch(Player.java:630) ~[?:?]
+	at net.minecraft.world.entity.player.Player.aiStep(Player.java:596) ~[?:?]
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2992) ~[?:?]
+	at net.minecraft.world.entity.player.Player.tick(Player.java:277) ~[?:?]
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:688) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:365) ~[?:?]
+	at net.minecraft.network.Connection.tick(Connection.java:588) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:233) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1565) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1397) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1173) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[21:32:43] [Server thread/INFO]: Futorista issued server command: /tradesystem reload
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: __________________________________________________________
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: Status:
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]:   > Cancelling all active trades
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: Finished (1ms)
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: __________________________________________________________
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: __________________________________________________________
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: Status:
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]:   > Loading sounds
+[21:32:43] [Server thread/INFO]:   > Loading blacklist
+[21:32:43] [Server thread/INFO]:     ...got 12 blocked item(s)
+[21:32:43] [Server thread/INFO]:   > Loading layouts
+[21:32:43] [Server thread/INFO]:     ...got 3 layout(s)
+[21:32:43] [Server thread/INFO]:   > Queuing database initializing task
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: Finished (94ms)
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Server thread/INFO]: __________________________________________________________
+[21:32:43] [Server thread/INFO]:  
+[21:32:43] [Craft Scheduler Thread - 46 - TradeSystem/INFO]: [TradeSystem] Database was started successfully.
+[21:32:44] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:32:46] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:32:48] [Server thread/INFO]: Futorista issued server command: /trade accept ImNotFish
+[21:32:48] [Server thread/INFO]: daniel98120 issued server command: /trade Futorista
+[21:32:49] [Server thread/INFO]: Futorista issued server command: /trade accept daniel98120
+[21:32:51] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:33:01] [Server thread/INFO]: Futorista lost connection: Disconnected
+[21:33:05] [User Authenticator #5/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
+[21:33:05] [Server thread/INFO]: Futorista[/127.100.255.139:49797] logged in with entity id 16760 at ([world]981.3000000119209, 122.11907372644295, -503.30000001192093)
+[21:33:14] [Server thread/INFO]: daniel98120 issued server command: /tpa ImNotFish
+[21:33:15] [Craft Scheduler Thread - 32 - nLogin/INFO]: [nLogin] The user Futorista has successfully logged in.
+[21:33:18] [Server thread/INFO]: Futorista issued server command: /trade daniel98120
+[21:33:20] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
+[21:33:20] [Server thread/INFO]: Futorista issued server command: /trade daniel98120
+[21:33:22] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:33:23] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[21:33:24] [Server thread/INFO]: Futorista issued server command: /trade daniel98120
+[21:33:24] [Server thread/INFO]: daniel98120 lost connection: Disconnected
+[21:33:29] [Server thread/INFO]: ImNotFish issued server command: /trade Futorista
+[21:33:31] [Server thread/INFO]: Futorista issued server command: /trade accept ImNotFish
+[21:33:39] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:40] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:40] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:40] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:41] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:41] [Server thread/INFO]: Futorista issued server command: /trade deny
+[21:33:44] [Server thread/INFO]: Futorista issued server command: /trade toggle
+[21:33:47] [Server thread/INFO]: Futorista issued server command: /trade toggle
+[21:33:58] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:34:00] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:00] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:01] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:08] [Server thread/INFO]: ImNotFish issued server command: /trade toggle
+[21:34:13] [Server thread/INFO]: ImNotFish issued server command: /trade toggle
+[21:34:18] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:19] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:22] [Server thread/INFO]: Futorista issued server command: /trade ImNotFish
+[21:34:25] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:25] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:26] [Server thread/INFO]: ImNotFish issued server command: /trade accept Futorista
+[21:34:30] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[21:35:22] [Server thread/INFO]: Futorista issued server command: /ae reload
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "strike" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "impact" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "explosive" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "frenzy" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "hunter" enchantment! Reason: enchant type "BOW_MOB" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "soulless" enchantment! Reason: enchant type "BOW_MOB" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "virus" enchantment! Reason: enchant type "BOW_MOB" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "poisoned" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "snare" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "perish" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "bowmaster" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "arrowdeflect" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "arrowbreak" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "fumble" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "reinforced" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "piercing" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "archer" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "marksman" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "poseidon" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "heavy" enchantment! Reason: enchant type "DEFENSE_BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "hellfire" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "missile" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "longbow" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "chaos" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "abiding" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "striker" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "sniper" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "deadshot" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "neutralize" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "spark" enchantment! Reason: enchant type "BOW" is invalid!
+[21:35:22] [Server thread/INFO]: [AdvancedEnchantments] Loaded 7 armor sets.
+[21:35:26] [Server thread/INFO]: ImNotFish lost connection: Disconnected
+[21:35:30] [User Authenticator #6/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
+[21:35:30] [Server thread/INFO]: ImNotFish[/127.169.76.46:45317] logged in with entity id 18331 at ([world]214.20142932997726, 63.0, 878.2181937440025)
+[21:35:32] [Craft Scheduler Thread - 50 - nLogin/INFO]: [nLogin] The user ImNotFish has successfully logged in.
+[21:35:35] [Server thread/INFO]: Futorista issued server command: /ae admin
+[21:36:46] [Server thread/INFO]: Futorista issued server command: /lp group default permission set
+[21:36:50] [Server thread/INFO]: Futorista issued server command: /gms ImNotFish
+[21:38:01] [Server thread/INFO]: Futorista issued server command: /heal ImNotFish
+[21:38:47] [Server thread/INFO]: Futorista issued server command: /ae premade
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §aconfig.yml §7file...
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §aanvil.yml §7file...
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §amobs.yml §7file...
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §aenchantments.yml §7file...
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §aenchantmentTable.yml §7file...
+[21:38:49] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §agroups.yml §7file...
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §alootConfiguration.yml §7file...
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §amenus/customcommands.yml §7file...
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Downloading §amenus/gkits.yml §7file...
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §a-----------------------------------------
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §7Download has been §acompleted!
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §a§nTo install§7 these new files, restart your server.
+[21:38:50] [Craft Scheduler Thread - 28 - AdvancedEnchantments/INFO]: §a-----------------------------------------
+[21:40:02] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
+[21:40:02] [Server thread/INFO]: S3B4ST109 lost connection: Server is restarting
+[21:40:02] [Server thread/INFO]: Futorista lost connection: Server is restarting
+[21:40:02] [Server thread/INFO]: ImNotFish lost connection: Server is restarting
+[21:40:02] [Server thread/INFO]: Stopping server
+[21:40:02] [Server thread/INFO]: [DeluxeCombat] Disabling DeluxeCombat v1.70.1
+[21:40:02] [Server thread/INFO]: [DeluxeCombat] Closing SQLite connection...
+[21:40:02] [Server thread/INFO]: [DeluxeCombat] SQLite connection closed.
+[21:40:02] [Server thread/INFO]: [AdvancedEnchantments] Disabling AdvancedEnchantments v9.15.3
+[21:40:02] [Server thread/INFO]: [TradeSystem] Disabling TradeSystem v2.6.3
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: __________________________________________________________
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]:                        TradeSystem [2.6.3]
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: Status:
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: MC-Version: Paper (git-Paper-307 (MC: 1.19.2))
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]:   > Cancelling all active trades
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: Finished (1ms)
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: __________________________________________________________
+[21:40:02] [Server thread/INFO]:  
+[21:40:02] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.5.2
+[21:40:02] [Server thread/INFO]: [nLogin] Disabling nLogin v10.4.18
+[21:40:02] [Server thread/INFO]: [nLogin] Successful plugin core shutdown (took 0.00s)
+[21:40:02] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[21:40:02] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.2.0-SNAPSHOT-679
+[21:40:02] [Server thread/INFO]: [AxVaults] Disabling AxVaults v2.6.0
+[21:40:02] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+160-e2295c1
+[21:40:02] [Server thread/INFO]: [nAntiBot] Disabling nAntiBot v6.1.27
+[21:40:02] [Server thread/INFO]: [nAntiBot] Successful plugin core shutdown (took 0.00s)
+[21:40:02] [Server thread/INFO]: [nAntiBot] Disconnecting from remote server...
+[21:40:04] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.153
+[21:40:04] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[21:40:04] [Server thread/INFO]: [LuckPerms] Closing storage...
+[21:40:04] [Server thread/INFO]: [LuckPerms] Goodbye!
+[21:40:04] [Server thread/INFO]: Saving players
+[21:40:04] [Server thread/INFO]: Saving worlds
+[21:40:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:40:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:40:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:40:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:40:07] [Server thread/INFO]: [ChunkHolderManager] Saved 3461 block chunks, 1977 entity chunks, 21 poi chunks in world 'world' in 3.03s
+[21:40:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:40:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[21:40:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:40:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:40:08] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[21:40:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:40:08] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:40:08] [Server thread/INFO]: Saving usercache.json
+[21:40:08] [Server thread/INFO]: Flushing Chunk IO
+[21:40:08] [Server thread/INFO]: Closing Thread Pool
+[21:40:08] [Server thread/INFO]: Closing Server
