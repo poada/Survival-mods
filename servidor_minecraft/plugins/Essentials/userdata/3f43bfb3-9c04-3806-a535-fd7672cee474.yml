@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.34.92.142
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737843253530
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737843515674
+  login: 1737843518318
+money: '0'
+last-account-name: DropeddByBrobi
+lastlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 41.869911056745714
+  y: 65.0
+  z: -14.651343616792513
+  yaw: -36.29999542236328
+  pitch: 39.15005874633789
+logoutlocation:
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 205.30000001192093
+  y: 64.0
+  z: 793.6999999880791
+  yaw: 177.8497314453125
+  pitch: -6.364205837249756

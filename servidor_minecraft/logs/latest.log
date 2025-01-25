@@ -383,3 +383,65 @@
 [22:07:44] [Server thread/INFO]: Futorista issued server command: /pv 1
 [22:07:52] [Server thread/INFO]: Futorista issued server command: /pv 1
 [22:07:54] [Server thread/INFO]: Futorista issued server command: /pv 2
+[22:08:38] [Server thread/INFO]: Futorista issued server command: /pv 2
+[22:08:40] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:09:37] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:09:41] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:10:40] [User Authenticator #7/INFO]: UUID of player DropeddByBrobi is 3f43bfb3-9c04-3806-a535-fd7672cee474
+[22:10:40] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@58eacfa6[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:58589): You are not whitelisted on this server!
+[22:10:40] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@58eacfa6[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:58589): You are not whitelisted on this server!
+[22:10:40] [Server thread/INFO]: com.mojang.authlib.GameProfile@58eacfa6[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:58589) lost connection: You are not whitelisted on this server!
+[22:11:05] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:12:31] [User Authenticator #8/INFO]: UUID of player DropeddByBrobi is 3f43bfb3-9c04-3806-a535-fd7672cee474
+[22:12:31] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@400aa4f7[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:41949): You are not whitelisted on this server!
+[22:12:31] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@400aa4f7[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:41949): You are not whitelisted on this server!
+[22:12:31] [Server thread/INFO]: com.mojang.authlib.GameProfile@400aa4f7[id=3f43bfb3-9c04-3806-a535-fd7672cee474,name=DropeddByBrobi,properties={},legacy=false] (/127.34.92.142:41949) lost connection: You are not whitelisted on this server!
+[22:12:39] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:12:48] [Server thread/INFO]: Futorista issued server command: /pv 2
+[22:13:24] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[22:13:31] [Server thread/INFO]: Added DropeddByBrobi to the whitelist
+[22:13:49] [User Authenticator #9/INFO]: UUID of player DropeddByBrobi is 3f43bfb3-9c04-3806-a535-fd7672cee474
+[22:13:49] [Server thread/INFO]: DropeddByBrobi joined the game
+[22:13:49] [Server thread/INFO]: DropeddByBrobi[/127.34.92.142:39261] logged in with entity id 74453 at ([world]42.5, 64.0, -15.5)
+[22:14:01] [Server thread/INFO]: DropeddByBrobi issued server command: /tpa S3B4ST109
+[22:14:08] [Server thread/INFO]: DropeddByBrobi issued server command: /tpa Futorista
+[22:14:13] [Server thread/INFO]: Futorista issued server command: /tpaccept
+[22:14:18] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:14:21] [Server thread/INFO]: DropeddByBrobi has made the advancement [Acquire Hardware]
+[22:14:24] [Server thread/INFO]: DropeddByBrobi has made the advancement [Isn't It Iron Pick]
+[22:14:27] [Server thread/INFO]: DropeddByBrobi has made the advancement [Diamonds!]
+[22:14:29] [Server thread/INFO]: Futorista issued server command: /kit inicial
+[22:14:31] [Server thread/INFO]: DropeddByBrobi issued server command: /kit
+[22:14:36] [Server thread/INFO]: DropeddByBrobi has made the advancement [Getting an Upgrade]
+[22:14:36] [Server thread/INFO]: S3B4ST109 issued server command: /kit
+[22:14:40] [Server thread/INFO]: S3B4ST109 issued server command: /kit inicial
+[22:14:47] [Server thread/INFO]: S3B4ST109 issued server command: /kit inicial
+[22:15:09] [Server thread/INFO]: S3B4ST109 has made the advancement [Spooky Scary Skeleton]
+[22:15:41] [Server thread/INFO]: Futorista issued server command: /ie lore
+[22:15:48] [Server thread/INFO]: Made Futorista a server operator
+[22:16:18] [Server thread/INFO]: Futorista issued server command: /lp group default permission set itemedit.itemedit.lore.color
+[22:16:18] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[22:16:18] [luckperms-command-executor/INFO]: [LP] LOG > permission set itemedit.itemedit.lore.color true
+[22:16:20] [Server thread/INFO]: Futorista issued server command: /lp group default permission set itemedit.itemedit.lore.copy
+[22:16:20] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[22:16:20] [luckperms-command-executor/INFO]: [LP] LOG > permission set itemedit.itemedit.lore.copy true
+[22:16:23] [Server thread/INFO]: Futorista issued server command: /lp group default permission set itemedit.itemedit.lore.format
+[22:16:23] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[22:16:23] [luckperms-command-executor/INFO]: [LP] LOG > permission set itemedit.itemedit.lore.format true
+[22:16:25] [Server thread/INFO]: Futorista issued server command: /lp group default permission set itemedit.itemedit.lore.minimessage
+[22:16:25] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[22:16:25] [luckperms-command-executor/INFO]: [LP] LOG > permission set itemedit.itemedit.lore.minimessage true
+[22:16:32] [Server thread/INFO]: Futorista issued server command: /lp group default permission set itemedit.itemedit.lore
+[22:16:32] [luckperms-command-executor/INFO]: [LP] LOG > (Futorista) [G] (default)
+[22:16:32] [luckperms-command-executor/INFO]: [LP] LOG > permission set itemedit.itemedit.lore true
+[22:16:40] [Server thread/INFO]: Made Futorista no longer a server operator
+[22:16:51] [Server thread/INFO]: Futorista issued server command: /ie lore set 1 La mamadora
+[22:16:58] [Server thread/INFO]: Futorista issued server command: /ie lore set 1 &6La mamadora
+[22:17:26] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:17:29] [Server thread/INFO]: Futorista issued server command: /spawn
+[22:18:02] [Server thread/INFO]: S3B4ST109 has made the advancement [Ol' Betsy]
+[22:18:02] [Server thread/INFO]: S3B4ST109 has made the advancement [Take Aim]
+[22:18:03] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:18:11] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:18:35] [Server thread/INFO]: DropeddByBrobi lost connection: Disconnected
+[22:18:35] [Server thread/INFO]: DropeddByBrobi left the game

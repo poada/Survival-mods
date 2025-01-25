@@ -71,6 +71,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/nether_brick_slab": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2025-01-24 21:15:45 +0000"
@@ -122,6 +128,12 @@
   "minecraft:recipes/building_blocks/magenta_wool": {
     "criteria": {
       "has_white_wool": "2025-01-24 20:33:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magma_block": {
+    "criteria": {
+      "has_magma_cream": "2025-01-25 22:08:15 +0000"
     },
     "done": true
   },
@@ -541,11 +553,15 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:blaze": "2025-01-25 22:05:49 +0000",
       "minecraft:skeleton": "2025-01-24 20:43:09 +0000",
       "minecraft:hoglin": "2025-01-25 21:58:35 +0000",
+      "minecraft:magma_cube": "2025-01-25 22:08:13 +0000",
       "minecraft:spider": "2025-01-24 21:08:46 +0000",
       "minecraft:piglin_brute": "2025-01-25 00:46:03 +0000",
       "minecraft:creeper": "2025-01-24 23:08:08 +0000",
+      "minecraft:zombified_piglin": "2025-01-25 22:09:54 +0000",
+      "minecraft:wither_skeleton": "2025-01-25 22:07:35 +0000",
       "minecraft:cave_spider": "2025-01-24 21:10:55 +0000",
       "minecraft:piglin": "2025-01-25 00:25:27 +0000",
       "minecraft:enderman": "2025-01-25 00:28:49 +0000",
@@ -632,6 +648,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2025-01-24 21:03:11 +0000"
@@ -653,6 +675,12 @@
   "minecraft:recipes/combat/netherite_boots_smithing": {
     "criteria": {
       "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_wall_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
     },
     "done": true
   },
@@ -722,6 +750,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2025-01-25 22:05:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/black_wool": {
     "criteria": {
       "has_white_wool": "2025-01-24 20:33:04 +0000"
@@ -767,6 +801,12 @@
   "minecraft:recipes/building_blocks/crimson_slab": {
     "criteria": {
       "has_planks": "2025-01-25 00:28:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
     },
     "done": true
   },
@@ -1028,6 +1068,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget_from_blasting": {
     "criteria": {
       "has_iron_leggings": "2025-01-24 20:40:28 +0000"
@@ -1075,6 +1121,7 @@
       "minecraft:old_growth_pine_taiga": "2025-01-24 20:38:24 +0000",
       "minecraft:taiga": "2025-01-24 20:32:35 +0000",
       "minecraft:birch_forest": "2025-01-24 21:34:10 +0000",
+      "minecraft:beach": "2025-01-25 22:06:23 +0000",
       "minecraft:river": "2025-01-24 20:30:00 +0000",
       "minecraft:grove": "2025-01-24 21:38:43 +0000",
       "minecraft:forest": "2025-01-24 20:27:30 +0000",
@@ -1276,6 +1323,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2025-01-25 22:05:01 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_wool": {
     "criteria": {
       "has_white_wool": "2025-01-24 20:33:04 +0000"
@@ -1375,6 +1428,12 @@
   "minecraft:nether/obtain_ancient_debris": {
     "criteria": {
       "ancient_debris": "2025-01-25 15:47:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_wall": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
     },
     "done": true
   },
@@ -2057,6 +2116,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/loom": {
     "criteria": {
       "has_string": "2025-01-24 21:08:46 +0000"
@@ -2285,6 +2350,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2025-01-25 22:05:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2025-01-24 20:34:16 +0000"
@@ -2300,6 +2371,12 @@
   "minecraft:recipes/redstone/oak_button": {
     "criteria": {
       "has_planks": "2025-01-24 20:28:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2025-01-25 22:05:50 +0000"
     },
     "done": true
   },
@@ -2336,6 +2413,12 @@
   "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
     "criteria": {
       "has_raw_copper": "2025-01-25 16:35:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_fence": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
     },
     "done": true
   },
@@ -2420,6 +2503,12 @@
   "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2025-01-24 21:05:29 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs": {
+    "criteria": {
+      "has_nether_bricks": "2025-01-25 22:04:59 +0000"
     },
     "done": true
   },
