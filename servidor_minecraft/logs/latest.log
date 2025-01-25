@@ -1,6 +1,6 @@
-[03:00:24] [ServerMain/INFO]: Building unoptimized datafixer
-[03:00:25] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[03:00:25] [ServerMain/ERROR]: Failed to start the minecraft server
+[03:02:43] [ServerMain/INFO]: Building unoptimized datafixer
+[03:02:44] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[03:02:44] [ServerMain/ERROR]: Failed to start the minecraft server
 net.minecraft.util.SessionLock$ExceptionWorldConflict: /workspaces/Survival-mods/servidor_minecraft/./world/session.lock: already locked (possibly by other Minecraft instance?)
 	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:136) ~[?:?]
 	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:33) ~[?:?]
