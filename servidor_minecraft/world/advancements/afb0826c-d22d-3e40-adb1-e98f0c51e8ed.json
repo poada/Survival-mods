@@ -35,6 +35,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2025-01-25 22:51:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_deepslate": {
     "criteria": {
       "has_cobbled_deepslate": "2025-01-24 20:50:46 +0000"
@@ -358,6 +364,7 @@
       "cooked_porkchop": "2025-01-24 20:53:35 +0000",
       "cooked_beef": "2025-01-25 15:53:26 +0000",
       "suspicious_stew": "2025-01-25 22:30:01 +0000",
+      "golden_carrot": "2025-01-25 22:48:00 +0000",
       "cooked_chicken": "2025-01-25 22:45:24 +0000"
     },
     "done": false
@@ -581,6 +588,12 @@
   "minecraft:recipes/building_blocks/smooth_basalt": {
     "criteria": {
       "has_basalt": "2025-01-25 16:01:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lectern": {
+    "criteria": {
+      "has_book": "2025-01-25 22:51:27 +0000"
     },
     "done": true
   },
@@ -1499,6 +1512,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2025-01-25 22:51:27 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/golden_axe": {
     "criteria": {
       "has_gold_ingot": "2025-01-24 21:29:37 +0000"
@@ -1933,6 +1952,12 @@
   "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-01-24 20:50:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "nether_wart": "2025-01-25 22:59:48 +0000"
     },
     "done": true
   },
