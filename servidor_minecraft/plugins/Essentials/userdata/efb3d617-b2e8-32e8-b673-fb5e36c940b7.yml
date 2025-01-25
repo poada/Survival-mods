@@ -11,13 +11,13 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1737847169677
+  lastteleport: 1737847204815
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737846870726
-  login: 1737846892218
+  logout: 1737847303073
+  login: 1737847306568
   kits:
     inicial: 1737751992951
 money: '0'
@@ -34,16 +34,16 @@ homes:
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 1247.2282464108566
-  y: 84.0
-  z: -227.6415468866958
-  yaw: 60.32330322265625
-  pitch: 31.848892211914062
+  x: 1227.699999988079
+  y: 32.0
+  z: -234.32821547045313
+  yaw: -54.55893325805664
+  pitch: 24.68803596496582
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 1335.8076088443595
-  y: 25.0
-  z: -670.3150816683863
-  yaw: -149.750732421875
-  pitch: 33.95314025878906
+  x: 1270.300000011921
+  y: 74.0
+  z: -240.69999998807907
+  yaw: 9.252135276794434
+  pitch: -43.11137390136719
