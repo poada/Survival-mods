@@ -445,3 +445,33 @@
 [22:18:11] [Server thread/INFO]: Futorista issued server command: /pv 1
 [22:18:35] [Server thread/INFO]: DropeddByBrobi lost connection: Disconnected
 [22:18:35] [Server thread/INFO]: DropeddByBrobi left the game
+[22:18:38] [User Authenticator #10/INFO]: UUID of player DropeddByBrobi is 3f43bfb3-9c04-3806-a535-fd7672cee474
+[22:18:38] [Server thread/INFO]: DropeddByBrobi joined the game
+[22:18:38] [Server thread/INFO]: DropeddByBrobi[/127.34.92.142:49951] logged in with entity id 76363 at ([world]205.30000001192093, 64.0, 793.6999999880791)
+[22:19:22] [Server thread/INFO]: DropeddByBrobi issued server command: /kits inicial
+[22:19:22] [Server thread/INFO]: DropeddByBrobi has made the advancement [Stone Age]
+[22:19:41] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:21:18] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /time set day
+[22:21:18] [Server thread/INFO]: The time was set to 0 ticks in: world, world_nether, world_the_end.
+[22:24:23] [Server thread/INFO]: S3B4ST109 issued server command: /home
+[22:25:50] [Server thread/INFO]: S3B4ST109 has made the advancement [A Seedy Place]
+[22:26:19] [Server thread/INFO]: S3B4ST109 issued server command: /home
+[22:26:22] [User Authenticator #11/INFO]: UUID of player ImNotFish is afb0826c-d22d-3e40-adb1-e98f0c51e8ed
+[22:26:22] [Server thread/INFO]: ImNotFish joined the game
+[22:26:22] [Server thread/INFO]: ImNotFish[/127.82.118.100:55165] logged in with entity id 80081 at ([world]1256.7377749913264, 84.0, -228.7418317399145)
+[22:26:30] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:26:38] [Server thread/INFO]: ImNotFish issued server command: /tpa Futorista
+[22:26:39] [Server thread/INFO]: Futorista issued server command: /tpaccept
+[22:26:59] [Server thread/INFO]: SV-ImNotFish Fue apuñalado por Futorista (15 ❤) usando el siguiente item: aaDUPS Swordaa
+[22:27:19] [Server thread/INFO]: DropeddByBrobi lost connection: Timed out
+[22:27:19] [Server thread/INFO]: DropeddByBrobi left the game
+[22:27:28] [Server thread/INFO]: Futorista issued server command: /pv 1
+[22:27:40] [Server thread/INFO]: S3B4ST109 issued server command: /home
+[22:27:44] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:27:47] [Server thread/INFO]: S3B4ST109 issued server command: /pv 2
+[22:27:48] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[22:27:57] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[22:28:10] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[22:28:12] [Server thread/INFO]: S3B4ST109 issued server command: /pv 2
+[22:28:14] [Server thread/INFO]: S3B4ST109 issued server command: /pv 4
+[22:28:16] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
