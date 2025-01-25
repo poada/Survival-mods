@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737777788599
-  login: 1737777727646
+  logout: 1737825025621
+  login: 1737825017573
   kits:
     inicial: 1737752037963
 money: '0'
@@ -27,8 +27,8 @@ logoutlocation:
   x: 210.91394730979084
   y: 64.0
   z: 804.676750482444
-  yaw: -10.290431022644043
-  pitch: 16.769981384277344
+  yaw: -95.61274719238281
+  pitch: 37.2422981262207
 last-account-name: Futorista
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a

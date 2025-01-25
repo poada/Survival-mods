@@ -280,3 +280,8 @@
 [16:47:33] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
 [16:48:20] [Server thread/INFO]: S3B4ST109 lost connection: Disconnected
 [16:48:20] [Server thread/INFO]: S3B4ST109 left the game
+[17:10:17] [User Authenticator #3/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
+[17:10:17] [Server thread/INFO]: Futorista joined the game
+[17:10:17] [Server thread/INFO]: Futorista[/127.100.255.139:44853] logged in with entity id 20118 at ([world]210.91394730979084, 64.0, 804.676750482444)
+[17:10:25] [Server thread/INFO]: Futorista lost connection: Disconnected
+[17:10:25] [Server thread/INFO]: Futorista left the game
