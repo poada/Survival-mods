@@ -241,3 +241,33 @@
 [15:52:39] [Server thread/INFO]: ImNotFish issued server command: /pv 1
 [15:53:04] [Server thread/INFO]: ImNotFish issued server command: /pv 1
 [15:55:46] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[15:56:44] [Server thread/INFO]: ImNotFish issued server command: /trade S3B4ST109
+[15:56:47] [Server thread/INFO]: S3B4ST109 issued server command: /trade ImNotFish
+[15:59:44] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[15:59:46] [Server thread/INFO]: ImNotFish issued server command: /ec
+[15:59:46] [Server thread/INFO]: [Essentials] ImNotFish was denied access to command.
+[15:59:49] [Server thread/INFO]: ImNotFish issued server command: /pv 2
+[16:00:09] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[16:00:15] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[16:00:20] [Server thread/INFO]: ImNotFish issued server command: /pv 2
+[16:00:26] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[16:02:20] [Server thread/INFO]: ImNotFish has made the advancement [War Pigs]
+[16:02:22] [Server thread/INFO]: ImNotFish has made the advancement [Hidden in the Depths]
+[16:03:35] [Server thread/INFO]: SV-ImNotFish No sabía que la colina era tan alta
+[16:03:42] [Server thread/INFO]: ImNotFish issued server command: /back
+[16:03:49] [Server thread/INFO]: ImNotFish issued server command: /back
+[16:03:49] [Async Chat Thread - #0/INFO]: [Not Secure] <S3B4ST109> ./back
+[16:04:01] [Server thread/INFO]: ImNotFish issued server command: /back
+[16:04:03] [Server thread/INFO]: ImNotFish issued server command: /back 4
+[16:04:06] [Server thread/INFO]: ImNotFish issued server command: /back 5
+[16:04:08] [Server thread/INFO]: ImNotFish issued server command: /back 6
+[16:04:11] [Server thread/INFO]: ImNotFish issued server command: /back1
+[16:04:13] [Server thread/INFO]: ImNotFish issued server command: /back 1
+[16:04:15] [Server thread/INFO]: ImNotFish issued server command: /spawn
+[16:04:15] [Server thread/INFO]: ImNotFish issued server command: /rank
+[16:04:16] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[16:04:21] [Server thread/INFO]: ImNotFish issued server command: /spawn
+[16:04:21] [Server thread/INFO]: ImNotFish issued server command: /rank
+[16:04:25] [Server thread/INFO]: ImNotFish issued server command: /back
+[16:05:47] [Server thread/INFO]: ImNotFish lost connection: Disconnected
+[16:05:47] [Server thread/INFO]: ImNotFish left the game

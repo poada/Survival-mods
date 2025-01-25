@@ -179,6 +179,12 @@
     },
     "done": true
   },
+  "minecraft:nether/obtain_ancient_debris": {
+    "criteria": {
+      "ancient_debris": "2025-01-25 16:02:22 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobbled_deepslate_slab": {
     "criteria": {
       "has_cobbled_deepslate": "2025-01-24 20:50:46 +0000"
@@ -212,6 +218,12 @@
   "minecraft:recipes/decorations/torch": {
     "criteria": {
       "has_stone_pickaxe": "2025-01-24 20:53:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_scrap_from_blasting": {
+    "criteria": {
+      "has_ancient_debris": "2025-01-25 16:02:22 +0000"
     },
     "done": true
   },
@@ -337,7 +349,8 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "cooked_porkchop": "2025-01-24 20:53:35 +0000"
+      "cooked_porkchop": "2025-01-24 20:53:35 +0000",
+      "cooked_beef": "2025-01-25 15:53:26 +0000"
     },
     "done": false
   },
@@ -554,6 +567,12 @@
   "minecraft:recipes/food/cooked_chicken_from_smoking": {
     "criteria": {
       "has_chicken": "2025-01-24 21:18:51 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_basalt": {
+    "criteria": {
+      "has_basalt": "2025-01-25 16:01:40 +0000"
     },
     "done": true
   },
@@ -857,6 +876,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
+    "criteria": {
+      "has_basalt": "2025-01-25 16:01:40 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_chest_boat": {
     "criteria": {
       "has_boat": "2025-01-24 21:26:45 +0000"
@@ -950,9 +975,11 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-01-24 20:59:25 +0000",
+      "minecraft:hoglin": "2025-01-25 15:53:36 +0000",
       "minecraft:spider": "2025-01-24 21:00:47 +0000",
       "minecraft:piglin_brute": "2025-01-25 00:52:16 +0000",
       "minecraft:creeper": "2025-01-24 20:59:44 +0000",
+      "minecraft:zombified_piglin": "2025-01-25 16:03:05 +0000",
       "minecraft:witch": "2025-01-24 22:05:09 +0000",
       "minecraft:piglin": "2025-01-25 00:52:12 +0000",
       "minecraft:zombie": "2025-01-24 20:59:36 +0000",
@@ -969,6 +996,12 @@
   "minecraft:story/enter_the_nether": {
     "criteria": {
       "entered_nether": "2025-01-25 00:52:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_scrap": {
+    "criteria": {
+      "has_ancient_debris": "2025-01-25 16:02:22 +0000"
     },
     "done": true
   },
@@ -1566,6 +1599,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_basalt": {
+    "criteria": {
+      "has_basalt": "2025-01-25 16:01:40 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_wood": {
     "criteria": {
       "has_log": "2025-01-24 21:03:40 +0000"
@@ -1847,6 +1886,12 @@
     },
     "done": true
   },
+  "minecraft:nether/loot_bastion": {
+    "criteria": {
+      "loot_bastion_other": "2025-01-25 16:02:20 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_pickaxe": {
     "criteria": {
       "has_cobblestone": "2025-01-24 20:50:46 +0000"
@@ -1999,7 +2044,9 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
-      "minecraft:nether_wastes": "2025-01-25 00:52:08 +0000"
+      "minecraft:crimson_forest": "2025-01-25 15:53:20 +0000",
+      "minecraft:nether_wastes": "2025-01-25 00:52:08 +0000",
+      "minecraft:warped_forest": "2025-01-25 15:56:23 +0000"
     },
     "done": false
   },

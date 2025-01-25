@@ -215,6 +215,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_hoe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/emerald_block": {
     "criteria": {
       "has_emerald": "2025-01-24 22:47:25 +0000"
@@ -431,6 +437,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/netherite_block": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2025-01-24 20:28:00 +0000"
@@ -625,6 +637,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/netherite_boots_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/blue_dye": {
     "criteria": {
       "has_lapis_lazuli": "2025-01-24 21:21:04 +0000"
@@ -715,6 +733,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_shovel_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/moss_carpet": {
     "criteria": {
       "has_moss_block": "2025-01-24 21:08:28 +0000"
@@ -760,6 +784,12 @@
   "minecraft:recipes/building_blocks/blackstone_stairs": {
     "criteria": {
       "has_blackstone": "2025-01-25 00:41:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_chestplate_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
     },
     "done": true
   },
@@ -1110,6 +1140,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2025-01-25 15:54:23 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2025-01-24 21:07:10 +0000"
@@ -1119,6 +1155,12 @@
   "minecraft:recipes/building_blocks/lapis_block": {
     "criteria": {
       "has_lapis_lazuli": "2025-01-24 21:21:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
     },
     "done": true
   },
@@ -1428,6 +1470,12 @@
   "minecraft:recipes/decorations/respawn_anchor": {
     "criteria": {
       "has_obsidian": "2025-01-25 00:51:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_pickaxe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
     },
     "done": true
   },
@@ -2001,6 +2049,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/netherite_leggings_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/painting": {
     "criteria": {
       "has_wool": "2025-01-24 20:33:04 +0000"
@@ -2085,6 +2139,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_axe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2025-01-24 21:03:11 +0000"
@@ -2166,6 +2226,12 @@
   "minecraft:recipes/redstone/dropper": {
     "criteria": {
       "has_redstone": "2025-01-24 21:20:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
     },
     "done": true
   },
@@ -2352,6 +2418,12 @@
   "minecraft:recipes/redstone/piston": {
     "criteria": {
       "has_redstone": "2025-01-24 21:20:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_helmet_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2025-01-25 15:54:44 +0000"
     },
     "done": true
   },
