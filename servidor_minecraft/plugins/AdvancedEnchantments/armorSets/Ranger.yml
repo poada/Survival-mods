@@ -66,7 +66,6 @@ items:
     - '&a&lRANGER SET BONUS'
     - '&a&l* &aEnemies bows deal 25% less damage to you.'
     - '&a&l* &aRanger Bow grants 30% increased bow damage.'
-    - '&a&l* &aImmune to Teleblock'
     - '&a&l* &aGears IV'
     - '&7&o(Requires all four ranger items)'
     enchants: # Supports AdvancedEnchantments CE
@@ -99,7 +98,6 @@ items:
     - '&a&lRANGER SET BONUS'
     - '&a&l* &aEnemies bows deal 25% less damage to you.'
     - '&a&l* &aRanger Bow grants 30% increased bow damage.'
-    - '&a&l* &aImmune to Teleblock'
     - '&a&l* &aGears IV'
     - '&7&o(Requires all four ranger armor items)'
     enchants: # Supports AdvancedEnchantments CE
@@ -130,7 +128,6 @@ items:
     - '&a&lRANGER SET BONUS'
     - '&a&l* &aEnemies bows deal 25% less damage to you.'
     - '&a&l* &aRanger Bow grants 30% increased bow damage.'
-    - '&a&l* &aImmune to Teleblock'
     - '&a&l* &aGears IV'
     - '&7&o(Requires all four ranger armor items)'
     enchants: # Supports AdvancedEnchantments CE
@@ -163,7 +160,6 @@ items:
     - '&a&lRANGER SET BONUS'
     - '&a&l* &aEnemies bows deal 25% less damage to you.'
     - '&a&l* &aRanger Bow grants 30% increased bow damage.'
-    - '&a&l* &aImmune to Teleblock'
     - '&a&l* &aGears IV'
     - '&7&o(Requires all four ranger armor items)'
     enchants: # Supports AdvancedEnchantments CE
@@ -190,6 +186,5 @@ events:
   DEFENSE_BOW:
     chance: 100
     effects:
-    - DISABLE_ACTIVATION:teleblock:5
     - DECREASE_DAMAGE:25
     cooldown: 0

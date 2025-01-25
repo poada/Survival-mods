@@ -14,148 +14,123 @@ settings:
   fallback-group: SIMPLE
 groups:
   SIMPLE:
-    global-color: '&7'
-    group-name: Simple
+    global-color: "&7"
+    group-name: "Simple"
     # Use this to change the type of item per group
-    right-click-book-material: FIREWORK_CHARGE
-    right-click-book-damage: 0
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 200;200;200
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 200;200;200
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
-    item:
-      type: BOOK
   UNIQUE:
-    global-color: '&a'
-    group-name: Unique
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 122;255;80
+    global-color: "&a"
+    group-name: "Unique"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 122;255;80
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
-    item:
-      type: BOOK
   ELITE:
-    global-color: '&b'
-    group-name: Elite
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 20;250;255
+    global-color: "&b"
+    group-name: "Elite"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 20;250;255
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
-    item:
-      type: BOOK
   ULTIMATE:
-    global-color: '&e'
-    group-name: Ultimate
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 250;255;0
+    global-color: "&e"
+    group-name: "Ultimate"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 250;255;0
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
-    item:
-      type: BOOK
   LEGENDARY:
-    global-color: '&6'
-    group-name: Legendary
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 255;182;0
+    global-color: "&6"
+    group-name: "Legendary"
+    item:
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 133;50;168
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
+  FABLED:
+    global-color: "&d"
+    group-name: "Fabled"
     item:
-      type: BOOK
-  SOUL:
-    global-color: '&c'
-    group-name: Soul
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 255;0;0
+      type: FIREWORK_CHARGE
+      id: 0
+      custom-model-data: 0
+      # Use this to set firework charge's color only! Uses RGB
+      # Find colors here: https://htmlcolorcodes.com/color-picker/
+      rgb-color: 133;50;168
     slot-increaser:
       # How many slots should slot increaser add when using this type increaser
       slots: 1
+      custom-model-data: 0
     magic-dust:
       # when right-clicked, it gives magic with success chance
       # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
       success: 1-15
       # Chance to give Magic dust instead of Mystery dust
       chance: 22
-    item:
-      type: BOOK
-  HEROIC:
-    global-color: '&d'
-    group-name: Heroic
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 133;50;168
-    slot-increaser:
-      # How many slots should slot increaser add when using this type increaser
-      slots: 1
-    magic-dust:
-      # when right-clicked, it gives magic with success chance
-      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
-      # Chance to give Magic dust instead of Mystery dust
-      chance: 22
-    item:
-      type: BOOK
-  MASTERY:
-    global-color: '&4'
-    group-name: Mastery
-    right-click-book-material: FIREWORK_CHARGE
-    # Use this to set firework charge's color only! Uses RGB
-    # Find colors here: https://htmlcolorcodes.com/color-picker/
-    firework-color: 255;0;0
-    slot-increaser:
-      # How many slots should slot increaser add when using this type increaser
-      slots: 1
-    magic-dust:
-      # when right-clicked, it gives magic with success chance
-      # How much success should the dust have? (e.g.: 5 would mean always 5, 5-10 would mean random number from 5 to 10)
-      success: 1-15
-      # Chance to give Magic dust instead of Mystery dust
-      chance: 22
-    item:
-      type: BOOK

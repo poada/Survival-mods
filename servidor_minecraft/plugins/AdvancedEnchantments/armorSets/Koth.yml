@@ -173,17 +173,17 @@ events:
   FALL_DAMAGE:
     chance: 100
     effects:
-    - STOP_ATTACK
+    - CANCEL_EVENT
     cooldown: 0
   SWING:
     chance: 100
     effects:
-    - CURE_PERMANENT:SLOW %attacker%
-    - CURE_PERMANENT:CONFUSION %attacker%
-    - CURE_PERMANENT:BLINDNESS %attacker%
-    - CURE_PERMANENT:POISON %attacker%
-    - CURE_PERMANENT:WITHER %attacker%
-    - CURE_PERMANENT:HUNGER %attacker%
-    - CURE_PERMANENT:WEAKNESS %attacker%
-    - CURE_PERMANENT:SLOW_DIGGING %attacker%
+    - CURE_PERMANENT:SLOW @Attacker
+    - CURE_PERMANENT:CONFUSION @Attacker
+    - CURE_PERMANENT:BLINDNESS @Attacker
+    - CURE_PERMANENT:POISON @Attacker
+    - CURE_PERMANENT:WITHER @Attacker
+    - CURE_PERMANENT:HUNGER @Attacker
+    - CURE_PERMANENT:WEAKNESS @Attacker
+    - CURE_PERMANENT:SLOW_DIGGING @Attacker
     cooldown: 0

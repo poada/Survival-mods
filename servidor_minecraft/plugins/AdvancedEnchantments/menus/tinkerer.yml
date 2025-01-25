@@ -23,7 +23,7 @@ general:
     # WARNING: If you don't know what this is, don't change it.
     # Default: 5, 6, 7, 14, 15, 16, 17, 23, 24, 25, 26,32, 33, 34, 35, 41, 42, 43, 44, 50, 51, 52, 53
     tinkerer-slots: "5, 6, 7, 14, 15, 16, 17, 23, 24, 25, 26, 32, 33, 34, 35, 41, 42, 43, 44, 50, 51, 52, 53"
-  # The prices of the items offered by the tinkerer.
+  # The is of the items offered by the tinkerer.
   prices:
     # This decides if the tinkerer use experience or money (exp/money) as currency.
     # Also determine the item offer by the tinkerer. (see below)

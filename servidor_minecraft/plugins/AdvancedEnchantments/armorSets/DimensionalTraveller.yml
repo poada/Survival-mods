@@ -180,11 +180,5 @@ events:
   FALL_DAMAGE:
     chance: 100
     effects:
-    - STOP_ATTACK
+    - CANCEL_EVENT
     cooldown: 0
-  DEFENSE:
-    chance: 20
-    cooldown: 10
-    effects:
-    - DIMENSIONAL_SHIFT:&5&l*** THE WRATH OF TRAVELLER <&c&l%victim name%&5&l> ***:2:5
-      %chance:30%

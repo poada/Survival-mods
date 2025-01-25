@@ -6,7 +6,7 @@
 # Format: "<item name>:<count>"
 
 mobs:
-   ZOMBIE:
-    chance: 0
-    items:
-      - "randomenchantmentbook:1"
+#  ZOMBIE:
+#    chance: 75
+#    items:
+#      - "randomenchantmentbook:1"

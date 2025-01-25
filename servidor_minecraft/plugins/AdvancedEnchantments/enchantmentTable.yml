@@ -38,11 +38,14 @@ enchantmentBooks:
   # Chance of getting custom enchantments when enchanting with enchantment table.
   # This will give custom enchantment book instead of vanilla books, and can be
   #  applied either with anvil or drag & drop onto item.
-  chance: 5 # Value: 1 to 100 %
+  chance: 3 # Value: 1 to 100 %
   groups:
     lowest:
-      - VANILLA
+      - SIMPLE
+      - UNIQUE
     middle:
-      - VANILLA
+      - ELITE
+      - ULTIMATE
     highest:
-      - VANILLA
+      - LEGENDARY
+      - FABLED
