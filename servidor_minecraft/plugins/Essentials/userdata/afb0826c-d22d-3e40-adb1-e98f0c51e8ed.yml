@@ -23,13 +23,13 @@ timestamps:
 money: '0'
 last-account-name: ImNotFish
 lastlocation:
-  world: c436571f-f372-4142-8e9e-4dd896ae9810
-  world-name: world_nether
-  x: -397.36002308667065
-  y: 94.0
-  z: -324.42421764173577
-  yaw: 12.870147705078125
-  pitch: 50.96929168701172
+  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
+  world-name: world
+  x: 1261.6537089017922
+  y: 70.0
+  z: -240.25177457266938
+  yaw: -105.47879028320312
+  pitch: 27.664398193359375
 homes:
   home:
     world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
