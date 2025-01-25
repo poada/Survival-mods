@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737766971506
+  logout: 1737823700471
   login: 1737819781868
   kits:
     inicial: 1737751992951
@@ -42,8 +42,8 @@ lastlocation:
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 1258.7805854325325
-  y: 70.0
-  z: -239.62689888637072
-  yaw: -114.6702880859375
-  pitch: 26.423784255981445
+  x: 1258.8207320351264
+  y: 72.0
+  z: -234.6740572812577
+  yaw: 63.9173583984375
+  pitch: 21.752422332763672
