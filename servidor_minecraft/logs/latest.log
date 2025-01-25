@@ -475,3 +475,58 @@
 [22:28:12] [Server thread/INFO]: S3B4ST109 issued server command: /pv 2
 [22:28:14] [Server thread/INFO]: S3B4ST109 issued server command: /pv 4
 [22:28:16] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:29:03] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:29:09] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:29:18] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:29:18] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:29:41] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:30:54] [Server thread/INFO]: Made Futorista a server operator
+[22:30:56] [Server thread/INFO]: Futorista issued server command: /gamemode adventure
+[22:30:57] [Server thread/INFO]: Futorista issued server command: /gamemode survival
+[22:30:59] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[22:31:26] [Server thread/INFO]: Futorista issued server command: /tp S3B4ST109
+[22:31:36] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:31:37] [Server thread/INFO]: ImNotFish issued server command: /pv 2
+[22:31:44] [Server thread/INFO]: ImNotFish issued server command: /pv 2
+[22:31:47] [Server thread/INFO]: ImNotFish issued server command: /pv 3
+[22:31:52] [Server thread/INFO]: SV-ImNotFish Fue apuñalado por Futorista (20 ❤) usando el siguiente item: aaDUPS Swordaa
+[22:32:03] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:32:16] [Server thread/INFO]: ImNotFish issued server command: /pv 3
+[22:32:46] [Server thread/INFO]: Futorista has made the advancement [We Need to Go Deeper]
+[22:33:19] [Server thread/INFO]: Futorista issued server command: /tp -275 48 -389
+[22:33:24] [Server thread/INFO]: Futorista issued server command: /gamemode spectator
+[22:33:27] [Server thread/INFO]: Futorista has made the advancement [Those Were the Days]
+[22:33:28] [Server thread/INFO]: Futorista issued server command: /gamemode creative
+[22:33:55] [Server thread/INFO]: ImNotFish issued server command: /pv 3
+[22:33:57] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:34:02] [Server thread/INFO]: Futorista has made the advancement [War Pigs]
+[22:34:19] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:34:26] [Server thread/INFO]: SV-ImNotFish Fue apuñalado por Futorista (20 ❤) usando el siguiente item: aaDUPS Swordaa
+[22:34:29] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:34:36] [Server thread/INFO]: ImNotFish issued server command: /pv 3
+[22:34:51] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish S3B4ST109
+[22:34:58] [Server thread/INFO]: Futorista issued server command: /dc menu
+[22:35:08] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[22:35:16] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish S3B4ST109
+[22:35:19] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:35:34] [Server thread/INFO]: SV-ImNotFish No sabía que la colina era tan alta
+[22:35:38] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:35:57] [Server thread/INFO]: S3B4ST109 issued server command: /pv 1
+[22:36:00] [Server thread/INFO]: Futorista issued server command: /dc menu
+[22:36:38] [Server thread/INFO]: Futorista issued server command: /effect give ImNotFish minecraft:resistance 99999 10
+[22:36:38] [Server thread/INFO]: [Futorista: Applied effect Resistance to ImNotFish]
+[22:36:44] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:36:53] [Server thread/INFO]: Futorista issued server command: /ie attribute add attack_speed 24 add_number hand
+[22:37:09] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:11] [Server thread/INFO]: S3B4ST109 issued server command: /pv 3
+[22:37:15] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:23] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:35] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:36] [Server thread/INFO]: Futorista issued server command: /ie attribute add attack_speed 24 add_number hand
+[22:37:48] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:52] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:56] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:37:59] [Server thread/INFO]: ImNotFish issued server command: /pv 1
+[22:38:15] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:38:37] [Server thread/INFO]: Futorista issued server command: /tp ImNotFish Futorista
+[22:38:39] [Server thread/INFO]: Futorista issued server command: /ie attribute add attack_speed 24 add_number hand

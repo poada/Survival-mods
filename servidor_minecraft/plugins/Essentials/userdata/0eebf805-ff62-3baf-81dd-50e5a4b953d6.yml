@@ -11,7 +11,7 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1737759280600
+  lastteleport: 1737844286541
   lastheal: 0
   mute: 0
   jail: 0
@@ -31,13 +31,13 @@ logoutlocation:
   pitch: 37.2422981262207
 last-account-name: Futorista
 lastlocation:
-  world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
-  world-name: world
-  x: 1487.6725039548337
-  y: 102.10453900411049
-  z: -382.43582016744796
-  yaw: 17.926158905029297
-  pitch: 45.1815071105957
+  world: c436571f-f372-4142-8e9e-4dd896ae9810
+  world-name: world_nether
+  x: 121.94912701208817
+  y: 102.95118997119914
+  z: -36.62804565907448
+  yaw: 63.86637878417969
+  pitch: 13.299606323242188
 homes:
   aldea:
     world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
