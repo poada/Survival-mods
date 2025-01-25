@@ -542,6 +542,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:skeleton": "2025-01-24 20:43:09 +0000",
+      "minecraft:hoglin": "2025-01-25 21:58:35 +0000",
       "minecraft:spider": "2025-01-24 21:08:46 +0000",
       "minecraft:piglin_brute": "2025-01-25 00:46:03 +0000",
       "minecraft:creeper": "2025-01-24 23:08:08 +0000",
@@ -2077,6 +2078,12 @@
   "minecraft:recipes/building_blocks/brown_wool": {
     "criteria": {
       "has_white_wool": "2025-01-24 20:33:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2025-01-25 22:04:36 +0000"
     },
     "done": true
   },
