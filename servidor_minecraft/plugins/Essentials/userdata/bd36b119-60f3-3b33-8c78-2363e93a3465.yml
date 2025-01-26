@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1737853643525
+  logout: 1737854078772
   login: 1737853649668
 money: '0'
 last-account-name: isaaczxd
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 41.449691508284964
-  y: 63.0
-  z: 24.823454347398425
-  yaw: 3.5999755859375
-  pitch: 29.314769744873047
+  x: 56.69999998807907
+  y: 34.0
+  z: 22.69999998807907
+  yaw: 105.12850952148438
+  pitch: 28.77166748046875
