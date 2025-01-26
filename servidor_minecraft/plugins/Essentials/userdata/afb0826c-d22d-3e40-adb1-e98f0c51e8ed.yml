@@ -11,7 +11,7 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1737843999626
+  lastteleport: 1737853805163
   lastheal: 0
   mute: 0
   jail: 0
@@ -25,20 +25,20 @@ last-account-name: ImNotFish
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 1261.6537089017922
-  y: 70.0
-  z: -240.25177457266938
-  yaw: -105.47879028320312
-  pitch: 27.664398193359375
+  x: 1258.3705461449674
+  y: 58.0
+  z: -247.53083360946226
+  yaw: -104.76405334472656
+  pitch: 39.217979431152344
 homes:
   home:
     world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
     world-name: world
-    x: 204.30000001192093
-    y: -25.0
-    z: 188.0679222753766
-    yaw: -125.3150634765625
-    pitch: -5.437126159667969
+    x: 1260.699999988079
+    y: 70.0
+    z: -237.94792726977226
+    yaw: -156.97097778320312
+    pitch: 37.93726348876953
 logoutlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
