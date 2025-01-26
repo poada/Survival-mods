@@ -17,7 +17,7 @@ timestamps:
   jail: 0
   onlinejail: 0
   logout: 1737847821573
-  login: 1737847306568
+  login: 1737861990875
   kits:
     inicial: 1737751992951
 money: '0'
@@ -34,11 +34,11 @@ homes:
 lastlocation:
   world: 5b4b1cd6-5a66-4c7a-b4e6-99f1f1c5800a
   world-name: world
-  x: 1227.699999988079
-  y: 32.0
-  z: -234.32821547045313
-  yaw: -54.55893325805664
-  pitch: 24.68803596496582
+  x: 1258.5
+  y: 84.0
+  z: -236.5
+  yaw: 93.46257019042969
+  pitch: 4.54979133605957
 logoutlocation:
   world: 4bebdf68-1d82-4ca1-b4d8-4bb906f6771f
   world-name: world_the_end

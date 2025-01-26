@@ -600,8 +600,8 @@ spawnpoints: []
 Old_PvP:
   no-sweep-attacks: false
   old-cooldown:
-    only-during-combat: false
-    enable: false
+    only-during-combat: true
+    enable: true
     old-attack-speed: 24
     new-attack-speed: 4
     disabled-worlds: []

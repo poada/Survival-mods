@@ -213,3 +213,27 @@
 [03:14:44] [Craft Scheduler Thread - 3 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
 [03:14:44] [Craft Scheduler Thread - 3 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
 [03:14:49] [Server thread/INFO]: [DeluxeCombat] Hooked into AdvancedEnchantments, PlaceholderAPI, Vault and Vault.
+[03:24:16] [User Authenticator #0/INFO]: UUID of player Futorista is 0eebf805-ff62-3baf-81dd-50e5a4b953d6
+[03:24:16] [Server thread/INFO]: Futorista joined the game
+[03:24:16] [Server thread/INFO]: Futorista[/127.100.255.139:51893] logged in with entity id 153 at ([world]212.2915360980256, 64.55342529892332, 809.9666675960857)
+[03:26:07] [Server thread/INFO]: Futorista issued server command: /exp give Futorista 150l
+[03:26:30] [User Authenticator #1/INFO]: UUID of player S3B4ST109 is efb3d617-b2e8-32e8-b673-fb5e36c940b7
+[03:26:30] [Server thread/INFO]: S3B4ST109 joined the game
+[03:26:30] [Server thread/INFO]: S3B4ST109[/127.165.76.113:46755] logged in with entity id 1336 at ([world_the_end]-89.68763459481549, 57.67647087614427, 91.09262386166142)
+[03:28:30] [Server thread/INFO]: Futorista issued server command: /anvil
+[03:28:52] [Server thread/INFO]: Futorista issued server command: /ae enchant trench 9
+[03:28:59] [Server thread/INFO]: Futorista issued server command: /ae enchant telepathy 4
+[03:29:26] [Server thread/INFO]: Futorista issued server command: /tp S3B4ST109 Futorista
+[03:30:29] [Server thread/INFO]: Futorista issued server command: /ie attribute add attack_speed 35
+[03:30:33] [Server thread/INFO]: Futorista issued server command: /ie attribute add attack_speed 35 add_number hand
+[03:30:36] [Server thread/INFO]: SV-S3B4ST109 Fue apuñalado por Futorista (20 ❤) usando el siguiente item: aaDark Swordaa
+[03:30:42] [Server thread/INFO]: Futorista issued server command: /tp S3B4ST109 Futorista
+[03:30:55] [Server thread/INFO]: Futorista issued server command: /effect give S3B4ST109 minecraft:resistance 999999 10
+[03:30:55] [Server thread/INFO]: [Futorista: Applied effect Resistance to S3B4ST109]
+[03:32:05] [Server thread/INFO]: Futorista issued server command: /dc menu
+[03:32:06] [Server thread/INFO]: S3B4ST109 issued server command: /pv 6
+[03:32:13] [Server thread/INFO]: Futorista issued server command: /dc menu
+[03:32:31] [Server thread/INFO]: Futorista issued server command: /dc menu
+[03:32:54] [Server thread/INFO]: Futorista issued server command: /dc menu
+[03:33:26] [Server thread/INFO]: Futorista issued server command: /dc menu
+[03:33:46] [Server thread/INFO]: Futorista issued server command: /dc menu
