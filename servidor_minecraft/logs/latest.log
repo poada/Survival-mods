@@ -1,59 +1,538 @@
-[01:03:24] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[01:03:24] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[01:03:27] [ServerMain/INFO]: Loaded 7 recipes
-[01:03:28] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[01:03:28] [Server thread/INFO]: Loading properties
-[01:03:28] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
-[01:03:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:03:28] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:03:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[01:03:28] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[01:16:16] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[01:16:18] [ServerMain/INFO]: Loaded 7 recipes
+[01:16:18] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[01:16:18] [Server thread/INFO]: Loading properties
+[01:16:18] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[01:16:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:16:19] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:16:19] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[01:03:29] [Server thread/INFO]: Default game type: SURVIVAL
-[01:03:29] [Server thread/INFO]: Generating keypair
-[01:03:29] [Server thread/INFO]: Starting Minecraft server on *:25565
-[01:03:29] [Server thread/INFO]: Using epoll channel type
-[01:03:29] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[01:03:29] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[01:03:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[01:03:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[01:03:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[01:03:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[01:03:29] [Server thread/INFO]: Preparing level "world"
-[01:03:40] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[01:03:40] [Server thread/INFO]: Time elapsed: 144 ms
-[01:03:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[01:03:40] [Server thread/INFO]: Time elapsed: 82 ms
-[01:03:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[01:03:40] [Server thread/INFO]: Time elapsed: 66 ms
-[01:03:40] [Server thread/INFO]: Running delayed init tasks
-[01:03:40] [Server thread/INFO]: Done (12.444s)! For help, type "help"
-[01:03:40] [Server thread/INFO]: Timings Reset
-[01:03:40] [Server thread/INFO]: Unknown command. Type "/help" for help.
-[01:03:55] [Server thread/INFO]: Stopping the server
-[01:03:55] [Server thread/INFO]: Stopping server
-[01:03:55] [Server thread/INFO]: Saving players
-[01:03:55] [Server thread/INFO]: Saving worlds
-[01:03:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[01:03:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[01:03:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[01:03:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Saved 1577 block chunks, 1 entity chunks, 0 poi chunks in world 'world' in 1.43s
-[01:03:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:03:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Saved 1849 block chunks, 1 entity chunks, 0 poi chunks in world 'world_nether' in 0.65s
-[01:03:57] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:03:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[01:03:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[01:03:58] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.48s
-[01:03:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:03:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:03:58] [Server thread/INFO]: Flushing Chunk IO
-[01:03:58] [Server thread/INFO]: Closing Thread Pool
-[01:03:58] [Server thread/INFO]: Closing Server
+[01:16:19] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[01:16:19] [Server thread/INFO]: Default game type: SURVIVAL
+[01:16:19] [Server thread/INFO]: Generating keypair
+[01:16:19] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:16:19] [Server thread/INFO]: Using epoll channel type
+[01:16:19] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[01:16:19] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:16:20] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[01:16:20] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.2.2-SNAPSHOT
+[01:16:20] [Server thread/INFO]: [ViaVersion] ViaVersion 5.2.2-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[01:16:20] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[01:16:21] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[01:16:21] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[01:16:21] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[01:16:21] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+180-fe27182
+[01:16:21] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.2.2-SNAPSHOT
+[01:16:21] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.6.3
+[01:16:21] [Server thread/INFO]: [DeluxeCombat] Loading server plugin DeluxeCombat v1.70.1
+[01:16:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:16:21] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:16:21] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:16:21] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:16:21] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:16:21] [Server thread/INFO]: Preparing level "world"
+[01:16:22] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:16:22] [Server thread/INFO]: Time elapsed: 209 ms
+[01:16:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[01:16:22] [Server thread/INFO]: Time elapsed: 111 ms
+[01:16:22] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[01:16:22] [Server thread/INFO]: Time elapsed: 76 ms
+[01:16:22] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.2.2-SNAPSHOT
+[01:16:23] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20-1.20.1 (763)
+[01:16:23] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.14).
+[01:16:23] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[01:16:23] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+180-fe27182
+[01:16:23] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[01:16:24] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[01:16:24] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[01:16:24] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[01:16:24] [Server thread/INFO]: [Essentials] Found 1 files to convert...
+[01:16:24] [Server thread/INFO]: [Essentials] Converted 0/1
+[01:16:24] [Server thread/INFO]: [Essentials] Ban format update complete.
+[01:16:24] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[01:16:24] [Server thread/INFO]: [Essentials] Done converting ignore list.
+[01:16:24] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[01:16:24] [Server thread/INFO]: [Essentials] Done converting legacy userdata keys to Configurate.
+[01:16:24] [Server thread/INFO]: [Essentials] Done converting mail list.
+[01:16:24] [Server thread/INFO]: [Essentials] #===========================================================================#
+[01:16:24] [Server thread/INFO]: [Essentials]  EssentialsX will now purge any NPC accounts which were incorrectly created.
+[01:16:24] [Server thread/INFO]: [Essentials]  Only NPC accounts with the default starting balance will be deleted. If
+[01:16:24] [Server thread/INFO]: [Essentials]  they turn out to be valid NPC accounts, they will be re-created as needed.
+[01:16:24] [Server thread/INFO]: [Essentials]  Any files deleted here will be backed up to the 
+[01:16:24] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup" folder. If you notice any files
+[01:16:24] [Server thread/INFO]: [Essentials]  have been purged incorrectly, you should restore it from the backup and
+[01:16:24] [Server thread/INFO]: [Essentials]  report it to us on GitHub:
+[01:16:24] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
+[01:16:24] [Server thread/INFO]: [Essentials] 
+[01:16:24] [Server thread/INFO]: [Essentials]  NOTE: This is a one-time process and will take several minutes if you have
+[01:16:24] [Server thread/INFO]: [Essentials]  a lot of userdata files! If you interrupt this process, EssentialsX will
+[01:16:24] [Server thread/INFO]: [Essentials]  skip the process until you rename or remove the backup folder.
+[01:16:24] [Server thread/INFO]: [Essentials] #===========================================================================#
+[01:16:24] [Server thread/INFO]: [Essentials] Found ~1 files under "plugins/Essentials/userdata"...
+[01:16:24] [Server thread/INFO]: [Essentials] #===========================================================================#
+[01:16:24] [Server thread/INFO]: [Essentials]  EssentialsX has finished purging NPC accounts.
+[01:16:24] [Server thread/INFO]: [Essentials] 
+[01:16:24] [Server thread/INFO]: [Essentials]  Deleted accounts: 0
+[01:16:24] [Server thread/INFO]: [Essentials]  Total accounts processed: 1
+[01:16:24] [Server thread/INFO]: [Essentials] 
+[01:16:24] [Server thread/INFO]: [Essentials]  Purged accounts have been backed up to
+[01:16:24] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup", and can be restored from there
+[01:16:24] [Server thread/INFO]: [Essentials]  if needed. Please report any files which have been incorrectly deleted
+[01:16:24] [Server thread/INFO]: [Essentials]  to us on GitHub:
+[01:16:24] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
+[01:16:24] [Server thread/INFO]: [Essentials] #===========================================================================#
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[01:16:24] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[01:16:24] [Server thread/INFO]: [Essentials] Using locale en
+[01:16:24] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[01:16:24] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[01:16:24] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[01:16:24] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.2.2-SNAPSHOT
+[01:16:24] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[01:16:24] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[01:16:24] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[01:16:24] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[01:16:24] [Server thread/INFO]: [ItemEdit] # Enabled (took 173 ms)
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] Enabling DeluxeCombat v1.70.1
+[01:16:24] [Server thread/INFO]: [DeluxeCombat]  _____        _                   ______            _                
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] (____ \      | |                 / _____)          | |          _    
+[01:16:24] [Server thread/INFO]: [DeluxeCombat]  _   \ \ ____| |_   _ _   _ ____| /      ___  ____ | | _   ____| |_  
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] | |   | / _  ) | | | ( \ / ) _  ) |     / _ \|    \| || \ / _  |  _) 
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] | |__/ ( (/ /| | |_| |) X ( (/ /| \____| |_| | | | | |_) | ( | | |__ 
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] |_____/ \____)_|\____(_/ \_)____)\______)___/|_|_|_|____/ \_||_|\___)
+[01:16:24] [Server thread/INFO]: [DeluxeCombat] 
+[01:16:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_20_R1! Trying to find NMS support
+[01:16:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
+[01:16:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeCombat' to create a bStats instance!
+[01:16:25] [Server thread/INFO]: [DeluxeCombat] Spawnpoints (0), Kill-Streaks (1), Rewards (2), Custom Tools (1) loaded!
+[01:16:25] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[01:16:26] [Server thread/INFO]: [DeluxeCombat] Start fetching marketplace addons...
+[01:16:26] [Server thread/INFO]: Running delayed init tasks
+[01:16:26] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:16:26] [Server thread/INFO]: Done (7.593s)! For help, type "help"
+[01:16:26] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
+[01:16:26] [Server thread/INFO]: Timings Reset
+[01:16:26] [Craft Scheduler Thread - 0 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
+[01:16:26] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[01:16:26] [Craft Scheduler Thread - 2 - DeluxeCombat/INFO]: [DeluxeCombat] Successfully fetched 15 marketplace items from the internet!
+[01:16:27] [Craft Scheduler Thread - 10 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
+[01:16:27] [Craft Scheduler Thread - 10 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
+[01:28:44] [User Authenticator #0/INFO]: UUID of player ImNot4R0N is 60d6ac25-d638-370d-be6c-d784822d23d9
+[01:28:44] [Server thread/INFO]: ImNot4R0N joined the game
+[01:28:44] [Server thread/INFO]: ImNot4R0N[/127.209.11.85:46259] logged in with entity id 300 at ([world]-22.5, 79.0, 89.5)
+[01:28:47] [Server thread/INFO]: ImNot4R0N issued server command: /gamemode creative
+[01:30:05] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:30:23] [Server thread/INFO]: ImNot4R0N issued server command: /pl
+[01:30:41] [Server thread/INFO]: ImNot4R0N issued server command: /reload
+[01:30:41] [Server thread/INFO]: ImNot4R0N: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[01:30:45] [Server thread/INFO]: ImNot4R0N issued server command: /reload confirm
+[01:30:45] [Server thread/INFO]: ImNot4R0N: Please note that this command is not supported and may cause issues when using some plugins.
+[01:30:45] [Server thread/INFO]: ImNot4R0N: If you encounter any issues please use the /stop command to restart your server.
+[01:30:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:30:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:30:45] [Server thread/INFO]: [DeluxeCombat] Disabling DeluxeCombat v1.70.1
+[01:30:45] [Server thread/INFO]: [DeluxeCombat] Closing SQLite connection...
+[01:30:45] [Server thread/INFO]: [DeluxeCombat] SQLite connection closed.
+[01:30:45] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[01:30:45] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.2.2-SNAPSHOT
+[01:30:45] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+180-fe27182
+[01:30:45] [Server thread/ERROR]: [Essentials] There's a good chance you're reloading your server right now. If that's the case, why do you hate yourself? Expect no support from the EssentialsX team when using /reload.
+[01:30:45] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.2-SNAPSHOT
+[01:30:45] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling. If this is a reload and you experience issues, please reboot instead.
+[01:30:45] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[01:30:45] [Server thread/INFO]: Loaded 7 recipes
+[01:30:46] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'FastAsyncWorldEdit-Bukkit-2.13.1-SNAPSHOT-1057.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.reload(CraftServer.java:1095) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.Bukkit.reload(Bukkit.java:993) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.1.jar:git-Paper-196]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:265) ~[paper-1.20.1.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:324) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:308) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2354) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$21(ServerGamePacketListenerImpl.java:2314) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1338) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1315) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1308) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1286) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1174) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.1.jar:git-Paper-196]
+	... 31 more
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:30:46] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[01:30:46] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.2.2-SNAPSHOT
+[01:30:46] [Server thread/INFO]: [ViaVersion] ViaVersion 5.2.2-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[01:30:46] [Server thread/ERROR]: [ViaVersion] ViaVersion is already loaded, this should work fine. If you get any console errors, try rebooting.
+[01:30:46] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[01:30:47] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[01:30:47] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[01:30:47] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[01:30:47] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+180-fe27182
+[01:30:47] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.2.2-SNAPSHOT
+[01:30:47] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.6.3
+[01:30:47] [Server thread/INFO]: [DeluxeCombat] Loading server plugin DeluxeCombat v1.70.1
+[01:30:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:30:47] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.2.2-SNAPSHOT
+[01:30:47] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20-1.20.1 (763)
+[01:30:47] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.14).
+[01:30:47] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[01:30:47] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+180-fe27182
+[01:30:47] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[01:30:48] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[01:30:48] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[01:30:48] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[01:30:48] [Server thread/INFO]: [Essentials] Using locale en
+[01:30:48] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[01:30:48] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[01:30:48] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[01:30:48] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.2.2-SNAPSHOT
+[01:30:48] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[01:30:48] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[01:30:48] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[01:30:48] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[01:30:48] [Server thread/INFO]: [ItemEdit] # Enabled (took 105 ms)
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] Enabling DeluxeCombat v1.70.1
+[01:30:48] [Server thread/INFO]: [DeluxeCombat]  _____        _                   ______            _                
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] (____ \      | |                 / _____)          | |          _    
+[01:30:48] [Server thread/INFO]: [DeluxeCombat]  _   \ \ ____| |_   _ _   _ ____| /      ___  ____ | | _   ____| |_  
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] | |   | / _  ) | | | ( \ / ) _  ) |     / _ \|    \| || \ / _  |  _) 
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] | |__/ ( (/ /| | |_| |) X ( (/ /| \____| |_| | | | | |_) | ( | | |__ 
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] |_____/ \____)_|\____(_/ \_)____)\______)___/|_|_|_|____/ \_||_|\___)
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] 
+[01:30:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_20_R1! Trying to find NMS support
+[01:30:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
+[01:30:48] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeCombat' to create a bStats instance!
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] Spawnpoints (0), Kill-Streaks (1), Rewards (2), Custom Tools (1) loaded!
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[01:30:48] [Server thread/INFO]: [DeluxeCombat] Start fetching marketplace addons...
+[01:30:49] [Server thread/INFO]: ImNot4R0N: Reload complete.
+[01:30:49] [Server thread/INFO]: Timings Reset
+[01:30:49] [Craft Scheduler Thread - 10 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:30:49] [Craft Scheduler Thread - 8 - Essentials/INFO]: [Essentials] Fetching version information...
+[01:30:49] [Craft Scheduler Thread - 9 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
+[01:30:49] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[01:30:49] [Craft Scheduler Thread - 5 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
+[01:30:49] [Craft Scheduler Thread - 5 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
+[01:30:49] [Craft Scheduler Thread - 0 - DeluxeCombat/INFO]: [DeluxeCombat] Successfully fetched 15 marketplace items from the internet!
+[01:31:02] [Server thread/INFO]: ImNot4R0N issued server command: /up 1
+[01:31:35] [Server thread/INFO]: ImNot4R0N issued server command: /pl
+[01:31:53] [Server thread/INFO]: ImNot4R0N issued server command: /dc me
+[01:32:09] [Server thread/INFO]: ImNot4R0N has made the advancement [Monster Hunter]
+[01:33:05] [Server thread/INFO]: ImNot4R0N issued server command: /effect give @e minecraft:resistance infinite 10
+[01:33:05] [Server thread/INFO]: [ImNot4R0N: Applied effect Resistance to 324 targets]
+[01:33:09] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:33:15] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:33:21] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:34:35] [Server thread/INFO]: ImNot4R0N issued server command: /attribute ImNot4R0N minecraft:generic.attack_speed base set 15
+[01:35:02] [Server thread/INFO]: ImNot4R0N issued server command: /attribute ImNot4R0N minecraft:generic.attack_speed base set 4
+[01:35:26] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:36:55] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:37:04] [Server thread/INFO]: ImNot4R0N issued server command: /dc menu
+[01:38:15] [Server thread/INFO]: ImNot4R0N issued server command: /reload confirm
+[01:38:15] [Server thread/INFO]: ImNot4R0N: Please note that this command is not supported and may cause issues when using some plugins.
+[01:38:15] [Server thread/INFO]: ImNot4R0N: If you encounter any issues please use the /stop command to restart your server.
+[01:38:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:38:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:38:15] [Server thread/INFO]: [DeluxeCombat] Disabling DeluxeCombat v1.70.1
+[01:38:15] [Server thread/INFO]: [DeluxeCombat] Closing SQLite connection...
+[01:38:15] [Server thread/INFO]: [DeluxeCombat] SQLite connection closed.
+[01:38:15] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[01:38:15] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.2.2-SNAPSHOT
+[01:38:15] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+180-fe27182
+[01:38:15] [Server thread/ERROR]: [Essentials] There's a good chance you're reloading your server right now. If that's the case, why do you hate yourself? Expect no support from the EssentialsX team when using /reload.
+[01:38:15] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.2-SNAPSHOT
+[01:38:15] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling. If this is a reload and you experience issues, please reboot instead.
+[01:38:15] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[01:38:15] [Server thread/INFO]: Loaded 7 recipes
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:38:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/Survival-mods/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.16.0/adventure-text-serializer-legacy-4.16.0.jar
+[01:38:16] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'FastAsyncWorldEdit-Bukkit-2.12.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.loadPlugins(CraftServer.java:510) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.reload(CraftServer.java:1095) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.Bukkit.reload(Bukkit.java:993) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.1.jar:git-Paper-196]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:265) ~[paper-1.20.1.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:324) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:308) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2354) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$21(ServerGamePacketListenerImpl.java:2314) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1338) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1315) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1308) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1286) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1174) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:76) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.1.jar:git-Paper-196]
+	... 31 more
+[01:38:16] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.2.2-SNAPSHOT
+[01:38:16] [Server thread/INFO]: [ViaVersion] ViaVersion 5.2.2-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[01:38:16] [Server thread/ERROR]: [ViaVersion] ViaVersion is already loaded, this should work fine. If you get any console errors, try rebooting.
+[01:38:16] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[01:38:16] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[01:38:16] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[01:38:16] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[01:38:17] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.0-dev+180-fe27182
+[01:38:17] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.2.2-SNAPSHOT
+[01:38:17] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.6.3
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] Loading server plugin DeluxeCombat v1.70.1
+[01:38:17] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:38:17] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.2.2-SNAPSHOT
+[01:38:17] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20-1.20.1 (763)
+[01:38:17] [Server thread/WARN]: [ViaVersion] Please update your Java runtime to at least Java 21 (your version is 17.0.14).
+[01:38:17] [Server thread/WARN]: [ViaVersion] At some point in the future, ViaVersion will no longer be compatible with this version of Java.
+[01:38:17] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.0-dev+180-fe27182
+[01:38:17] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[01:38:17] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[01:38:17] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Legacy InventoryView Abstract Class ABI Provider as the provider for InventoryViewProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Legacy Damage Event Provider as the provider for DamageEventProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Selected 1.9-1.20.4 Potion Meta Provider as the provider for PotionMetaProvider
+[01:38:17] [Server thread/INFO]: [Essentials] Loaded 43465 items from items.json.
+[01:38:17] [Server thread/INFO]: [Essentials] Using locale en
+[01:38:17] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[01:38:17] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[01:38:17] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[01:38:17] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.2.2-SNAPSHOT
+[01:38:17] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.6.3
+[01:38:17] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[01:38:17] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[01:38:17] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[01:38:17] [Server thread/INFO]: [ItemEdit] # Enabled (took 63 ms)
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] Enabling DeluxeCombat v1.70.1
+[01:38:17] [Server thread/INFO]: [DeluxeCombat]  _____        _                   ______            _                
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] (____ \      | |                 / _____)          | |          _    
+[01:38:17] [Server thread/INFO]: [DeluxeCombat]  _   \ \ ____| |_   _ _   _ ____| /      ___  ____ | | _   ____| |_  
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] | |   | / _  ) | | | ( \ / ) _  ) |     / _ \|    \| || \ / _  |  _) 
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] | |__/ ( (/ /| | |_| |) X ( (/ /| \____| |_| | | | | |_) | ( | | |__ 
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] |_____/ \____)_|\____(_/ \_)____)\______)___/|_|_|_|____/ \_||_|\___)
+[01:38:17] [Server thread/INFO]: [DeluxeCombat] 
+[01:38:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_20_R1! Trying to find NMS support
+[01:38:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R1' loaded!
+[01:38:18] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DeluxeCombat' to create a bStats instance!
+[01:38:18] [Server thread/INFO]: [DeluxeCombat] Spawnpoints (0), Kill-Streaks (1), Rewards (2), Custom Tools (1) loaded!
+[01:38:18] [Server thread/INFO]: [DeluxeCombat] Loaded 14 Elo ranges.
+[01:38:18] [Server thread/INFO]: [DeluxeCombat] Start fetching marketplace addons...
+[01:38:18] [Server thread/INFO]: ImNot4R0N: Reload complete.
+[01:38:18] [Server thread/INFO]: Timings Reset
+[01:38:18] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:38:18] [Craft Scheduler Thread - 16 - Essentials/INFO]: [Essentials] Fetching version information...
+[01:38:18] [Craft Scheduler Thread - 8 - ItemEdit/INFO]: [ItemEdit] New Update at https://spigotmc.org/resources/40993
+[01:38:18] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[01:38:18] [Craft Scheduler Thread - 1 - DeluxeCombat/INFO]: [DeluxeCombat] Checking for new updates...
+[01:38:18] [Craft Scheduler Thread - 1 - DeluxeCombat/INFO]: [DeluxeCombat] You're running the newest version of DeluxeCombat
+[01:38:18] [Craft Scheduler Thread - 14 - DeluxeCombat/INFO]: [DeluxeCombat] Successfully fetched 15 marketplace items from the internet!
+[01:38:31] [Server thread/INFO]: ImNot4R0N issued server command: /up
+[01:38:33] [Server thread/INFO]: ImNot4R0N issued server command: /pl
+[01:38:40] [Server thread/INFO]: ImNot4R0N issued server command: /version
+[01:39:16] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
+[01:39:16] [Server thread/INFO]: ImNot4R0N lost connection: Server is restarting
+[01:39:16] [Server thread/INFO]: ImNot4R0N left the game
+[01:39:16] [Server thread/INFO]: Stopping server
+[01:39:16] [Server thread/INFO]: [DeluxeCombat] Disabling DeluxeCombat v1.70.1
+[01:39:16] [Server thread/INFO]: [DeluxeCombat] Closing SQLite connection...
+[01:39:16] [Server thread/INFO]: [DeluxeCombat] SQLite connection closed.
+[01:39:16] [Server thread/INFO]: [ItemEdit] Disabling ItemEdit v3.6.3
+[01:39:16] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.2.2-SNAPSHOT
+[01:39:16] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.0-dev+180-fe27182
+[01:39:16] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.2.2-SNAPSHOT
+[01:39:16] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[01:39:16] [Server thread/INFO]: Saving players
+[01:39:17] [Server thread/INFO]: Saving worlds
+[01:39:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:39:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[01:39:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[01:39:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 1632 block chunks, 223 entity chunks, 0 poi chunks in world 'world' in 1.41s
+[01:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:39:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 23 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[01:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:39:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[01:39:18] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[01:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:39:18] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01:39:18] [Server thread/INFO]: Flushing Chunk IO
+[01:39:18] [Server thread/INFO]: Closing Thread Pool
+[01:39:18] [Server thread/INFO]: Closing Server
