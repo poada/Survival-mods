@@ -12,7 +12,7 @@
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 29
+_version: 30
 anticheat:
   anti-xray:
     enabled: false
@@ -63,6 +63,7 @@ chunks:
     small_fireball: -1
     snowball: -1
   fixed-chunk-inhabited-time: -1
+  flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 24
   prevent-moving-into-unloaded-chunks: false
 collisions:
@@ -76,6 +77,7 @@ entities:
     do-collision-entity-lookups: true
     tick: true
   behavior:
+    allow-spider-world-border-climbing: true
     baby-zombie-movement-modifier: 0.5
     disable-chest-cat-detection: false
     disable-creeper-lingering-effect: false
@@ -119,12 +121,17 @@ entities:
     zombie-villager-infection-chance: -1.0
     zombies-target-turtle-eggs: true
   entities-target-with-follow-range: false
+  markers:
+    tick: true
   mob-effects:
     immune-to-wither-effect:
       wither: true
       wither-skeleton: true
     spiders-immune-to-poison-effect: true
     undead-immune-to-certain-effects: true
+  sniffer:
+    boosted-hatch-time: default
+    hatch-time: default
   spawning:
     all-chunks-are-slime-chunks: false
     alt-item-despawn-rate:
@@ -162,7 +169,13 @@ entities:
     duplicate-uuid:
       mode: SAFE_REGEN
       safe-regen-delete-range: 32
-    filter-nbt-data-from-spawn-eggs-and-related: true
+    filter-bad-tile-entity-nbt-from-falling-blocks: true
+    filtered-entity-tag-nbt-paths:
+    - Pos
+    - Motion
+    - SleepingX
+    - SleepingY
+    - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: -1
     non-player-arrow-despawn-rate: default
@@ -192,6 +205,14 @@ entities:
     wateranimal-spawn-height:
       maximum: default
       minimum: default
+  tracking-range-y:
+    animal: default
+    display: default
+    enabled: false
+    misc: default
+    monster: default
+    other: default
+    player: default
 environment:
   disable-explosion-knockback: false
   disable-ice-and-snow: false
@@ -239,6 +260,7 @@ lootables:
   refresh-min: 12h
   reset-seed-on-fill: true
   restrict-player-reloot: true
+  restrict-player-reloot-time: disabled
 maps:
   item-frame-cursor-limit: 128
   item-frame-cursor-update-interval: 10
@@ -259,7 +281,7 @@ misc:
   show-sign-click-command-failure-msgs-to-player: false
   update-pathfinding-on-block-update: true
 scoreboards:
-  allow-non-player-entities-on-scoreboards: false
+  allow-non-player-entities-on-scoreboards: true
   use-vanilla-world-scoreboard-name-coloring: false
 spawn:
   allow-using-signs-inside-spawn-protection: false
